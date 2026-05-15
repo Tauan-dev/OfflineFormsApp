@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  TouchableOpacity,
+} from "react-native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../navigation/AppNavigator";
@@ -50,7 +56,9 @@ export default function HomeScreen() {
             <Text style={styles.dataBtnIcon}>📊</Text>
             <View>
               <Text style={styles.dataBtnTitle}>Ver Dados Salvos</Text>
-              <Text style={styles.dataBtnSub}>Visualize e compartilhe os .xlsx</Text>
+              <Text style={styles.dataBtnSub}>
+                Visualize e compartilhe os .xlsx
+              </Text>
             </View>
             <Text style={styles.dataBtnArrow}>›</Text>
           </TouchableOpacity>
@@ -138,7 +146,11 @@ const styles = StyleSheet.create({
   dataBtnIcon: { fontSize: 28 },
   dataBtnTitle: { fontSize: 15, fontWeight: "700", color: Colors.primary },
   dataBtnSub: { fontSize: 12, color: Colors.textSecondary, marginTop: 2 },
-  dataBtnArrow: { fontSize: 24, color: Colors.textSecondary, marginLeft: "auto" },
+  dataBtnArrow: {
+    fontSize: 24,
+    color: Colors.textSecondary,
+    marginLeft: "auto",
+  },
   version: {
     textAlign: "center",
     ...Typography.caption,

@@ -13,7 +13,11 @@ import { useFocusEffect } from "@react-navigation/native";
 import * as Sharing from "expo-sharing";
 import * as XLSX from "xlsx";
 import { Colors, Spacing, Typography, Shadow } from "../constants/theme";
-import { fileExists, readFileAsBytes, getFileUri } from "../storage/fileManager";
+import {
+  fileExists,
+  readFileAsBytes,
+  getFileUri,
+} from "../storage/fileManager";
 
 // ── tipos ──────────────────────────────────────────────────────────────────
 interface SheetState {
@@ -23,7 +27,12 @@ interface SheetState {
   exists: boolean;
 }
 
-const EMPTY_SHEET: SheetState = { headers: [], rows: [], count: 0, exists: false };
+const EMPTY_SHEET: SheetState = {
+  headers: [],
+  rows: [],
+  count: 0,
+  exists: false,
+};
 
 // ── helpers ────────────────────────────────────────────────────────────────
 function readSheet(fileName: string): SheetState {
@@ -31,7 +40,10 @@ function readSheet(fileName: string): SheetState {
   const bytes = readFileAsBytes(fileName);
   const wb = XLSX.read(bytes, { type: "array" });
   const ws = wb.Sheets[wb.SheetNames[0]];
-  const all: string[][] = XLSX.utils.sheet_to_json(ws, { header: 1, defval: "" });
+  const all: string[][] = XLSX.utils.sheet_to_json(ws, {
+    header: 1,
+    defval: "",
+  });
   if (all.length === 0) return { ...EMPTY_SHEET, exists: true };
   const [headers, ...rows] = all;
   return { headers, rows, count: rows.length, exists: true };
@@ -39,7 +51,10 @@ function readSheet(fileName: string): SheetState {
 
 async function compartilhar(fileName: string, label: string) {
   if (!fileExists(fileName)) {
-    Alert.alert("Arquivo não encontrado", `Nenhum dado de ${label} foi salvo ainda.`);
+    Alert.alert(
+      "Arquivo não encontrado",
+      `Nenhum dado de ${label} foi salvo ainda.`,
+    );
     return;
   }
   const uri = getFileUri(fileName);
@@ -49,7 +64,8 @@ async function compartilhar(fileName: string, label: string) {
     return;
   }
   await Sharing.shareAsync(uri, {
-    mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    mimeType:
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     dialogTitle: `Compartilhar ${label}`,
     UTI: "com.microsoft.excel.xlsx",
   });
@@ -138,7 +154,9 @@ export default function DataScreen() {
     <ScrollView
       style={styles.root}
       contentContainerStyle={styles.content}
-      refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }
     >
       {/* ── abas ── */}
       <View style={styles.tabs}>
@@ -146,7 +164,9 @@ export default function DataScreen() {
           style={[styles.tab, tab === "dendro" && styles.tabActive]}
           onPress={() => setTab("dendro")}
         >
-          <Text style={[styles.tabText, tab === "dendro" && styles.tabTextActive]}>
+          <Text
+            style={[styles.tabText, tab === "dendro" && styles.tabTextActive]}
+          >
             🌲 Dendometria
           </Text>
           {dendro.exists && (
@@ -160,7 +180,9 @@ export default function DataScreen() {
           style={[styles.tab, tab === "fenol" && styles.tabActive]}
           onPress={() => setTab("fenol")}
         >
-          <Text style={[styles.tabText, tab === "fenol" && styles.tabTextActive]}>
+          <Text
+            style={[styles.tabText, tab === "fenol" && styles.tabTextActive]}
+          >
             🌸 Fenologia
           </Text>
           {fenol.exists && (
@@ -182,7 +204,10 @@ export default function DataScreen() {
           </Text>
         </View>
         <TouchableOpacity
-          style={[styles.shareBtn, !activeSheet.exists && styles.shareBtnDisabled]}
+          style={[
+            styles.shareBtn,
+            !activeSheet.exists && styles.shareBtnDisabled,
+          ]}
           onPress={() => compartilhar(activeFile, activeLabel)}
           disabled={!activeSheet.exists}
         >
@@ -200,7 +225,8 @@ export default function DataScreen() {
       </View>
 
       <Text style={styles.hint}>
-        ↻ Puxe para baixo para atualizar · Toque em Compartilhar para enviar o .xlsx
+        ↻ Puxe para baixo para atualizar · Toque em Compartilhar para enviar o
+        .xlsx
       </Text>
     </ScrollView>
   );

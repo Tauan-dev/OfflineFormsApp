@@ -6,12 +6,15 @@ import {
   TouchableOpacity,
   ScrollView,
   Image,
+  StatusBar,
+  Platform,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "../navigation/AppNavigator";
+import { FEATURES } from "../constants/features";
 import {
   Colors,
   Gradients,
@@ -43,7 +46,8 @@ export default function HomeScreen() {
   const navigation = useNavigation<HomeNavProp>();
 
   return (
-    <SafeAreaView style={styles.safe}>
+    <View style={styles.safe}>
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent={false} />
       {/* Header com gradiente diagonal */}
       <LinearGradient
         colors={Gradients.headerDiag}
@@ -143,28 +147,30 @@ export default function HomeScreen() {
           <Text style={styles.dataArrow}>›</Text>
         </TouchableOpacity>
 
-        {/* Estatísticas */}
-        <TouchableOpacity
-          style={[styles.dataCard, styles.statsCard]}
-          onPress={() => navigation.navigate("StatsHome")}
-          activeOpacity={0.82}
-        >
-          <View style={[styles.dataIconWrap, styles.statsIconWrap]}>
-            <Text style={styles.dataIcon}>📈</Text>
-          </View>
-          <View style={styles.dataInfo}>
-            <Text style={styles.dataLabel}>Estatísticas de Campo</Text>
-            <Text style={styles.dataDesc}>
-              BI offline — médias, rankings e insights
-            </Text>
-          </View>
-          <Text style={styles.dataArrow}>›</Text>
-        </TouchableOpacity>
+        {/* Estatísticas — visível apenas na versão gestão */}
+        {FEATURES.showStats && (
+          <TouchableOpacity
+            style={[styles.dataCard, styles.statsCard]}
+            onPress={() => navigation.navigate("StatsHome")}
+            activeOpacity={0.82}
+          >
+            <View style={[styles.dataIconWrap, styles.statsIconWrap]}>
+              <Text style={styles.dataIcon}>📈</Text>
+            </View>
+            <View style={styles.dataInfo}>
+              <Text style={styles.dataLabel}>Estatísticas de Campo</Text>
+              <Text style={styles.dataDesc}>
+                BI offline — médias, rankings e insights
+              </Text>
+            </View>
+            <Text style={styles.dataArrow}>›</Text>
+          </TouchableOpacity>
+        )}
       </ScrollView>
 
       <Text style={styles.version}>Desenvolvido por Tauan Neres Silva</Text>
       <Text style={styles.version}>Coleta Verde v1.0.0 · CEPLAC</Text>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -172,6 +178,7 @@ const styles = StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: Colors.background,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0,
   },
 
   // Header

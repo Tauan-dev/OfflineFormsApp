@@ -3,21 +3,24 @@
     "name": "Coleta Verde",
     "slug": "coleta-verde",
     "version": "1.0.0",
+    "updates": {
+      "checkAutomatically": "NEVER"
+    },
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon-generated.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": false,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/coletaverde.png",
       "resizeMode": "contain",
-      "backgroundColor": "#1B4332"
+      "backgroundColor": "#F7FAF7"
     },
     "android": {
       "package": "com.coletaverde.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#1B4332"
+        "foregroundImage": "./assets/adaptive-icon-generated.png",
+        "backgroundColor": "#FFFFFF"
       },
       "edgeToEdgeEnabled": false,
       "permissions": []

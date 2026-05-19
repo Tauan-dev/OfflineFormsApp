@@ -9,19 +9,26 @@
 const { Jimp } = require("jimp");
 const path = require("path");
 
-const SRC          = path.resolve(__dirname, "../assets/coletaverdelogo.png");
-const OUT_ICON     = path.resolve(__dirname, "../assets/icon-generated.png");
-const OUT_ADAPTIVE = path.resolve(__dirname, "../assets/adaptive-icon-generated.png");
+const SRC = path.resolve(__dirname, "../assets/coletaverdelogo.png");
+const OUT_ICON = path.resolve(__dirname, "../assets/icon-generated.png");
+const OUT_ADAPTIVE = path.resolve(
+  __dirname,
+  "../assets/adaptive-icon-generated.png",
+);
 
 const CANVAS = 1024;
-const LOGO_SIZE_ICON     = Math.round(CANVAS * 0.55); // 563px — icon normal
+const LOGO_SIZE_ICON = Math.round(CANVAS * 0.55); // 563px — icon normal
 const LOGO_SIZE_ADAPTIVE = Math.round(CANVAS * 0.48); // 491px — dentro da safe zone do Android
 
 async function generate() {
   const logo = await Jimp.read(SRC);
 
   // ── icon.png ──────────────────────────────────────────────────────────────
-  const iconCanvas = new Jimp({ width: CANVAS, height: CANVAS, color: 0xffffffff });
+  const iconCanvas = new Jimp({
+    width: CANVAS,
+    height: CANVAS,
+    color: 0xffffffff,
+  });
   const iconLogo = logo.clone().resize({ w: LOGO_SIZE_ICON });
   const iconX = Math.round((CANVAS - iconLogo.width) / 2);
   const iconY = Math.round((CANVAS - iconLogo.height) / 2);
@@ -30,7 +37,11 @@ async function generate() {
   console.log("✅ icon-generated.png salvo em assets/");
 
   // ── adaptive-icon.png ─────────────────────────────────────────────────────
-  const adaptiveCanvas = new Jimp({ width: CANVAS, height: CANVAS, color: 0xffffffff });
+  const adaptiveCanvas = new Jimp({
+    width: CANVAS,
+    height: CANVAS,
+    color: 0xffffffff,
+  });
   const adaptiveLogo = logo.clone().resize({ w: LOGO_SIZE_ADAPTIVE });
   const adaptiveX = Math.round((CANVAS - adaptiveLogo.width) / 2);
   const adaptiveY = Math.round((CANVAS - adaptiveLogo.height) / 2);
@@ -43,4 +54,3 @@ generate().catch((err) => {
   console.error("Erro ao gerar ícone:", err);
   process.exit(1);
 });
-

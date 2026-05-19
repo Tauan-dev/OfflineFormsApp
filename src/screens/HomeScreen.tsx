@@ -47,7 +47,11 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.safe}>
-      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent={false} />
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent={false}
+      />
       {/* Header com gradiente diagonal */}
       <LinearGradient
         colors={Gradients.headerDiag}
@@ -178,7 +182,7 @@ const styles = StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: Colors.background,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight ?? 24 : 0,
+    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ?? 24) : 0,
   },
 
   // Header

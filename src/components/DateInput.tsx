@@ -1,8 +1,4 @@
-/**
- * DateInput — campo de data com máscara automática DD/MM/AAAA.
- * Ao digitar apenas números, as barras são inseridas automaticamente.
- */
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 import { Colors, Spacing, Typography } from "../constants/theme";
 
@@ -14,7 +10,6 @@ interface DateInputProps {
   error?: string;
 }
 
-/** Aplica máscara DD/MM/AAAA removendo tudo que não for dígito */
 function applyMask(raw: string): string {
   const digits = raw.replace(/\D/g, "").slice(0, 8);
   if (digits.length <= 2) return digits;
@@ -29,41 +24,80 @@ export default function DateInput({
   placeholder = "DD/MM/AAAA",
   error,
 }: DateInputProps) {
-  const handleChange = (text: string) => {
-    onChangeText(applyMask(text));
-  };
+  const [focused, setFocused] = useState(false);
 
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>
-      <TextInput
-        style={[styles.input, !!error && styles.inputError]}
-        value={value}
-        onChangeText={handleChange}
-        placeholder={placeholder}
-        placeholderTextColor={Colors.textSecondary}
-        keyboardType="numeric"
-        maxLength={10}
-      />
+      <View
+        style={[
+          styles.inputWrapper,
+          focused && styles.inputWrapperFocused,
+          !!error && styles.inputWrapperError,
+        ]}
+      >
+        <TextInput
+          style={styles.input}
+          value={value}
+          onChangeText={(t) => onChangeText(applyMask(t))}
+          placeholder={placeholder}
+          placeholderTextColor={Colors.textTertiary}
+          keyboardType="numeric"
+          maxLength={10}
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+        />
+      </View>
       {!!error && <Text style={styles.errorText}>{error}</Text>}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { marginBottom: 10 },
+  container: { marginBottom: 14 },
   label: { ...Typography.label },
-  input: {
+  inputWrapper: {
+    flexDirection: "row",
+    alignItems: "center",
     height: Spacing.inputHeight,
     borderWidth: 1,
-    borderColor: Colors.border,
+    borderColor: "rgba(45,106,79,0.18)",
     borderRadius: Spacing.borderRadiusInput,
-    paddingHorizontal: 12,
+    backgroundColor: Colors.surface,
+    paddingHorizontal: 14,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.04,
+    shadowRadius: 4,
+    elevation: 1,
+  },
+  inputWrapperFocused: {
+    borderColor: Colors.primaryLight,
+    borderWidth: 1.5,
+    backgroundColor: "#FAFDFA",
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  inputWrapperError: {
+    borderColor: Colors.error,
+    borderWidth: 1.5,
+    backgroundColor: Colors.errorSoft,
+    shadowOpacity: 0,
+    elevation: 0,
+  },
+  input: {
+    flex: 1,
     fontSize: 16,
     color: Colors.textPrimary,
-    backgroundColor: Colors.surface,
-    letterSpacing: 1,
+    paddingVertical: 0,
+    letterSpacing: 1.5,
   },
-  inputError: { borderColor: Colors.error },
+  calIcon: {
+    fontSize: 15,
+    opacity: 0.35,
+    marginLeft: 4,
+  },
+  calIconFocused: { opacity: 0.75 },
   errorText: { ...Typography.errorText },
 });

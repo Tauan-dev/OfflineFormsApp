@@ -7,21 +7,25 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import FormContainer from "../components/FormContainer";
 import Card from "../components/Card";
 import Input from "../components/Input";
 import SpeciesSelector from "../components/SpeciesSelector";
 import SelectField from "../components/SelectField";
-import { Colors, Spacing, Typography } from "../constants/theme";
+import {
+  Colors,
+  Gradients,
+  Shadow,
+  Spacing,
+  Typography,
+} from "../constants/theme";
 import {
   savePhenologyData,
   PhenologyGroupData,
 } from "../services/excelService";
 import { validatePhenology, getFieldError } from "../utils/validators";
 
-// =============================================
-// ESTÁGIOS POR GRUPO
-// =============================================
 const FLORES_STAGES = ["botão", "em abertura", "plena floração", "senescente"];
 const FRUTOS_STAGES = ["em desenvolvimento", "maduro", "senescente", "no chão"];
 const FOLHAS_STAGES = ["jovens", "adultas", "senescentes"];
@@ -31,11 +35,87 @@ function emptyGroup(stages: string[]): PhenologyGroupData {
   return { presenca: true, intensidade: "", estagio: stages[0] };
 }
 
-// =============================================
-// SUB-COMPONENTE: Grupo Fenológico
-// =============================================
+// ── Segmented Control (Sim | Não) ──────────────────────────────────────────
+interface SegmentedProps {
+  value: boolean;
+  onChange: (v: boolean) => void;
+}
+
+function PresencaToggle({ value, onChange }: SegmentedProps) {
+  return (
+    <View style={toggle.wrap}>
+      <TouchableOpacity
+        style={[toggle.seg, value && toggle.segActiveYes]}
+        onPress={() => onChange(true)}
+        activeOpacity={0.75}
+      >
+        <Text style={[toggle.segText, value && toggle.segTextActive]}>Sim</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={[toggle.seg, !value && toggle.segActiveNo]}
+        onPress={() => onChange(false)}
+        activeOpacity={0.75}
+      >
+        <Text style={[toggle.segText, !value && toggle.segTextActive]}>
+          Não
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+const toggle = StyleSheet.create({
+  wrap: {
+    flexDirection: "row",
+    borderRadius: Spacing.borderRadiusInput,
+    borderWidth: 1,
+    borderColor: "rgba(45,106,79,0.18)",
+    overflow: "hidden",
+    marginBottom: 14,
+    alignSelf: "flex-start",
+    minWidth: 168,
+    backgroundColor: Colors.surfaceAlt,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 3,
+    elevation: 1,
+  },
+  seg: {
+    flex: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 26,
+    alignItems: "center",
+    backgroundColor: "transparent",
+  },
+  segActiveYes: {
+    backgroundColor: Colors.primary,
+    shadowColor: Colors.primaryDark,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  segActiveNo: {
+    backgroundColor: Colors.error,
+  },
+  segText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: Colors.textTertiary,
+    letterSpacing: 0.2,
+  },
+  segTextActive: {
+    color: "#FFFFFF",
+    fontWeight: "700",
+  },
+});
+
+// ── Grupo Fenológico ────────────────────────────────────────────────────────
 interface GroupProps {
   title: string;
+  icon: string;
+  subtitle: string;
   stages: string[];
   data: PhenologyGroupData;
   onChange: (data: PhenologyGroupData) => void;
@@ -44,6 +124,8 @@ interface GroupProps {
 
 function PhenologyGroup({
   title,
+  icon,
+  subtitle,
   stages,
   data,
   onChange,
@@ -58,54 +140,21 @@ function PhenologyGroup({
   };
 
   return (
-    <Card title={title}>
-      {/* Presença */}
-      <View style={styles.fieldGroup}>
-        <Text style={styles.fieldLabel}>Presença</Text>
-        <View style={styles.toggleRow}>
-          <TouchableOpacity
-            style={[styles.toggleBtn, data.presenca && styles.toggleActive]}
-            onPress={() => handlePresenca(true)}
-            activeOpacity={0.8}
-          >
-            <Text
-              style={[
-                styles.toggleText,
-                data.presenca && styles.toggleTextActive,
-              ]}
-            >
-              Sim
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.toggleBtn, !data.presenca && styles.toggleActiveNo]}
-            onPress={() => handlePresenca(false)}
-            activeOpacity={0.8}
-          >
-            <Text
-              style={[
-                styles.toggleText,
-                !data.presenca && styles.toggleTextActive,
-              ]}
-            >
-              Não
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+    <Card title={title} icon={icon} subtitle={subtitle}>
+      <Text style={groupStyles.fieldLabel}>Presença</Text>
+      <PresencaToggle value={data.presenca} onChange={handlePresenca} />
 
-      {/* Intensidade */}
       <Input
-        label="Intensidade (%)"
+        label="Intensidade"
         value={data.intensidade}
         onChangeText={(v) => onChange({ ...data, intensidade: v })}
         keyboardType="decimal-pad"
         placeholder="0 – 100"
+        unit="%"
         editable={data.presenca}
         error={intensidadeError}
       />
 
-      {/* Estágio */}
       <SelectField
         label="Estágio"
         options={data.presenca ? stages : [NAO_APLICAVEL]}
@@ -117,9 +166,13 @@ function PhenologyGroup({
   );
 }
 
-// =============================================
-// TELA PRINCIPAL
-// =============================================
+const groupStyles = StyleSheet.create({
+  fieldLabel: { ...Typography.label },
+});
+
+// ── Tela principal ────────────────────────────────────────────────────────
+const FITOSSANITARIO_OPTIONS = ["vivo", "morto", "com dano"];
+
 interface Form {
   parcela: string;
   arv: string;
@@ -127,6 +180,8 @@ interface Form {
   flores: PhenologyGroupData;
   frutos: PhenologyGroupData;
   folhas: PhenologyGroupData;
+  fitossanitario: string;
+  observacao: string;
 }
 
 const initialForm: Form = {
@@ -136,6 +191,8 @@ const initialForm: Form = {
   flores: emptyGroup(FLORES_STAGES),
   frutos: emptyGroup(FRUTOS_STAGES),
   folhas: emptyGroup(FOLHAS_STAGES),
+  fitossanitario: "",
+  observacao: "",
 };
 
 export default function Form2Screen() {
@@ -161,12 +218,9 @@ export default function Form2Screen() {
     setSaving(true);
     try {
       await savePhenologyData(form);
-      showSuccess("Dados salvos com sucesso!");
+      showSuccess("Registro salvo com sucesso!");
       if (continueAfter) {
-        setForm((prev) => ({
-          ...initialForm,
-          parcela: prev.parcela,
-        }));
+        setForm((prev) => ({ ...initialForm, parcela: prev.parcela }));
       } else {
         setForm(initialForm);
       }
@@ -184,32 +238,37 @@ export default function Form2Screen() {
       style={styles.wrapper}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
-      {/* Banner de sucesso */}
       {!!successMsg && (
         <View style={styles.successBanner}>
-          <Text style={styles.successBannerText}>✓ {successMsg}</Text>
+          <Text style={styles.successIcon}>✓</Text>
+          <Text style={styles.successBannerText}>{successMsg}</Text>
         </View>
       )}
 
       <FormContainer>
-        {/* CARD 1 — Identificação */}
-        <Card title="Identificação">
-          <Input
-            label="Parcela"
-            value={form.parcela}
-            onChangeText={(v) => setForm((p) => ({ ...p, parcela: v }))}
-            keyboardType="numeric"
-            placeholder="Ex: 1"
-            error={getFieldError(errors, "parcela")}
-          />
-          <Input
-            label="Árvore"
-            value={form.arv}
-            onChangeText={(v) => setForm((p) => ({ ...p, arv: v }))}
-            keyboardType="numeric"
-            placeholder="Ex: 12"
-            error={getFieldError(errors, "arv")}
-          />
+        <Card title="Identificação" icon="📍" subtitle="Parcela e árvore">
+          <View style={styles.row}>
+            <View style={styles.col}>
+              <Input
+                label="Parcela *"
+                value={form.parcela}
+                onChangeText={(v) => setForm((p) => ({ ...p, parcela: v }))}
+                keyboardType="numeric"
+                placeholder="Ex: 1"
+                error={getFieldError(errors, "parcela")}
+              />
+            </View>
+            <View style={styles.col}>
+              <Input
+                label="Árvore *"
+                value={form.arv}
+                onChangeText={(v) => setForm((p) => ({ ...p, arv: v }))}
+                keyboardType="numeric"
+                placeholder="Ex: 12"
+                error={getFieldError(errors, "arv")}
+              />
+            </View>
+          </View>
           <SpeciesSelector
             value={form.nomeComum}
             onChange={(v) => setForm((p) => ({ ...p, nomeComum: v }))}
@@ -217,34 +276,60 @@ export default function Form2Screen() {
           />
         </Card>
 
-        {/* CARD 2 — Flores */}
         <PhenologyGroup
           title="Flores"
+          icon="🌸"
+          subtitle="Estado fenológico floral"
           stages={FLORES_STAGES}
           data={form.flores}
           onChange={(v) => setForm((p) => ({ ...p, flores: v }))}
           intensidadeError={getFieldError(errors, "flores.intensidade")}
         />
 
-        {/* CARD 3 — Frutos */}
         <PhenologyGroup
           title="Frutos"
+          icon="🌱"
+          subtitle="Estado fenológico dos frutos"
           stages={FRUTOS_STAGES}
           data={form.frutos}
           onChange={(v) => setForm((p) => ({ ...p, frutos: v }))}
           intensidadeError={getFieldError(errors, "frutos.intensidade")}
         />
 
-        {/* CARD 4 — Folhas */}
         <PhenologyGroup
           title="Folhas"
+          icon="🍃"
+          subtitle="Estado fenológico foliar"
           stages={FOLHAS_STAGES}
           data={form.folhas}
           onChange={(v) => setForm((p) => ({ ...p, folhas: v }))}
           intensidadeError={getFieldError(errors, "folhas.intensidade")}
         />
 
-        {/* Erro global */}
+        <Card
+          title="Estado Fitossanitário"
+          icon="🌿"
+          subtitle="Condição geral da árvore"
+        >
+          <SelectField
+            label="Estado *"
+            options={FITOSSANITARIO_OPTIONS}
+            value={form.fitossanitario}
+            onChange={(v) => setForm((p) => ({ ...p, fitossanitario: v }))}
+          />
+        </Card>
+
+        <Card title="Observações" icon="📝" subtitle="Anotações adicionais">
+          <Input
+            label="Observações"
+            value={form.observacao}
+            onChangeText={(v) => setForm((p) => ({ ...p, observacao: v }))}
+            placeholder="Ex: galhos quebrados, ataque de praga..."
+            multiline
+            numberOfLines={3}
+          />
+        </Card>
+
         {getFieldError(errors, "_global") && (
           <Text style={styles.globalError}>
             {getFieldError(errors, "_global")}
@@ -252,12 +337,12 @@ export default function Form2Screen() {
         )}
       </FormContainer>
 
-      {/* Botões fixos */}
       <View style={styles.footer}>
         <TouchableOpacity
           style={[styles.btn, styles.btnOutline]}
           onPress={() => handleSave(false)}
           disabled={saving}
+          activeOpacity={0.75}
         >
           <Text style={[styles.btnText, styles.btnTextOutline]}>Salvar</Text>
         </TouchableOpacity>
@@ -265,10 +350,18 @@ export default function Form2Screen() {
           style={[styles.btn, styles.btnPrimary]}
           onPress={() => handleSave(true)}
           disabled={saving}
+          activeOpacity={0.78}
         >
-          <Text style={[styles.btnText, styles.btnTextPrimary]}>
-            Salvar e Continuar
-          </Text>
+          <LinearGradient
+            colors={Gradients.header}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={styles.btnGradient}
+          >
+            <Text style={[styles.btnText, styles.btnTextPrimary]}>
+              Salvar e Continuar
+            </Text>
+          </LinearGradient>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -281,92 +374,64 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.background,
   },
   successBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
     backgroundColor: Colors.successSoft,
     borderBottomWidth: 1,
     borderBottomColor: Colors.primarySoft,
-    paddingVertical: 10,
+    paddingVertical: 11,
     paddingHorizontal: Spacing.paddingScreen,
-    flexDirection: "row",
-    alignItems: "center",
+  },
+  successIcon: {
+    fontSize: 15,
+    color: Colors.primary,
+    fontWeight: "700",
   },
   successBannerText: {
     color: Colors.primary,
     fontSize: 14,
     fontWeight: "600",
   },
-  fieldGroup: {
-    marginBottom: 10,
-  },
-  fieldLabel: {
-    ...Typography.label,
-  },
-  toggleRow: {
-    flexDirection: "row",
-    gap: 10,
-    marginTop: 4,
-  },
-  toggleBtn: {
-    flex: 1,
-    paddingVertical: 10,
-    borderRadius: Spacing.borderRadiusInput,
-    borderWidth: 1.5,
-    borderColor: Colors.border,
-    backgroundColor: Colors.surface,
-    alignItems: "center",
-  },
-  toggleActive: {
-    backgroundColor: Colors.primary,
-    borderColor: Colors.primary,
-  },
-  toggleActiveNo: {
-    backgroundColor: Colors.error,
-    borderColor: Colors.error,
-  },
-  toggleText: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: Colors.textPrimary,
-  },
-  toggleTextActive: {
-    color: Colors.surface,
-  },
+  row: { flexDirection: "row", gap: 10 },
+  col: { flex: 1 },
   globalError: {
     ...Typography.errorText,
     textAlign: "center",
-    marginTop: 4,
   },
   footer: {
     flexDirection: "row",
     gap: 10,
     paddingHorizontal: Spacing.paddingScreen,
-    paddingVertical: 12,
+    paddingVertical: 14,
     backgroundColor: Colors.surface,
     borderTopWidth: 1,
     borderTopColor: Colors.border,
+    ...Shadow.medium,
   },
   btn: {
     flex: 1,
     height: Spacing.buttonHeight,
     borderRadius: Spacing.borderRadiusInput,
-    alignItems: "center",
-    justifyContent: "center",
+    overflow: "hidden",
   },
   btnPrimary: {
-    backgroundColor: Colors.primary,
+    ...Shadow.small,
+  },
+  btnGradient: {
+    flex: 1,
+    alignSelf: "stretch",
+    alignItems: "center",
+    justifyContent: "center",
   },
   btnOutline: {
     borderWidth: 1.5,
     borderColor: Colors.primary,
     backgroundColor: Colors.surface,
+    alignItems: "center",
+    justifyContent: "center",
   },
-  btnText: {
-    fontSize: 15,
-    fontWeight: "600",
-  },
-  btnTextPrimary: {
-    color: Colors.surface,
-  },
-  btnTextOutline: {
-    color: Colors.primary,
-  },
+  btnText: { fontSize: 15, fontWeight: "700", letterSpacing: 0.2 },
+  btnTextPrimary: { color: "#FFFFFF" },
+  btnTextOutline: { color: Colors.primary },
 });

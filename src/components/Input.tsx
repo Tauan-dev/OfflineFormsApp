@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -18,6 +18,7 @@ interface InputProps {
   numberOfLines?: number;
   editable?: boolean;
   error?: string;
+  unit?: string;
 }
 
 export default function Input({
@@ -30,26 +31,41 @@ export default function Input({
   numberOfLines = 1,
   editable = true,
   error,
+  unit,
 }: InputProps) {
+  const [focused, setFocused] = useState(false);
+
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>
-      <TextInput
+      <View
         style={[
-          styles.input,
-          multiline && styles.multiline,
-          !editable && styles.disabled,
-          !!error && styles.inputError,
+          styles.inputWrapper,
+          multiline && styles.inputWrapperMultiline,
+          focused && styles.inputWrapperFocused,
+          !editable && styles.inputWrapperDisabled,
+          !!error && styles.inputWrapperError,
         ]}
-        value={value}
-        onChangeText={onChangeText}
-        placeholder={placeholder}
-        placeholderTextColor={Colors.textSecondary}
-        keyboardType={keyboardType}
-        multiline={multiline}
-        numberOfLines={multiline ? numberOfLines : 1}
-        editable={editable}
-      />
+      >
+        <TextInput
+          style={[styles.input, multiline && styles.multiline]}
+          value={value}
+          onChangeText={onChangeText}
+          placeholder={placeholder}
+          placeholderTextColor={Colors.textTertiary}
+          keyboardType={keyboardType}
+          multiline={multiline}
+          numberOfLines={multiline ? numberOfLines : 1}
+          editable={editable}
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+        />
+        {!!unit && (
+          <Text style={[styles.unit, focused && styles.unitFocused]}>
+            {unit}
+          </Text>
+        )}
+      </View>
       {!!error && <Text style={styles.errorText}>{error}</Text>}
     </View>
   );
@@ -57,32 +73,79 @@ export default function Input({
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 10,
+    marginBottom: 14,
   },
   label: {
     ...Typography.label,
   },
-  input: {
+  inputWrapper: {
+    flexDirection: "row",
+    alignItems: "center",
     height: Spacing.inputHeight,
     borderWidth: 1,
-    borderColor: Colors.border,
+    borderColor: "rgba(45,106,79,0.18)",
     borderRadius: Spacing.borderRadiusInput,
-    paddingHorizontal: 12,
+    backgroundColor: Colors.surface,
+    paddingHorizontal: 14,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.04,
+    shadowRadius: 4,
+    elevation: 1,
+  },
+  inputWrapperMultiline: {
+    height: undefined,
+    paddingVertical: 12,
+    alignItems: "flex-start",
+  },
+  inputWrapperFocused: {
+    borderColor: Colors.primaryLight,
+    borderWidth: 1.5,
+    backgroundColor: "#FAFDFA",
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  inputWrapperDisabled: {
+    backgroundColor: Colors.surfaceAlt,
+    borderColor: "rgba(45,106,79,0.08)",
+    shadowOpacity: 0,
+    elevation: 0,
+  },
+  inputWrapperError: {
+    borderColor: Colors.error,
+    borderWidth: 1.5,
+    backgroundColor: Colors.errorSoft,
+    shadowOpacity: 0,
+    elevation: 0,
+  },
+  input: {
+    flex: 1,
     fontSize: 16,
     color: Colors.textPrimary,
-    backgroundColor: Colors.surface,
+    paddingVertical: 0,
+    letterSpacing: 0.1,
   },
   multiline: {
     height: 90,
-    paddingTop: 10,
     textAlignVertical: "top",
   },
-  disabled: {
-    backgroundColor: Colors.background,
-    color: Colors.textSecondary,
+  unit: {
+    ...Typography.unit,
+    marginLeft: 10,
+    paddingLeft: 10,
+    paddingVertical: 3,
+    paddingHorizontal: 8,
+    borderRadius: 6,
+    backgroundColor: Colors.primaryMuted,
+    color: Colors.primary,
+    fontSize: 12,
+    fontWeight: "700",
+    overflow: "hidden",
   },
-  inputError: {
-    borderColor: Colors.error,
+  unitFocused: {
+    backgroundColor: Colors.primarySoft,
+    color: Colors.primaryDark,
   },
   errorText: {
     ...Typography.errorText,

@@ -201,7 +201,7 @@ export default function SpeciesSelector({
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 10,
+    marginBottom: 14,
   },
   label: {
     ...Typography.label,
@@ -209,40 +209,53 @@ const styles = StyleSheet.create({
   input: {
     height: Spacing.inputHeight,
     borderWidth: 1,
-    borderColor: Colors.border,
+    borderColor: "rgba(45,106,79,0.18)",
     borderRadius: Spacing.borderRadiusInput,
-    paddingHorizontal: 12,
+    paddingHorizontal: 14,
     fontSize: 16,
     color: Colors.textPrimary,
     backgroundColor: Colors.surface,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.04,
+    shadowRadius: 4,
+    elevation: 1,
   },
   inputError: {
     borderColor: Colors.error,
+    borderWidth: 1.5,
+    backgroundColor: Colors.errorSoft,
   },
   errorText: {
     ...Typography.errorText,
   },
   dropdown: {
     backgroundColor: Colors.surface,
-    borderWidth: 1,
-    borderColor: Colors.border,
-    borderRadius: Spacing.borderRadiusInput,
-    ...Shadow.small,
+    borderWidth: 0.5,
+    borderColor: "rgba(45,106,79,0.12)",
+    borderRadius: Spacing.borderRadius,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.16,
+    shadowRadius: 20,
+    elevation: 10,
     overflow: "hidden",
   },
   item: {
-    paddingHorizontal: 14,
-    paddingVertical: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 13,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.background,
+    borderBottomColor: "rgba(45,106,79,0.06)",
   },
   itemText: {
     fontSize: 15,
     color: Colors.textPrimary,
+    letterSpacing: 0.1,
   },
   newTag: {
-    marginTop: 4,
-    padding: 8,
+    marginTop: 6,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
     backgroundColor: Colors.successSoft,
     borderRadius: Spacing.borderRadiusInput,
     borderWidth: 1,
@@ -251,5 +264,6 @@ const styles = StyleSheet.create({
   newTagText: {
     fontSize: 12,
     color: Colors.primary,
+    fontWeight: "600",
   },
 });

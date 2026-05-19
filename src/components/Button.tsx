@@ -5,8 +5,16 @@ import {
   StyleSheet,
   ActivityIndicator,
   ViewStyle,
+  View,
 } from "react-native";
-import { Colors, Spacing, Typography } from "../constants/theme";
+import { LinearGradient } from "expo-linear-gradient";
+import {
+  Colors,
+  Gradients,
+  Shadow,
+  Spacing,
+  Typography,
+} from "../constants/theme";
 
 interface ButtonProps {
   label: string;
@@ -27,31 +35,46 @@ export default function Button({
 }: ButtonProps) {
   const isPrimary = variant === "primary";
 
+  if (isPrimary) {
+    return (
+      <TouchableOpacity
+        style={[styles.button, (disabled || loading) && styles.disabled, style]}
+        onPress={onPress}
+        disabled={disabled || loading}
+        activeOpacity={0.78}
+      >
+        <LinearGradient
+          colors={Gradients.header}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={styles.gradient}
+        >
+          {loading ? (
+            <ActivityIndicator color="#FFFFFF" />
+          ) : (
+            <Text style={[styles.label, styles.labelPrimary]}>{label}</Text>
+          )}
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
+
   return (
     <TouchableOpacity
       style={[
         styles.button,
-        isPrimary ? styles.primary : styles.secondary,
+        styles.secondary,
         (disabled || loading) && styles.disabled,
         style,
       ]}
       onPress={onPress}
       disabled={disabled || loading}
-      activeOpacity={0.8}
+      activeOpacity={0.75}
     >
       {loading ? (
-        <ActivityIndicator
-          color={isPrimary ? Colors.surface : Colors.primary}
-        />
+        <ActivityIndicator color={Colors.primary} />
       ) : (
-        <Text
-          style={[
-            styles.label,
-            isPrimary ? styles.labelPrimary : styles.labelSecondary,
-          ]}
-        >
-          {label}
-        </Text>
+        <Text style={[styles.label, styles.labelSecondary]}>{label}</Text>
       )}
     </TouchableOpacity>
   );
@@ -61,29 +84,35 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: Spacing.buttonHeight,
-    paddingHorizontal: 24,
-    borderRadius: Spacing.borderRadiusInput,
+    borderRadius: Spacing.borderRadius,
+    overflow: "hidden",
+    ...Shadow.small,
+  },
+  gradient: {
+    flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  primary: {
-    backgroundColor: Colors.primary,
+    paddingHorizontal: 24,
   },
   secondary: {
     backgroundColor: Colors.surface,
     borderWidth: 1.5,
     borderColor: Colors.primary,
+    alignItems: "center",
+    justifyContent: "center",
   },
   disabled: {
-    opacity: 0.45,
+    opacity: 0.42,
   },
   label: {
     ...Typography.buttonText,
   },
   labelPrimary: {
-    color: Colors.surface,
+    color: "#FFFFFF",
   },
   labelSecondary: {
     color: Colors.primary,
+    fontWeight: "700",
+    fontSize: 15,
   },
 });

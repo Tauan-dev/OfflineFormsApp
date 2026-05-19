@@ -11,13 +11,14 @@ import {
 } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import * as Sharing from "expo-sharing";
-import * as XLSX from "xlsx";
 import { Colors, Spacing, Typography, Shadow } from "../constants/theme";
 import {
   fileExists,
-  readFileAsBytes,
-  getFileUri,
+  readFileAsText,
+  deleteFile,
+  getShareUri,
 } from "../storage/fileManager";
+import { parseCsv } from "../services/excelService";
 
 // ── tipos ──────────────────────────────────────────────────────────────────
 interface SheetState {
@@ -35,40 +36,38 @@ const EMPTY_SHEET: SheetState = {
 };
 
 // ── helpers ────────────────────────────────────────────────────────────────
-function readSheet(fileName: string): SheetState {
-  if (!fileExists(fileName)) return EMPTY_SHEET;
-  const bytes = readFileAsBytes(fileName);
-  const wb = XLSX.read(bytes, { type: "array" });
-  const ws = wb.Sheets[wb.SheetNames[0]];
-  const all: string[][] = XLSX.utils.sheet_to_json(ws, {
-    header: 1,
-    defval: "",
-  });
+async function readSheet(fileName: string): Promise<SheetState> {
+  if (!(await fileExists(fileName))) return EMPTY_SHEET;
+  const text = await readFileAsText(fileName);
+  const all = parseCsv(text);
   if (all.length === 0) return { ...EMPTY_SHEET, exists: true };
   const [headers, ...rows] = all;
   return { headers, rows, count: rows.length, exists: true };
 }
 
 async function compartilhar(fileName: string, label: string) {
-  if (!fileExists(fileName)) {
+  if (!(await fileExists(fileName))) {
     Alert.alert(
       "Arquivo não encontrado",
       `Nenhum dado de ${label} foi salvo ainda.`,
     );
     return;
   }
-  const uri = getFileUri(fileName);
+  const uri = await getShareUri(fileName);
   const canShare = await Sharing.isAvailableAsync();
   if (!canShare) {
     Alert.alert("Compartilhamento indisponível", `Caminho do arquivo:\n${uri}`);
     return;
   }
-  await Sharing.shareAsync(uri, {
-    mimeType:
-      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    dialogTitle: `Compartilhar ${label}`,
-    UTI: "com.microsoft.excel.xlsx",
-  });
+  try {
+    await Sharing.shareAsync(uri, {
+      mimeType: "text/csv",
+      dialogTitle: `Compartilhar ${label}`,
+      UTI: "public.comma-separated-values-text",
+    });
+  } catch (e: any) {
+    Alert.alert("Erro ao compartilhar", e?.message ?? String(e));
+  }
 }
 
 // ── componente de tabela ───────────────────────────────────────────────────
@@ -91,31 +90,59 @@ function DataTable({ sheet }: { sheet: SheetState }) {
   }
 
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator>
-      <View>
-        {/* cabeçalho */}
-        <View style={[styles.tableRow, styles.tableHead]}>
-          {sheet.headers.map((h, i) => (
-            <Text key={i} style={[styles.tableCell, styles.tableCellHead]}>
-              {h}
-            </Text>
-          ))}
-        </View>
-        {/* linhas */}
-        {sheet.rows.map((row, ri) => (
-          <View
-            key={ri}
-            style={[styles.tableRow, ri % 2 === 1 && styles.tableRowAlt]}
-          >
-            {sheet.headers.map((_, ci) => (
-              <Text key={ci} style={styles.tableCell}>
-                {row[ci] ?? ""}
+    <View>
+      <ScrollView horizontal showsHorizontalScrollIndicator persistentScrollbar>
+        <View>
+          {/* ── cabeçalho ── */}
+          <View style={[styles.tableRow, styles.tableHead]}>
+            {/* coluna # */}
+            <View style={[styles.tableCell, styles.tableCellNumHead]}>
+              <Text style={[styles.tableCellHeadText, { textAlign: "center" }]}>
+                #
               </Text>
+            </View>
+            {sheet.headers.map((h, i) => (
+              <View key={i} style={[styles.tableCell, styles.tableCellHead]}>
+                <Text style={styles.tableCellHeadText} numberOfLines={2}>
+                  {h}
+                </Text>
+              </View>
             ))}
           </View>
-        ))}
+
+          {/* ── linhas de dados ── */}
+          {sheet.rows.map((row, ri) => (
+            <View
+              key={ri}
+              style={[
+                styles.tableRow,
+                ri % 2 === 0 ? styles.tableRowEven : styles.tableRowOdd,
+              ]}
+            >
+              {/* número da linha */}
+              <View style={[styles.tableCell, styles.tableCellNum]}>
+                <Text style={styles.tableCellNumText}>{ri + 1}</Text>
+              </View>
+              {sheet.headers.map((_, ci) => (
+                <View key={ci} style={styles.tableCell}>
+                  <Text style={styles.tableCellText} numberOfLines={2}>
+                    {row[ci] ?? "-"}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+
+      {/* ── rodapé com contagem ── */}
+      <View style={styles.tableFooter}>
+        <Text style={styles.tableFooterText}>
+          {sheet.count} registro{sheet.count !== 1 ? "s" : ""} encontrado
+          {sheet.count !== 1 ? "s" : ""}
+        </Text>
       </View>
-    </ScrollView>
+    </View>
   );
 }
 
@@ -127,28 +154,54 @@ export default function DataScreen() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
-  const load = useCallback(() => {
+  const load = useCallback(async () => {
     setLoading(true);
     try {
-      setDendro(readSheet("dendometria.xlsx"));
-      setFenol(readSheet("fenologia.xlsx"));
+      const [d, f] = await Promise.all([
+        readSheet("dendometria.csv"),
+        readSheet("fenologia.csv"),
+      ]);
+      setDendro(d);
+      setFenol(f);
     } finally {
       setLoading(false);
     }
   }, []);
 
   // recarrega sempre que a tela ganhar foco
-  useFocusEffect(load);
+  useFocusEffect(
+    useCallback(() => {
+      load();
+    }, [load]),
+  );
 
-  const onRefresh = () => {
+  const onRefresh = async () => {
     setRefreshing(true);
-    load();
+    await load();
     setRefreshing(false);
   };
 
   const activeSheet = tab === "dendro" ? dendro : fenol;
-  const activeFile = tab === "dendro" ? "dendometria.xlsx" : "fenologia.xlsx";
+  const activeFile = tab === "dendro" ? "dendometria.csv" : "fenologia.csv";
   const activeLabel = tab === "dendro" ? "Dendometria" : "Fenologia";
+
+  function handleLimpar() {
+    Alert.alert(
+      `Limpar ${activeLabel}`,
+      `Isso apagará TODOS os registros de ${activeLabel} permanentemente. Deseja continuar?`,
+      [
+        { text: "Cancelar", style: "cancel" },
+        {
+          text: "Apagar",
+          style: "destructive",
+          onPress: async () => {
+            await deleteFile(activeFile);
+            load();
+          },
+        },
+      ],
+    );
+  }
 
   return (
     <ScrollView
@@ -203,16 +256,28 @@ export default function DataScreen() {
               : "Arquivo não criado ainda"}
           </Text>
         </View>
-        <TouchableOpacity
-          style={[
-            styles.shareBtn,
-            !activeSheet.exists && styles.shareBtnDisabled,
-          ]}
-          onPress={() => compartilhar(activeFile, activeLabel)}
-          disabled={!activeSheet.exists}
-        >
-          <Text style={styles.shareBtnText}>📤 Compartilhar</Text>
-        </TouchableOpacity>
+        <View style={styles.btnGroup}>
+          <TouchableOpacity
+            style={[
+              styles.clearBtn,
+              !activeSheet.exists && styles.shareBtnDisabled,
+            ]}
+            onPress={handleLimpar}
+            disabled={!activeSheet.exists}
+          >
+            <Text style={styles.clearBtnText}>🗑️</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[
+              styles.shareBtn,
+              !activeSheet.exists && styles.shareBtnDisabled,
+            ]}
+            onPress={() => compartilhar(activeFile, activeLabel)}
+            disabled={!activeSheet.exists}
+          >
+            <Text style={styles.shareBtnText}>📤 Compartilhar</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       {/* ── tabela ── */}
@@ -226,7 +291,7 @@ export default function DataScreen() {
 
       <Text style={styles.hint}>
         ↻ Puxe para baixo para atualizar · Toque em Compartilhar para enviar o
-        .xlsx
+        .csv
       </Text>
     </ScrollView>
   );
@@ -242,12 +307,14 @@ const styles = StyleSheet.create({
   // abas
   tabs: {
     flexDirection: "row",
-    backgroundColor: Colors.surface,
+    backgroundColor: Colors.surfaceAlt,
     borderRadius: Spacing.borderRadius,
-    borderWidth: 1,
-    borderColor: Colors.border,
+    borderWidth: 0.5,
+    borderColor: "rgba(45,106,79,0.12)",
     overflow: "hidden",
     marginBottom: 16,
+    padding: 4,
+    gap: 4,
     ...Shadow.small,
   },
   tab: {
@@ -255,18 +322,26 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 12,
+    paddingVertical: 11,
     gap: 6,
+    borderRadius: 12,
   },
-  tabActive: { backgroundColor: Colors.primary },
-  tabText: { fontSize: 14, fontWeight: "600", color: Colors.textSecondary },
-  tabTextActive: { color: "#fff" },
+  tabActive: {
+    backgroundColor: Colors.surface,
+    shadowColor: "#0D2B1E",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    elevation: 2,
+  },
+  tabText: { fontSize: 14, fontWeight: "600", color: Colors.textTertiary },
+  tabTextActive: { color: Colors.primary, fontWeight: "700" },
   badge: {
-    backgroundColor: Colors.primarySoft,
+    backgroundColor: Colors.primaryMuted,
     borderRadius: 10,
     paddingHorizontal: 6,
     paddingVertical: 1,
-    marginLeft: 4,
+    marginLeft: 2,
   },
   badgeText: { fontSize: 11, fontWeight: "700", color: Colors.primary },
 
@@ -280,7 +355,20 @@ const styles = StyleSheet.create({
   infoTitle: { ...Typography.cardTitle, marginBottom: 2 },
   infoSub: { ...Typography.caption },
 
-  // botão compartilhar
+  // botões da infoRow
+  btnGroup: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  clearBtn: {
+    backgroundColor: Colors.errorSoft,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderRadius: Spacing.borderRadiusInput,
+    ...Shadow.small,
+  },
+  clearBtnText: { fontSize: 16 },
   shareBtn: {
     backgroundColor: Colors.primary,
     paddingHorizontal: 14,
@@ -305,22 +393,71 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.border,
   },
-  tableRowAlt: { backgroundColor: "#F9FBF9" },
-  tableHead: { backgroundColor: Colors.primary },
+  tableRowEven: { backgroundColor: Colors.surface },
+  tableRowOdd: { backgroundColor: "#F2F7F4" },
+  tableHead: {
+    backgroundColor: Colors.primary,
+    borderBottomWidth: 2,
+    borderBottomColor: "rgba(0,0,0,0.15)",
+  },
   tableCell: {
     width: CELL_W,
-    paddingHorizontal: 8,
-    paddingVertical: 9,
-    fontSize: 12,
-    color: Colors.textPrimary,
+    minHeight: 40,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    justifyContent: "center",
     borderRightWidth: 1,
     borderRightColor: Colors.border,
   },
   tableCellHead: {
+    backgroundColor: "transparent",
+    borderRightColor: "rgba(255,255,255,0.2)",
+    justifyContent: "center",
+  },
+  tableCellHeadText: {
     color: "#fff",
     fontWeight: "700",
     fontSize: 11,
+    textAlign: "center",
+    letterSpacing: 0.3,
+    textTransform: "uppercase",
+  },
+  tableCellText: {
+    fontSize: 12,
+    color: Colors.textPrimary,
+    textAlign: "center",
+  },
+  // coluna de número (#)
+  tableCellNum: {
+    width: 36,
+    backgroundColor: "#EEF5F1",
+    borderRightColor: Colors.border,
+    justifyContent: "center",
+  },
+  tableCellNumHead: {
+    width: 36,
     borderRightColor: "rgba(255,255,255,0.2)",
+    justifyContent: "center",
+  },
+  tableCellNumText: {
+    fontSize: 11,
+    color: Colors.textTertiary,
+    fontWeight: "600",
+    textAlign: "center",
+  },
+  // rodapé da tabela
+  tableFooter: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderTopWidth: 1,
+    borderTopColor: Colors.border,
+    backgroundColor: "#F7FAF8",
+    alignItems: "flex-end",
+  },
+  tableFooterText: {
+    fontSize: 11,
+    color: Colors.textTertiary,
+    fontWeight: "600",
   },
 
   // vazio

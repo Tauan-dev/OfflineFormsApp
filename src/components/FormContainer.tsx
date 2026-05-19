@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
   content: {
     padding: Spacing.paddingScreen,
     gap: Spacing.gapBetweenCards,
-    paddingBottom: 130,
+    paddingBottom: 24,
   },
 });

@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -7,12 +7,19 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import FormContainer from "../components/FormContainer";
 import Card from "../components/Card";
 import Input from "../components/Input";
 import DateInput from "../components/DateInput";
 import SpeciesSelector from "../components/SpeciesSelector";
-import { Colors, Spacing, Typography } from "../constants/theme";
+import {
+  Colors,
+  Gradients,
+  Shadow,
+  Spacing,
+  Typography,
+} from "../constants/theme";
 import { saveDendrometryData, DendrometryData } from "../services/excelService";
 import { validateDendrometry, getFieldError } from "../utils/validators";
 
@@ -66,7 +73,7 @@ export default function Form1Screen() {
     setSaving(true);
     try {
       await saveDendrometryData(form);
-      showSuccess("Dados salvos com sucesso!");
+      showSuccess("Registro salvo com sucesso!");
       if (continueAfter) {
         setForm((prev) => ({
           ...initialState,
@@ -92,43 +99,62 @@ export default function Form1Screen() {
     >
       {!!successMsg && (
         <View style={styles.successBanner}>
-          <Text style={styles.successBannerText}>✓ {successMsg}</Text>
+          <Text style={styles.successIcon}>✓</Text>
+          <Text style={styles.successBannerText}>{successMsg}</Text>
         </View>
       )}
 
       <FormContainer>
-        <Card title="Identificação">
-          <Input
-            label="Parcela *"
-            value={form.parcela}
-            onChangeText={handleChange("parcela")}
-            keyboardType="numeric"
-            placeholder="Ex: 1"
-            error={getFieldError(errors, "parcela")}
-          />
-          <Input
-            label="Árvore *"
-            value={form.arv}
-            onChangeText={handleChange("arv")}
-            keyboardType="numeric"
-            placeholder="Ex: 12"
-            error={getFieldError(errors, "arv")}
-          />
-          <Input
-            label="Plantio"
-            value={form.plantio}
-            onChangeText={handleChange("plantio")}
-            keyboardType="numeric"
-            placeholder="Ex: 2020"
-          />
-          <DateInput
-            label="Replantio (data)"
-            value={form.replantio}
-            onChangeText={handleChange("replantio")}
-          />
+        <Card
+          title="Identificação"
+          icon="📍"
+          subtitle="Parcela, árvore e plantio"
+        >
+          <View style={styles.row}>
+            <View style={styles.col}>
+              <Input
+                label="Parcela *"
+                value={form.parcela}
+                onChangeText={handleChange("parcela")}
+                keyboardType="numeric"
+                placeholder="Ex: 1"
+                error={getFieldError(errors, "parcela")}
+              />
+            </View>
+            <View style={styles.col}>
+              <Input
+                label="Árvore *"
+                value={form.arv}
+                onChangeText={handleChange("arv")}
+                keyboardType="numeric"
+                placeholder="Ex: 12"
+                error={getFieldError(errors, "arv")}
+              />
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.col}>
+              <Input
+                label="Plantio"
+                value={form.plantio}
+                onChangeText={handleChange("plantio")}
+                keyboardType="numeric"
+                placeholder="Ano"
+                error={getFieldError(errors, "plantio")}
+              />
+            </View>
+            <View style={styles.col}>
+              <DateInput
+                label="Replantio"
+                value={form.replantio}
+                onChangeText={handleChange("replantio")}
+                error={getFieldError(errors, "replantio")}
+              />
+            </View>
+          </View>
         </Card>
 
-        <Card title="Espécie">
+        <Card title="Espécie" icon="🌿" subtitle="Nome comum da árvore">
           <SpeciesSelector
             value={form.nomeComum}
             onChange={handleChange("nomeComum")}
@@ -136,56 +162,77 @@ export default function Form1Screen() {
           />
         </Card>
 
-        <Card title="Medições">
+        <Card
+          title="Medição"
+          icon="📐"
+          subtitle="Data e parâmetros dendométricos"
+        >
           <DateInput
             label="Data de Medição *"
             value={form.dataMedicao}
             onChangeText={handleChange("dataMedicao")}
             error={getFieldError(errors, "dataMedicao")}
           />
+          <View style={styles.row}>
+            <View style={styles.col}>
+              <Input
+                label="DAP"
+                value={form.dap}
+                onChangeText={handleChange("dap")}
+                keyboardType="decimal-pad"
+                placeholder="0.00"
+                unit="cm"
+                error={getFieldError(errors, "dap")}
+              />
+            </View>
+            <View style={styles.col}>
+              <Input
+                label="Hesg"
+                value={form.hesg}
+                onChangeText={handleChange("hesg")}
+                keyboardType="decimal-pad"
+                placeholder="0.00"
+                unit="m"
+                error={getFieldError(errors, "hesg")}
+              />
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.col}>
+              <Input
+                label="Hesgcopa"
+                value={form.hesgcopa}
+                onChangeText={handleChange("hesgcopa")}
+                keyboardType="decimal-pad"
+                placeholder="0.00"
+                unit="m"
+                error={getFieldError(errors, "hesgcopa")}
+              />
+            </View>
+            <View style={styles.col}>
+              <Input
+                label="Hc"
+                value={form.hc}
+                onChangeText={handleChange("hc")}
+                keyboardType="decimal-pad"
+                placeholder="0.00"
+                unit="m"
+                error={getFieldError(errors, "hc")}
+              />
+            </View>
+          </View>
           <Input
-            label="DAP (cm)"
-            value={form.dap}
-            onChangeText={handleChange("dap")}
-            keyboardType="decimal-pad"
-            placeholder="0.00"
-            error={getFieldError(errors, "dap")}
-          />
-          <Input
-            label="Hesg (m)"
-            value={form.hesg}
-            onChangeText={handleChange("hesg")}
-            keyboardType="decimal-pad"
-            placeholder="0.00"
-            error={getFieldError(errors, "hesg")}
-          />
-          <Input
-            label="Hesgcopa (m)"
-            value={form.hesgcopa}
-            onChangeText={handleChange("hesgcopa")}
-            keyboardType="decimal-pad"
-            placeholder="0.00"
-            error={getFieldError(errors, "hesgcopa")}
-          />
-          <Input
-            label="Hc (m)"
-            value={form.hc}
-            onChangeText={handleChange("hc")}
-            keyboardType="decimal-pad"
-            placeholder="0.00"
-            error={getFieldError(errors, "hc")}
-          />
-          <Input
-            label="Ht (m)"
+            label="Ht"
             value={form.ht}
             onChangeText={handleChange("ht")}
             keyboardType="decimal-pad"
             placeholder="0.00"
+            unit="m"
             error={getFieldError(errors, "ht")}
           />
         </Card>
 
-        <Card title="Observação">
+        <Card title="Observação" icon="📝" subtitle="Anotações adicionais">
           <Input
             label="Observação"
             value={form.observacao}
@@ -208,6 +255,7 @@ export default function Form1Screen() {
           style={[styles.btn, styles.btnOutline]}
           onPress={() => handleSave(false)}
           disabled={saving}
+          activeOpacity={0.75}
         >
           <Text style={[styles.btnText, styles.btnTextOutline]}>Salvar</Text>
         </TouchableOpacity>
@@ -215,10 +263,18 @@ export default function Form1Screen() {
           style={[styles.btn, styles.btnPrimary]}
           onPress={() => handleSave(true)}
           disabled={saving}
+          activeOpacity={0.78}
         >
-          <Text style={[styles.btnText, styles.btnTextPrimary]}>
-            Salvar e Continuar
-          </Text>
+          <LinearGradient
+            colors={Gradients.header}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={styles.btnGradient}
+          >
+            <Text style={[styles.btnText, styles.btnTextPrimary]}>
+              Salvar e Continuar
+            </Text>
+          </LinearGradient>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
@@ -231,16 +287,31 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.background,
   },
   successBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
     backgroundColor: Colors.successSoft,
     borderBottomWidth: 1,
     borderBottomColor: Colors.primarySoft,
-    paddingVertical: 10,
+    paddingVertical: 11,
     paddingHorizontal: Spacing.paddingScreen,
+  },
+  successIcon: {
+    fontSize: 15,
+    color: Colors.primary,
+    fontWeight: "700",
   },
   successBannerText: {
     color: Colors.primary,
     fontSize: 14,
     fontWeight: "600",
+  },
+  row: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  col: {
+    flex: 1,
   },
   globalError: {
     ...Typography.errorText,
@@ -250,34 +321,39 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
     paddingHorizontal: Spacing.paddingScreen,
-    paddingVertical: 12,
+    paddingVertical: 14,
     backgroundColor: Colors.surface,
     borderTopWidth: 1,
     borderTopColor: Colors.border,
+    ...Shadow.medium,
   },
   btn: {
     flex: 1,
     height: Spacing.buttonHeight,
     borderRadius: Spacing.borderRadiusInput,
-    alignItems: "center",
-    justifyContent: "center",
+    overflow: "hidden",
   },
   btnPrimary: {
-    backgroundColor: Colors.primary,
+    ...Shadow.small,
+  },
+  btnGradient: {
+    flex: 1,
+    alignSelf: "stretch",
+    alignItems: "center",
+    justifyContent: "center",
   },
   btnOutline: {
     borderWidth: 1.5,
     borderColor: Colors.primary,
     backgroundColor: Colors.surface,
+    alignItems: "center",
+    justifyContent: "center",
   },
   btnText: {
     fontSize: 15,
-    fontWeight: "600",
+    fontWeight: "700",
+    letterSpacing: 0.2,
   },
-  btnTextPrimary: {
-    color: Colors.surface,
-  },
-  btnTextOutline: {
-    color: Colors.primary,
-  },
+  btnTextPrimary: { color: "#FFFFFF" },
+  btnTextOutline: { color: Colors.primary },
 });

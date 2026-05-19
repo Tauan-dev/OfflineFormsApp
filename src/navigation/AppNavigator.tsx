@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Colors } from "../constants/theme";
 
 import HomeScreen from "../screens/HomeScreen";
+import EntryScreen from "../screens/EntryScreen";
 import Form1Screen from "../screens/Form1Screen";
 import Form2Screen from "../screens/Form2Screen";
 import DataScreen from "../screens/DataScreen";
@@ -17,6 +18,7 @@ import GeneralStatsScreen from "../screens/GeneralStatsScreen";
 import PopulationDynamicsScreen from "../screens/PopulationDynamicsScreen";
 
 export type RootStackParamList = {
+  Entry: undefined;
   Home: undefined;
   Form1: undefined;
   Form2: undefined;
@@ -38,7 +40,7 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="Entry"
         screenOptions={{
           headerStyle: { backgroundColor: Colors.primaryDark },
           headerTintColor: "#FFFFFF",
@@ -51,6 +53,11 @@ export default function AppNavigator() {
           contentStyle: { backgroundColor: Colors.background },
         }}
       >
+        <Stack.Screen
+          name="Entry"
+          component={EntryScreen}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Home"
           component={HomeScreen}

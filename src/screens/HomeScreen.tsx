@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
+  Image,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
@@ -55,9 +56,11 @@ export default function HomeScreen() {
         <View style={styles.decorCircle2} />
 
         <View style={styles.headerTop}>
-          <View style={styles.logoWrap}>
-            <Text style={styles.logoIcon}>🌿</Text>
-          </View>
+          <Image
+            source={require("../../assets/coletaverdelogo.png")}
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
           <View style={styles.headerTextWrap}>
             <Text style={styles.appName}>Coleta Verde</Text>
             <Text style={styles.appOrg}>CEPLAC · Sistema de Campo</Text>
@@ -202,17 +205,10 @@ const styles = StyleSheet.create({
     gap: 14,
     marginBottom: 18,
   },
-  logoWrap: {
-    width: 50,
-    height: 50,
-    borderRadius: 15,
-    backgroundColor: "rgba(255,255,255,0.14)",
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.2)",
+  logoImage: {
+    width: 60,
+    height: 60,
   },
-  logoIcon: { fontSize: 26 },
   headerTextWrap: { flex: 1 },
   appName: {
     fontSize: 22,

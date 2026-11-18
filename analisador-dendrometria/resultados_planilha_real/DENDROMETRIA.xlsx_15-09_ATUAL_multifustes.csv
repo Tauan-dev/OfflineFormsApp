@@ -1,0 +1,73 @@
+﻿linha;parcela;árvore;espécie;DAP (coluna, original);situação;motivo;fustes (cm);nº de fustes;DAP equivalente (cm);Σ g dos fustes (m²);observação (original)
+63;4;19;Pau-óleo / Copaíba;49.4;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;bifurcação 2 fustes grandes
+75;5;5;Claraíba-parda;20.6;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;brotação basal: DAP 7,1 Ht 6,00
+78;5;8;Claraíba-parda;9.1;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;broto: DAP 4,2 Hesg 4,20?
+80;5;10;Claraíba-parda;77.9;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;broto: DAP 7,6 Ht 7,00
+81;5;11;Claraíba-parda;11.3;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;broto: Hesg 4,5
+86;5;16;Claraíba-parda;62;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;Ao lado tem uma Erythrina com DAP 73,2 e Ht 24,00
+319;24;1;Copaíba;49.2;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;3 fustes a partir da bifurcação que dá para usar como comercial
+333;25;12;Mogno;;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"3.7; 3.5";2,0;5,0931326312987375;0,002037322835852981;2 fustes: 3.7 e 3.5
+349;26;1;Pau-brasil;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"12.1; 14.5; 13";3,0;22,927276331915223;0,04128523985715027;3 fustes: 12.1, 14.5, 13.0
+352;26;4;Pau-brasil;;FUSTES EXTRAÍDOS;4 fustes extraídos (quantidade declarada = valores listados);"10.5; 19.6; 8.3; 11.2";4,0;26,243856423932822;0,05409351310583586;4 fustes no mesmo indivíduo, sendo que a bifurcação está próxima ao chão. 4 fustes: 10.5, 19.6, 8.3, 11.2
+354;26;6;Pau-brasil;2026-02-22 00:00:00;REVISÃO HUMANA;sem lista de fustes;;;;;2 fustes, sendo que um mede DAP 22.2 e o outro 10.5. Bifurcação próxima ao chão,  0.30cm
+359;26;11;Pau-brasil;8.8;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"8.8; 7.2";2,0;11,370136322841518;0,010153627456402213;2 fustes - 8.8 e 7.2
+361;26;13;Pau-brasil;4.9;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"4.9; 3.5";2,0;6,021627686929839;0,0028478537404791476;DAP 2 fustes - 4.9 e 3.5. 1 das bifurcações dá 2m
+374;26;26;Pau-brasil;;REVISÃO HUMANA;sem lista de fustes;;;;;Bifurcação a partir do chão com 3 fustes. 
+447;30;10;Putumuju-mirim;7.0;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"7; 5.5; 4";3,0;9,759610647971568;0,007480917506360695;3 bifurcações: 7, 5.5 e 4 cm de DAP. Considerado altura da bifurcação com DAP maior. Bifurcações a 0.89 cm do chão.
+483;36;3;Sapucaia;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;Fuste principal morto, brotação na base com 1,65 de altura
+497;36;17;Sapucaia;13.9;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Fuste principal quebrado. Brotação/ bifurcação
+515;38;1;Pau-brasil (folha de arruda);;FUSTES EXTRAÍDOS;5 fustes extraídos (quantidade declarada = valores listados);"8.8; 8.2; 9.5; 7.5; 6.4";5,0;18,224708502469937;0,026086214599082846;"Parcela com 1 indivíduo apenas, na beira da estrada; Bifurcação começa a 30cm do solo - 5 fustes: 8.8, 8.2, 9.5, 7.5, 6.4"
+517;39;2;Jacarandá-da-bahia;;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"13.9; 10.5";2,0;17,42010332919986;0,023833692666458968;2 fustes com DAP: 13.9 e 10.5. Brotação próxima ao solo que forma outro fuste.
+609;47;1;Teca;24.5;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;3 fustes, sendo que 2 estão secos
+629;48;4;Mogno;51.8;REVISÃO HUMANA;"lista de valores sem quantidade de fustes declarada (revisão humana); mantido o DAP da coluna (fuste único)";;;;;Dois fustes com Hc 11 e 8 metros
+652;49;8;Não identificada 2;93.8;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Hc 16m fustes além da bifurcação
+654;49;10;Não identificada 2;86.5;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Tem algumas bifurcações grandes pra considerar área comercial
+739;59;3;Não identificada 6 (fabaceae);44.4;REVISÃO HUMANA;"DAP da coluna (44.4 cm) não corresponde a nenhum fuste listado (15, 33.5) — revisão humana; mantido o DAP da coluna (fuste único)";"15; 33.5";2,0;;;2 fustes: 15.0 e 33.5 (árvore inclinada no barranco)
+740;59;4;Não identificada 6 (fabaceae);;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"26.8; 14.5";2,0;30,471133881101306;0,07292343407328969;PARCELA NOVA, PEGANDO INDIVÍDUOS DOS DOIS LADOS DO RAMAL. 2 fustes: 26.8 e 14.5
+743;59;7;Não identificada 6 (fabaceae);;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"15.5; 6";2,0;16,62077013859466;0,02169662426385451;2 fustes: 15.5 e 6.0. brotação na base
+745;60;2;Cabeludinha (Myrtaceae);;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"7; 6.9";2,0;9,829038610159186;0,007587731656582749;2 fustes: 7.0 e 6.9. brotações na base.
+747;60;4;Cabeludinha (Myrtaceae);;FUSTES EXTRAÍDOS;7 fustes extraídos (quantidade declarada = valores listados);"5.9; 8.6; 11; 6.9; 4; 7.8; 3.7";7,0;19,18098016265071;0,02889558382955552;7 fustes: 5.9, 8.6, 11.0, 6.9, 4.0, 7.8, 3.7. brotações na base
+748;60;5;Cabeludinha (Myrtaceae);;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"9; 6.5; 5.5";3,0;12,389511693363866;0,01205586180815083;3 fustes: 9.0, 6.5, 5.5. brotações na base.
+750;60;7;Cabeludinha (Myrtaceae);;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"7.3; 6.5; 7.6";3,0;12,381437719424994;0,012040153844882882;3 fustes 7.3, 6.5, 7.6. brotações na base.
+751;60;8;Cabeludinha (Myrtaceae);;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"5.6; 5.5; 6";3,0;9,879777325425913;0,007666271472922492;3 fustes: 5.6, 5.5, 6.0. brotações na base
+786;62;6;Putumuju-gigante;37.1;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Hc pode ser aproveitada a partir da bifurcação, mais 10 m
+803;66;8;Rosa-branca;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;Caule partido no meio: 22.0 e 24.0 DAP
+838;75;2;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;4.0, 3.9. brotações com ramos começando na base
+840;75;4;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;3.5, 2.5, 7.0. bifurcações com ramos na base
+841;75;5;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;3.5, 3.7, 2.0.
+842;75;6;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;9.7, 8.0
+843;75;7;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;Moita atrás da árvore 3. 3.5, 2.8, 4.0, 3.2, 3.5, 2.2, 3.5, 2.2, 5.7, 5.5, 9.0
+844;75;8;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;8.0, 6.8, 5.9, 4.5, 5.7, 8.5, 8.0. moitas - medidas DAP de cada ramificação e altura total medida da moite no geral e não de cada ramificação. Medida apenas a altura total pq as ramificações começam da base.
+845;75;9;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;2.5, 2.6, 2.7
+846;75;10;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;5.7, 3.9, 5.2, 7.1
+848;75;12;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;3.4, 3.5, 2.8
+849;75;13;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;5.5, 6.4, 7.0, 3.1, 3.7
+850;75;14;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;6.5, 4.6, 2.2
+851;75;15;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;8.3, 4.5, 6.1, 4.0, 3.5, 4.0, 3.6, 6.0, 6.2, 10.5
+852;75;16;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;4.8, 6.3, 4.6
+855;75;19;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;8.8, 4.7
+856;75;20;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;10.4, 6.5
+857;75;21;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;6.9, 7.4
+862;75;26;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;6.1, 8.0
+863;75;27;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;7.8, 8.4, 3.5
+864;75;28;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;"""duas moitas juntas"" essa é a da esquerda de quem sobe: 3.5, 4.0, 2.8, 3.7, 3.5, 2.9"
+867;75;31;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;9.1, 4.5, 6.4, 4.5
+868;75;32;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;11.9, 11.1
+869;75;33;Mata-cacau;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;11.1, 8.5, 7.0, 3.9
+953;87;4;Angico;68.8;REVISÃO HUMANA;"DAP da coluna (68.8 cm) não corresponde a nenhum fuste listado (11.5, 9.7, 5.5) — revisão humana; mantido o DAP da coluna (fuste único)";"11.5; 9.7; 5.5";3,0;;;3 Brotações: 11.5, 9.7, 5.5, na base do tronco
+1005;91;5;Não identificada 3;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"8.5; 7.2; 7.8";3,0;13,598897014096401;0,014524368235709012;3 fustes: 8.5, 7.2 e 7.8
+1006;91;6;Não identificada 3;;REVISÃO HUMANA;quantidade declarada (2) difere dos valores listados (3) — revisão humana;;;;;2 fustes: 30.2, 17.6 e 3.5 (ver se fica essa marcação do menor). Árvore inclinada
+1010;91;10;Não identificada 3;;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"16.1; 10.2";2,0;19,059118552545918;0,02852958828541231;2 fustes: 16.1 e 10.2
+1012;91;12;Não identificada 3;10.9;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"10.9; 7.2";2,0;13,06330739131557;0,013402819658377457;2 fustes: 10.9 e 7.2
+1014;91;14;Não identificada 3;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"11.2; 9.6; 8.8";3,0;17,17672844286711;0,023172387412878317;3 fustes: 11.2, 9.6 e 8.8
+1015;91;15;Não identificada 3;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"8.7; 8.5; 10";3,0;15,74611063088279;0,019473162063276334;3 fustes: 8.7, 8.5 e 10.0
+1016;91;16;Não identificada 3;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"16.7; 15; 19.5";3,0;29,734491756207973;0,06944019321862199;3 fustes: 16.7, 15.0 e 19.5. árvore deitada, com muitas brotações baixas.
+1019;91;19;Não identificada 3;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"20.6; 20.9; 11.3";3,0;31,44614443775262;0,07766488278572008;3 fustes: 20.6, 20.9 e 11.3
+1069;97;2;Vinhático;16.5;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Fuste principal quebrado, com bifurcações
+1070;97;3;Vinhático;21.2;REVISÃO HUMANA;"sem lista de fustes; mantido o DAP da coluna (fuste único)";;;;;Fuste principal quebrado, com bifurcações
+1102;98;17;Pau-brasil;;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"15.5; 9; 6.5";3,0;19,06567596493762;0,028549223239497247;"3 bifurcações: 15.5, 9.0, 6.5; brotações na base"
+1113;PX3;2;Pau-brasil;;REVISÃO HUMANA;lista de valores sem quantidade de fustes declarada (revisão humana);;;;;4.4, 3.9, 4.1
+1125;PX5;11;Murta (Rutaceae);;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"10; 9.4";2,0;13,72443077143821;0,014793759805754338;2 fustes: 10.0 e 9.4
+1132;PX5;18;Murta (Rutaceae);;FUSTES EXTRAÍDOS;4 fustes extraídos (quantidade declarada = valores listados);"10.5; 8.4; 7.5; 12";4,0;19,52075818199693;0,029928382414423166;4 Fustes 10.5, 8.4, 7.5 ,12.0. 
+1133;PX5;19;Murta (Rutaceae);;FUSTES EXTRAÍDOS;3 fustes extraídos (quantidade declarada = valores listados);"17.5; 8; 17.5";3,0;26,009613607279906;0,05313218575383737;3 fustes: 17.5, 8.0, 17.5. brotações desde a base
+1134;PX5;20;Murta (Rutaceae);;FUSTES EXTRAÍDOS;2 fustes extraídos (quantidade declarada = valores listados);"7.3; 7.1";2,0;10,183319694480772;0,008144578954431537;2 fustes: 7.3 e 7.1

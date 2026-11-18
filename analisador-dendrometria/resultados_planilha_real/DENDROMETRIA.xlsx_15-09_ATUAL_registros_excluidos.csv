@@ -1,0 +1,336 @@
+﻿linha;parcela (original);árvore (original);espécie;excluído de;motivo;valor original;status do registro
+6;1;5;Barriguda;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+9;1;8;Barriguda;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+48;4;4;Pau-óleo / Copaíba;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+74;5;4;Claraíba-parda;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+82;5;12;Claraíba-parda;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+84;5;14;Claraíba-parda;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+96;7;9;Jequitibá;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+121;10;15;Buranhém;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+124;10;18;Buranhém;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+125;10;19;Buranhém;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+140;11;10;Biriba-branca;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+207;15;8;Mucitaíba-amarela;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+212;16;1;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-12 00:00:00;VÁLIDO COM RESSALVA
+212;16;1;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-07 00:00:00;VÁLIDO COM RESSALVA
+213;16;2;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-05 00:00:00;VÁLIDO COM RESSALVA
+214;16;3;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-13 00:00:00;VÁLIDO COM RESSALVA
+215;16;4;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-14 00:00:00;VÁLIDO COM RESSALVA
+216;16;5;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-12 00:00:00;VÁLIDO COM RESSALVA
+217;16;6;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-07 00:00:00;VÁLIDO COM RESSALVA
+217;16;6;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+219;16;8;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-16 00:00:00;VÁLIDO COM RESSALVA
+220;16;9;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-07 00:00:00;VÁLIDO COM RESSALVA
+220;16;9;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-05 00:00:00;VÁLIDO COM RESSALVA
+221;16;10;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-08 00:00:00;VÁLIDO COM RESSALVA
+222;16;11;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+222;16;11;Putumuju-mirim;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-09 00:00:00;VÁLIDO COM RESSALVA
+223;16;12;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-13 00:00:00;VÁLIDO COM RESSALVA
+224;16;13;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+225;16;14;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-12 00:00:00;VÁLIDO COM RESSALVA
+226;16;15;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-17 00:00:00;VÁLIDO COM RESSALVA
+227;16;16;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-06 00:00:00;VÁLIDO COM RESSALVA
+228;16;17;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-07 00:00:00;VÁLIDO COM RESSALVA
+228;16;17;Putumuju-mirim;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-09 00:00:00;VÁLIDO COM RESSALVA
+229;16;18;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-04 00:00:00;VÁLIDO COM RESSALVA
+229;16;18;Putumuju-mirim;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+230;16;19;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-08 00:00:00;VÁLIDO COM RESSALVA
+231;16;20;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-03 00:00:00;VÁLIDO COM RESSALVA
+231;16;20;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+232;16;21;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-03 00:00:00;VÁLIDO COM RESSALVA
+232;16;21;Putumuju-mirim;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+233;16;22;Putumuju-mirim;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+233;16;22;Putumuju-mirim;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+234;16;23;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-09 00:00:00;VÁLIDO COM RESSALVA
+235;16;24;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-03 00:00:00;VÁLIDO COM RESSALVA
+235;16;24;Putumuju-mirim;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+235;16;24;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+236;16;25;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-04 00:00:00;VÁLIDO COM RESSALVA
+236;16;25;Putumuju-mirim;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+237;16;26;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+238;16;27;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-09 00:00:00;VÁLIDO COM RESSALVA
+239;16;28;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+240;16;29;Putumuju-mirim;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-01 00:00:00;VÁLIDO COM RESSALVA
+240;16;29;Putumuju-mirim;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+281;20;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+282;21;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+295;22;13;Gonçalo Alves;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+299;22;17;Gonçalo Alves;indicadores de HT (m);HT extremo: HT > 120 m (pendente de revisão);46151;VÁLIDO COM RESSALVA
+310;22;28;Gonçalo Alves;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+333;25;12;Mogno;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+349;26;1;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;INCONCLUSIVO
+350;26;2;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-10 00:00:00;VÁLIDO COM RESSALVA
+351;26;3;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-10 00:00:00;VÁLIDO COM RESSALVA
+352;26;4;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+354;26;6;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-22 00:00:00;VÁLIDO COM RESSALVA
+354;26;6;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+355;26;7;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-20 00:00:00;VÁLIDO COM RESSALVA
+356;26;8;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-25 00:00:00;VÁLIDO COM RESSALVA
+358;26;10;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-02 00:00:00;VÁLIDO COM RESSALVA
+362;26;14;Pau-brasil;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+363;26;15;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-01 00:00:00;VÁLIDO COM RESSALVA
+364;26;16;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-01 00:00:00;VÁLIDO COM RESSALVA
+364;26;16;Pau-brasil;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+365;26;17;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-21 00:00:00;VÁLIDO COM RESSALVA
+366;26;18;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-19 00:00:00;VÁLIDO COM RESSALVA
+367;26;19;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-26 00:00:00;VÁLIDO COM RESSALVA
+368;26;20;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-28 00:00:00;VÁLIDO COM RESSALVA
+369;26;21;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-15 00:00:00;VÁLIDO COM RESSALVA
+369;26;21;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-01 00:00:00;VÁLIDO COM RESSALVA
+370;26;22;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+371;26;23;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-09 00:00:00;VÁLIDO COM RESSALVA
+372;26;24;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-27 00:00:00;VÁLIDO COM RESSALVA
+373;26;25;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-15 00:00:00;VÁLIDO COM RESSALVA
+374;26;26;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+375;26;27;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-14 00:00:00;VÁLIDO COM RESSALVA
+376;26;28;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+378;26;30;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-01 00:00:00;VÁLIDO COM RESSALVA
+378;26;30;Pau-brasil;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+379;26;31;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-17 00:00:00;VÁLIDO COM RESSALVA
+380;26;32;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-02 00:00:00;VÁLIDO COM RESSALVA
+380;26;32;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-01 00:00:00;VÁLIDO COM RESSALVA
+380;26;32;Pau-brasil;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+381;26;33;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-18 00:00:00;VÁLIDO COM RESSALVA
+382;26;34;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+383;26;35;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-27 00:00:00;VÁLIDO COM RESSALVA
+384;26;36;Pau-brasil;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-20 00:00:00;VÁLIDO COM RESSALVA
+385;26;37;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+386;26;38;Pau-brasil;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+388;27;2;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-06 00:00:00;VÁLIDO COM RESSALVA
+388;27;2;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+389;27;3;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-11 00:00:00;VÁLIDO COM RESSALVA
+390;27;4;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-18 00:00:00;VÁLIDO COM RESSALVA
+391;27;5;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-16 00:00:00;VÁLIDO COM RESSALVA
+392;27;6;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-16 00:00:00;VÁLIDO COM RESSALVA
+393;27;7;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-09 00:00:00;VÁLIDO COM RESSALVA
+394;27;8;Angelim-côco;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+396;27;10;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-12 00:00:00;VÁLIDO COM RESSALVA
+397;27;11;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-09 00:00:00;VÁLIDO COM RESSALVA
+397;27;11;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+398;27;12;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-10 00:00:00;VÁLIDO COM RESSALVA
+398;27;12;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-07 00:00:00;VÁLIDO COM RESSALVA
+399;27;13;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-17 00:00:00;VÁLIDO COM RESSALVA
+400;27;14;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-18 00:00:00;VÁLIDO COM RESSALVA
+400;27;14;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+401;27;15;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-19 00:00:00;VÁLIDO COM RESSALVA
+401;27;15;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+402;27;16;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-30 00:00:00;VÁLIDO COM RESSALVA
+403;27;17;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-24 00:00:00;VÁLIDO COM RESSALVA
+403;27;17;Angelim-côco;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-07 00:00:00;VÁLIDO COM RESSALVA
+404;27;18;Angelim-côco;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-10 00:00:00;VÁLIDO COM RESSALVA
+417;28;12;Murta (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+422;28;17;Murta (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+451;31;1;Pau-brasil (folha de laranja);indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-28 00:00:00;VÁLIDO COM RESSALVA
+451;31;1;Pau-brasil (folha de laranja);indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+452;31;3;Pau-brasil (folha de laranja);indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-19 00:00:00;VÁLIDO COM RESSALVA
+453;31;2;Pau-brasil (folha de laranja);indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+454;31;4;Pau-brasil (folha de laranja);indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+455;31;5;Pau-brasil (folha de laranja);indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-12 00:00:00;VÁLIDO COM RESSALVA
+455;31;5;Pau-brasil (folha de laranja);indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+456;32;1;Cedro;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-05 00:00:00;VÁLIDO COM RESSALVA
+457;32;2;Cedro;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-25 00:00:00;VÁLIDO COM RESSALVA
+458;33;1;Eritrina-mulungu;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-31 00:00:00;VÁLIDO COM RESSALVA
+463;33;6;Eritrina-mulungu;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+464;34;1;Bacupari;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-25 00:00:00;VÁLIDO COM RESSALVA
+464;34;1;Bacupari;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+465;35;1;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-20 00:00:00;VÁLIDO COM RESSALVA
+466;35;2;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-20 00:00:00;VÁLIDO COM RESSALVA
+466;35;2;Arariba-branca;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+467;35;3;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-23 00:00:00;VÁLIDO COM RESSALVA
+468;35;4;Arariba-branca;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+469;35;5;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-19 00:00:00;VÁLIDO COM RESSALVA
+472;35;8;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-16 00:00:00;VÁLIDO COM RESSALVA
+473;35;9;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-14 00:00:00;VÁLIDO COM RESSALVA
+474;35;10;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-10 00:00:00;VÁLIDO COM RESSALVA
+474;35;10;Arariba-branca;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+474;35;10;Arariba-branca;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+475;35;11;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-24 00:00:00;VÁLIDO COM RESSALVA
+476;35;12;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-21 00:00:00;VÁLIDO COM RESSALVA
+476;35;12;Arariba-branca;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+477;35;13;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-13 00:00:00;VÁLIDO COM RESSALVA
+478;35;14;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-16 00:00:00;VÁLIDO COM RESSALVA
+479;35;15;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-27 00:00:00;VÁLIDO COM RESSALVA
+480;35;16;Arariba-branca;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-16 00:00:00;VÁLIDO COM RESSALVA
+480;35;16;Arariba-branca;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+483;36;3;Sapucaia;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+502;37;1;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-13 00:00:00;VÁLIDO COM RESSALVA
+502;37;1;Sapotaceae;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+503;37;2;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-12 00:00:00;VÁLIDO COM RESSALVA
+504;37;3;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-13 00:00:00;VÁLIDO COM RESSALVA
+505;37;4;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-09 00:00:00;VÁLIDO COM RESSALVA
+506;37;5;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-14 00:00:00;VÁLIDO COM RESSALVA
+508;37;7;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-14 00:00:00;VÁLIDO COM RESSALVA
+508;37;7;Sapotaceae;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+509;37;8;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+510;37;9;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-15 00:00:00;VÁLIDO COM RESSALVA
+511;37;10;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-14 00:00:00;VÁLIDO COM RESSALVA
+512;37;11;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-19 00:00:00;VÁLIDO COM RESSALVA
+513;37;12;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-16 00:00:00;VÁLIDO COM RESSALVA
+514;37;13;Sapotaceae;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-13 00:00:00;VÁLIDO COM RESSALVA
+515;38;1;Pau-brasil (folha de arruda);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+516;39;1;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-29 00:00:00;VÁLIDO COM RESSALVA
+517;39;2;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+518;39;3;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-18 00:00:00;VÁLIDO COM RESSALVA
+519;39;4;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-17 00:00:00;VÁLIDO COM RESSALVA
+520;39;5;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-15 00:00:00;VÁLIDO COM RESSALVA
+524;40;3;Não identificada 1;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-05 00:00:00;VÁLIDO COM RESSALVA
+525;40;4;Não identificada 1;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-27 00:00:00;VÁLIDO COM RESSALVA
+526;40;5;Não identificada 1;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-14 00:00:00;VÁLIDO COM RESSALVA
+526;40;5;Não identificada 1;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+527;40;6;Não identificada 1;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+528;40;7;Não identificada 1;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-09 00:00:00;VÁLIDO COM RESSALVA
+532;40;11;Não identificada 1;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-16 00:00:00;VÁLIDO COM RESSALVA
+535;40;14;Não identificada 1;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-19 00:00:00;VÁLIDO COM RESSALVA
+538;41;3;Cajazeira;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-27 00:00:00;VÁLIDO COM RESSALVA
+543;41;8;Cajazeira;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-18 00:00:00;VÁLIDO COM RESSALVA
+544;41;9;Cajazeira;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-16 00:00:00;VÁLIDO COM RESSALVA
+544;41;9;Cajazeira;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-05 00:00:00;VÁLIDO COM RESSALVA
+548;42;3;Juerana;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-25 00:00:00;VÁLIDO COM RESSALVA
+549;42;4;Juerana;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+550;42;5;Juerana;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-17 00:00:00;VÁLIDO COM RESSALVA
+550;42;5;Juerana;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+552;43;1;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-28 00:00:00;VÁLIDO COM RESSALVA
+554;43;3;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-26 00:00:00;VÁLIDO COM RESSALVA
+555;43;2;Putumuju-piloso;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+556;43;5;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-18 00:00:00;VÁLIDO COM RESSALVA
+556;43;5;Putumuju-piloso;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+559;43;8;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-25 00:00:00;VÁLIDO COM RESSALVA
+559;43;8;Putumuju-piloso;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+561;43;10;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-24 00:00:00;VÁLIDO COM RESSALVA
+563;43;12;Putumuju-piloso;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-06 00:00:00;VÁLIDO COM RESSALVA
+565;43;14;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-20 00:00:00;VÁLIDO COM RESSALVA
+565;43;14;Putumuju-piloso;indicadores de HT (m);HT inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+567;43;16;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-31 00:00:00;VÁLIDO COM RESSALVA
+568;43;17;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-07 00:00:00;VÁLIDO COM RESSALVA
+568;43;17;Putumuju-piloso;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+569;43;18;Putumuju-piloso;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-25 00:00:00;VÁLIDO COM RESSALVA
+569;43;18;Putumuju-piloso;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+577;44;5;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-15 00:00:00;VÁLIDO COM RESSALVA
+579;44;7;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-01-17 00:00:00;VÁLIDO COM RESSALVA
+580;44;8;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-22 00:00:00;VÁLIDO COM RESSALVA
+581;44;9;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-27 00:00:00;VÁLIDO COM RESSALVA
+582;44;10;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-09-24 00:00:00;VÁLIDO COM RESSALVA
+583;44;11;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-23 00:00:00;VÁLIDO COM RESSALVA
+583;44;11;Itapicuru;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+584;44;12;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-25 00:00:00;VÁLIDO COM RESSALVA
+586;44;14;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-17 00:00:00;VÁLIDO COM RESSALVA
+587;44;15;Itapicuru;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-08 00:00:00;VÁLIDO COM RESSALVA
+588;44;16;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-02-23 00:00:00;VÁLIDO COM RESSALVA
+589;44;17;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-17 00:00:00;VÁLIDO COM RESSALVA
+590;44;18;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-14 00:00:00;VÁLIDO COM RESSALVA
+590;44;18;Itapicuru;indicadores de HESG (m);HESG inválido: valor interpretado como data;2026-05-05 00:00:00;VÁLIDO COM RESSALVA
+591;44;19;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-19 00:00:00;VÁLIDO COM RESSALVA
+592;44;20;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-07-25 00:00:00;VÁLIDO COM RESSALVA
+593;44;21;Itapicuru;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-04-27 00:00:00;VÁLIDO COM RESSALVA
+597;45;1;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-26 00:00:00;VÁLIDO COM RESSALVA
+597;45;1;Jitaí;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-02 00:00:00;VÁLIDO COM RESSALVA
+599;45;3;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-27 00:00:00;VÁLIDO COM RESSALVA
+599;45;3;Jitaí;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+600;45;4;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-17 00:00:00;VÁLIDO COM RESSALVA
+601;45;5;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-25 00:00:00;VÁLIDO COM RESSALVA
+602;45;6;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-03-29 00:00:00;VÁLIDO COM RESSALVA
+603;45;7;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-05-21 00:00:00;VÁLIDO COM RESSALVA
+603;45;7;Jitaí;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-04 00:00:00;VÁLIDO COM RESSALVA
+604;45;8;Jitaí;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-08-20 00:00:00;VÁLIDO COM RESSALVA
+604;45;8;Jitaí;indicadores de HESGCOPA (m);HESGCOPA inválido: valor interpretado como data;2026-05-03 00:00:00;VÁLIDO COM RESSALVA
+606;46;2;Jenipapeiro;indicadores de DAP, área basal e volumes;DAP inválido: valor interpretado como data;2026-06-30 00:00:00;VÁLIDO COM RESSALVA
+612;47;4;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+613;47;5;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+614;47;6;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+615;47;7;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+616;47;8;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+617;47;9;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+621;47;13;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+622;47;14;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+623;47;15;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+624;47;16;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+625;47;17;Teca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+671;51;5;Jenipapeiro;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+675;51;9;Jenipapeiro;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+702;55;8;Roxinho;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+707;56;1;Juerana-branca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+710;56;4;Juerana-branca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+711;56;5;Juerana-branca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+718;58;5;Boleira;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+725;58;12;Boleira;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+733;58;20;Boleira;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+740;59;4;Não identificada 6 (fabaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+743;59;7;Não identificada 6 (fabaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+745;60;2;Cabeludinha (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+747;60;4;Cabeludinha (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+748;60;5;Cabeludinha (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+750;60;7;Cabeludinha (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+751;60;8;Cabeludinha (Myrtaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+766;61;15;Pitomba;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+794;64;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+795;65;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+798;66;3;Rosa-branca;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+803;66;8;Rosa-branca;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+804;67;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+807;68;3;Jatobá;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+811;68;7;Jatobá;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+821;69;1;Cedro;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;INCONCLUSIVO
+822;70;NÃO TEM O QUE TÁ MARCADO NO MAPA;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+823;71;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+835;73;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+836;74;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+838;75;2;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+840;75;4;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+841;75;5;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+842;75;6;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+843;75;7;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+844;75;8;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+845;75;9;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+846;75;10;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+848;75;12;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+849;75;13;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+850;75;14;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+851;75;15;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+852;75;16;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+855;75;19;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+856;75;20;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+857;75;21;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+858;75;22;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+862;75;26;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+863;75;27;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+864;75;28;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+867;75;31;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+868;75;32;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+869;75;33;Mata-cacau;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+888;78;7;Pau-ferro;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+894;78;13;Pau-ferro;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+913;80;NÃO TEM ÁRVORES;nem no local e nem no mapa;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+946;84;NÃO TEM ÁRVORES;descritas no mapa;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+947;85;NÃO TEM ÁRVORES;descritas no mapa;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+970;88;8;Sucupiruçu;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+974;88;12;Sucupiruçu;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+978;88;16;Sucupiruçu;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+979;88;17;Sucupiruçu;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+982;88;20;Sucupiruçu;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+998;89;9;Ipêzinho-de-jardim;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1000;90;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+1004;91;4;Não identificada 3;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1005;91;5;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1006;91;6;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1007;91;7;Não identificada 3;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1010;91;10;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1011;91;11;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+1013;91;13;Não identificada 3;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1014;91;14;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1015;91;15;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1016;91;16;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1019;91;19;Não identificada 3;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1020;91;20;Não identificada 3;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1029;92;9;Maçaranduba;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1044;93;8;Jacarandá-da-bahia;indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+1067;96;NÃO TEM ÁRVORES;;todas as análises de indivíduo;ANOTACAO_PARCELA;;INVÁLIDO
+1094;98;9;Pau-brasil;indicadores de DAP, área basal e volumes;DAP ausente: valor ausente;;VÁLIDO COM RESSALVA
+1102;98;17;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1113;PX3;2;Pau-brasil;indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1117;PX5;3;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+1120;PX5;6;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+1125;PX5;11;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1127;PX5;13;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: observação menciona morte (estado vital requer revisão);;VÁLIDO COM RESSALVA
+1132;PX5;18;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1133;PX5;19;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA
+1134;PX5;20;Murta (Rutaceae);indicadores de DAP, área basal e volumes;DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes);;VÁLIDO COM RESSALVA

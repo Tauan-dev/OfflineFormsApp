@@ -1,0 +1,4959 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><title>Relatório — Dendrometria</title><style>body{font-family:Segoe UI,Arial,sans-serif;color:#1f2937;margin:32px;max-width:1200px}h1{color:#1F3A5F}h2{color:#1F3A5F;border-bottom:2px solid #e5e7eb;padding-bottom:4px;margin-top:32px}table.t{border-collapse:collapse;font-size:12px;width:100%}table.t th{background:#1F3A5F;color:#fff;text-align:left;padding:6px}table.t td{border-bottom:1px solid #e5e7eb;padding:4px 6px}.m{color:#6b7280;font-size:13px}</style></head><body><h1>Relatório de Dendrometria</h1><p class='m'>Arquivo: DENDROMETRIA.xlsx_15-09_ATUAL.xlsx · SHA-256 07fdf7838a722b54ad9fcc821d826a275c0575845a3e0fd20e85de9a7523ff00 · planilha dendrometria · gerado em 2026-11-17T17:49:27-03:00 · analisador 1.1.0 · metodologia dendro-2026.11-r1</p><p class='m'>Filtros: {}</p><h2>Indicadores</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>indicador</th>
+      <th>valor</th>
+      <th>unidade</th>
+      <th>status</th>
+      <th>denominador</th>
+      <th>potencial</th>
+      <th>elegível</th>
+      <th>excluído</th>
+      <th>cobertura (%)</th>
+      <th>motivos de exclusão</th>
+      <th>fórmula</th>
+      <th>observações</th>
+      <th>versão metodológica</th>
+      <th>filtrado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>linhas_importadas</td>
+      <td>Total de linhas importadas (físicas, incl. cabeçalho e vazias)</td>
+      <td>1225.000000</td>
+      <td>linhas</td>
+      <td>VÁLIDO</td>
+      <td>arquivo: DENDROMETRIA.xlsx_15-09_ATUAL.xlsx</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>93 linhas vazias ignoradas; 1131 registros interpretados.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>registros_validos</td>
+      <td>Registros válidos</td>
+      <td>773.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>1131 registros interpretados</td>
+      <td>1131.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>68.35</td>
+      <td></td>
+      <td>contagem</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>registros_ressalva</td>
+      <td>Registros válidos com ressalva</td>
+      <td>342.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>1131 registros interpretados</td>
+      <td>1131.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>30.24</td>
+      <td></td>
+      <td>contagem</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>registros_invalidos</td>
+      <td>Registros inválidos</td>
+      <td>14.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>1131 registros interpretados</td>
+      <td>1131.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1.24</td>
+      <td></td>
+      <td>contagem</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>registros_inconclusivos</td>
+      <td>Registros inconclusivos</td>
+      <td>2.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>1131 registros interpretados</td>
+      <td>1131.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.18</td>
+      <td></td>
+      <td>contagem</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>parcelas</td>
+      <td>Parcelas identificadas</td>
+      <td>103.000000</td>
+      <td>parcelas</td>
+      <td>VÁLIDO</td>
+      <td>valores distintos de Parcela em registros identificáveis ou anotações de parcela</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Identificadores preservados como texto: '7' e '07' seriam parcelas distintas.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>individuos</td>
+      <td>Indivíduos únicos identificáveis</td>
+      <td>1117.000000</td>
+      <td>indivíduos</td>
+      <td>VÁLIDO</td>
+      <td>pares Parcela + Árvore distintos em 1117 registros identificáveis</td>
+      <td>1117.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>nº de pares distintos (Parcela, Árvore)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>especies</td>
+      <td>Espécies identificadas (riqueza observada)</td>
+      <td>76.000000</td>
+      <td>táxons</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>valores distintos de Nome Comum (sem espaço externo) em registros identificáveis</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Inclui 7 rótulo(s) 'Não identificada' contados como táxons distintos. | Variações de grafia não são unificadas (ver Qualidade).</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>medicoes</td>
+      <td>Medições dendrométricas</td>
+      <td>1115.000000</td>
+      <td>medições</td>
+      <td>VÁLIDO</td>
+      <td>chaves Parcela + Árvore + Data Medição distintas</td>
+      <td>1117.0</td>
+      <td>—</td>
+      <td>2.0</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Registros sem data de medição não formam chave de medição (identidade inconclusiva).</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>cobertura_dap</td>
+      <td>Cobertura de DAP</td>
+      <td>77.081468</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>861 DAPs elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>DAPs elegíveis / registros potenciais × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>cobertura_ht</td>
+      <td>Cobertura de altura total (HT)</td>
+      <td>93.733214</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>1047 HT elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>HT elegíveis / registros potenciais × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_ausentes</td>
+      <td>DAPs ausentes</td>
+      <td>12.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Ausência sem justificativa. DAP vazio com menção de morte ou multifuste é contado como NÃO APLICÁVEL.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_invalidos</td>
+      <td>DAPs inválidos</td>
+      <td>140.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Datas, textos, negativos ou não finitos na coluna DAP.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>duplicidades</td>
+      <td>Duplicidades de medição (Parcela + Árvore + Data)</td>
+      <td>0.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>de 1131 registros</td>
+      <td>1131.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Indivíduos com mais de um registro (qualquer data): 0.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>campanhas</td>
+      <td>Possíveis campanhas</td>
+      <td>1.000000</td>
+      <td>campanhas</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>máximo de datas distintas por indivíduo</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Estimativa: cada data é um dia de campo; campanha = rodada de remedição do mesmo indivíduo. | Período: 19/05/2026 a 28/08/2026 (25 datas distintas).</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>obs_revisao</td>
+      <td>Observações que exigem revisão</td>
+      <td>239.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>de 316 registros com observação preenchida</td>
+      <td>316.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>contagem</td>
+      <td>Menções potenciais detectadas por termos; não são ocorrências confirmadas.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_n</td>
+      <td>Contagem de DAP elegíveis</td>
+      <td>861.000000</td>
+      <td>valores</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>n = nº de valores elegíveis</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_media</td>
+      <td>Média aritmética do DAP</td>
+      <td>26.541231</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>x̄ = Σxᵢ / n (soma compensada, math.fsum)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_mediana</td>
+      <td>Mediana de DAP</td>
+      <td>20.400000</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>valor central da amostra ordenada</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_min</td>
+      <td>Mínimo de DAP</td>
+      <td>1.500000</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>min(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_max</td>
+      <td>Máximo de DAP</td>
+      <td>125.000000</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>max(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_q1</td>
+      <td>1º quartil de DAP</td>
+      <td>13.400000</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>Q1, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_q3</td>
+      <td>3º quartil de DAP</td>
+      <td>35.500000</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>Q3, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_dp</td>
+      <td>Desvio-padrão amostral de DAP</td>
+      <td>19.094542</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>s = √[Σ(xᵢ − x̄)² / (n − 1)] (duas passagens)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dap_cv</td>
+      <td>Coeficiente de variação de DAP</td>
+      <td>71.942939</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>861 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>CV = s / x̄ × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_n</td>
+      <td>Contagem de HESG elegíveis</td>
+      <td>568.000000</td>
+      <td>valores</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>n = nº de valores elegíveis</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_media</td>
+      <td>Média de HESG</td>
+      <td>4.481761</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>x̄ = Σxᵢ / n (soma compensada, math.fsum)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_mediana</td>
+      <td>Mediana de HESG</td>
+      <td>3.850000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>valor central da amostra ordenada</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_min</td>
+      <td>Mínimo de HESG</td>
+      <td>0.200000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>min(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_max</td>
+      <td>Máximo de HESG</td>
+      <td>23.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>max(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_q1</td>
+      <td>1º quartil de HESG</td>
+      <td>2.450000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>Q1, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_q3</td>
+      <td>3º quartil de HESG</td>
+      <td>6.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>Q3, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_dp</td>
+      <td>Desvio-padrão amostral de HESG</td>
+      <td>2.958284</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>s = √[Σ(xᵢ − x̄)² / (n − 1)] (duas passagens)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_cv</td>
+      <td>Coeficiente de variação de HESG</td>
+      <td>66.007184</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>568 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td>HESG ausente: valor ausente: 533; HESG inválido: valor interpretado como data: 16</td>
+      <td>CV = s / x̄ × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesg_m_ausentes</td>
+      <td>HESG ausentes</td>
+      <td>533.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>533 de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>568.0</td>
+      <td>549.0</td>
+      <td>50.85</td>
+      <td></td>
+      <td>contagem de status AUSENTE</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_n</td>
+      <td>Contagem de HESGCOPA elegíveis</td>
+      <td>901.000000</td>
+      <td>valores</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>n = nº de valores elegíveis</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_media</td>
+      <td>Média de HESGCOPA</td>
+      <td>7.772886</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>x̄ = Σxᵢ / n (soma compensada, math.fsum)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_mediana</td>
+      <td>Mediana de HESGCOPA</td>
+      <td>7.500000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>valor central da amostra ordenada</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_min</td>
+      <td>Mínimo de HESGCOPA</td>
+      <td>0.300000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>min(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_max</td>
+      <td>Máximo de HESGCOPA</td>
+      <td>25.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>max(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_q1</td>
+      <td>1º quartil de HESGCOPA</td>
+      <td>5.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>Q1, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_q3</td>
+      <td>3º quartil de HESGCOPA</td>
+      <td>10.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>Q3, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_dp</td>
+      <td>Desvio-padrão amostral de HESGCOPA</td>
+      <td>4.002503</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>s = √[Σ(xᵢ − x̄)² / (n − 1)] (duas passagens)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_cv</td>
+      <td>Coeficiente de variação de HESGCOPA</td>
+      <td>51.493145</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>901 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td>HESGCOPA ausente: valor ausente: 177; HESGCOPA inválido: valor interpretado como data: 39</td>
+      <td>CV = s / x̄ × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hesgcopa_m_ausentes</td>
+      <td>HESGCOPA ausentes</td>
+      <td>177.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>177 de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>901.0</td>
+      <td>216.0</td>
+      <td>80.66</td>
+      <td></td>
+      <td>contagem de status AUSENTE</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_n</td>
+      <td>Contagem de HC elegíveis</td>
+      <td>62.000000</td>
+      <td>valores</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>n = nº de valores elegíveis</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_media</td>
+      <td>Média de HC</td>
+      <td>9.008065</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>x̄ = Σxᵢ / n (soma compensada, math.fsum)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_mediana</td>
+      <td>Mediana de HC</td>
+      <td>8.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>valor central da amostra ordenada</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_min</td>
+      <td>Mínimo de HC</td>
+      <td>2.500000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>min(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_max</td>
+      <td>Máximo de HC</td>
+      <td>20.000000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>max(xᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_q1</td>
+      <td>1º quartil de HC</td>
+      <td>6.625000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>Q1, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_q3</td>
+      <td>3º quartil de HC</td>
+      <td>10.750000</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>Q3, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_dp</td>
+      <td>Desvio-padrão amostral de HC</td>
+      <td>3.811643</td>
+      <td>m</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>s = √[Σ(xᵢ − x̄)² / (n − 1)] (duas passagens)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_cv</td>
+      <td>Coeficiente de variação de HC</td>
+      <td>42.313674</td>
+      <td>%</td>
+      <td>VÁLIDO</td>
+      <td>62 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td>HC ausente: valor ausente: 1055</td>
+      <td>CV = s / x̄ × 100</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>hc_m_ausentes</td>
+      <td>HC ausentes</td>
+      <td>1055.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>1055 de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>62.0</td>
+      <td>1055.0</td>
+      <td>5.55</td>
+      <td></td>
+      <td>contagem de status AUSENTE</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_n</td>
+      <td>Contagem de HT elegíveis</td>
+      <td>1047.000000</td>
+      <td>valores</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>n = nº de valores elegíveis</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_media</td>
+      <td>Altura total média (HT)</td>
+      <td>13.554814</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>x̄ = Σxᵢ / n (soma compensada, math.fsum)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_mediana</td>
+      <td>Mediana de HT</td>
+      <td>13.000000</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>valor central da amostra ordenada</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_min</td>
+      <td>Mínimo de HT</td>
+      <td>0.300000</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>min(xᵢ)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_max</td>
+      <td>Máximo de HT</td>
+      <td>33.000000</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>max(xᵢ)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_q1</td>
+      <td>1º quartil de HT</td>
+      <td>10.000000</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>Q1, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_q3</td>
+      <td>3º quartil de HT</td>
+      <td>17.000000</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>Q3, interpolação linear (Hyndman &amp; Fan tipo 7)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_dp</td>
+      <td>Desvio-padrão amostral de HT</td>
+      <td>5.871475</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>s = √[Σ(xᵢ − x̄)² / (n − 1)] (duas passagens)</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_cv</td>
+      <td>Coeficiente de variação de HT</td>
+      <td>43.316532</td>
+      <td>%</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>1047 valores elegíveis de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td>HT ausente: valor ausente: 60; HT inválido: valor interpretado como data: 9; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>CV = s / x̄ × 100</td>
+      <td>1 valor(es) de HT acima do limite físico de 120 m (maior árvore viva medida ≈ 116 m), fora do cálculo até revisão.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>ht_m_ausentes</td>
+      <td>HT ausentes</td>
+      <td>60.000000</td>
+      <td>registros</td>
+      <td>VÁLIDO</td>
+      <td>60 de 1117 registros potenciais</td>
+      <td>1117.0</td>
+      <td>1047.0</td>
+      <td>70.0</td>
+      <td>93.73</td>
+      <td></td>
+      <td>contagem de status AUSENTE</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>g_total</td>
+      <td>Área basal total (G)</td>
+      <td>72.262719</td>
+      <td>m²</td>
+      <td>VÁLIDO</td>
+      <td>861 indivíduos elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>G = Σ gᵢ ;  gᵢ = π · DAPᵢ² / 40000</td>
+      <td>Área seccional à altura do peito (g); a soma é a área basal absoluta da amostra (não por hectare).</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>g_media</td>
+      <td>Área basal média por indivíduo elegível</td>
+      <td>0.083929</td>
+      <td>m²</td>
+      <td>VÁLIDO</td>
+      <td>861 indivíduos elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>Ḡ = G / n</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>g_max</td>
+      <td>Maior área basal individual</td>
+      <td>1.227185</td>
+      <td>m²</td>
+      <td>VÁLIDO</td>
+      <td>861 indivíduos elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>max(gᵢ)</td>
+      <td></td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>area_amostrada</td>
+      <td>Área das parcelas com área conhecida (A)</td>
+      <td>1.411200</td>
+      <td>ha</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>A = 1,4112 ha em 98 parcelas; 839 DAPs elegíveis de 1087 potenciais nessas parcelas</td>
+      <td>1117.0</td>
+      <td>839.0</td>
+      <td>278.0</td>
+      <td>77.18</td>
+      <td>parcela sem área conhecida (5 parcelas): 30; DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>A = Σ aⱼ</td>
+      <td>Soma das áreas de 98 parcelas.</td>
+      <td>literatura</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>g_ha</td>
+      <td>Área basal por hectare</td>
+      <td>50.913241</td>
+      <td>m²/ha</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>A = 1,4112 ha em 98 parcelas; 839 DAPs elegíveis de 1087 potenciais nessas parcelas</td>
+      <td>1117.0</td>
+      <td>839.0</td>
+      <td>278.0</td>
+      <td>77.18</td>
+      <td>parcela sem área conhecida (5 parcelas): 30; DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>ABₕₐ = G / A ;  A = Σ aⱼ (ha) ;  F = 1 / aⱼ</td>
+      <td>Área e desenho amostral (fonte: literatura — Barazetti et al. (2011), Unoesc &amp; Ciência – ACET 2(1):31-46 — arboreto da ESARM/CEPLAC, Ilhéus: 98 parcelas, 36 indivíduos da mesma espécie, 6 linhas × 6 colunas, espaçamento 2 × 2 m; Gama-Rodrigues, Barros &amp; Mendonça (1999), R. Bras. Ci. Solo 23:581-592 — arboreto CEPLAC/ESPAB: parcelas puras de 144 m², 2 × 2 m, 36 árvores por espécie): censo de parcelas monoespecíficas do arboreto da ESARM/CEPLAC (todas as árvores medidas, sem amostragem); 36 plantas em grade 6 × 6, espaçamento 2 × 2 m → área útil 144 m² (36 × 4 m²). Os 100 m² citados por Barazetti et al. correspondem ao polígono entre as árvores externas ((6 − 1) × 2 m)²; a área útil é a que reproduz a densidade do espaçamento (2.500 plantas/ha). Corredores de 4 m entre parcelas não entram em A. | A = soma das áreas de 98 parcelas (inclusive as anotadas sem árvores). | Indivíduos sem DAP elegível não contribuem para G: o valor por hectare é um limite inferior (cobertura de DAP nessas parcelas 77.2%). | 5 parcela(s) sem área conhecida excluída(s) de G e de A: PX1, PX2, PX3, PX4, PX5. | Sensibilidade à convenção de área (mesmas parcelas e mesmo G): 100 m² → 73,32 m²/ha; 196 m² → 37,41 m²/ha. 100 m² = polígono entre as árvores externas (área citada por Barazetti et al., 2011); 196 m² = área útil acrescida do corredor de 4 m entre parcelas. Adotada a área útil (nº de plantas × espaçamento), convenção de experimentos de plantio. Confirmar em campo. | Parcelas pequenas (≈ 0,014 ha) com árvores de grande porte geram valores por parcela muito altos (efeito de borda: copas e raízes ocupam corredores); interpretar o valor por parcela com cautela.</td>
+      <td>literatura</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>dg</td>
+      <td>Diâmetro quadrático médio (dg)</td>
+      <td>32.689677</td>
+      <td>cm</td>
+      <td>VÁLIDO</td>
+      <td>861 indivíduos elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>861.0</td>
+      <td>256.0</td>
+      <td>77.08</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>dg = √(Σ DAPᵢ² / n) = √(40000 · Ḡ / π)</td>
+      <td>Definição da literatura: diâmetro da árvore de área seccional média (Finger, 1992; Soares, Paula Neto &amp; Souza, 2011). | Não equivale à média aritmética do DAP (dg ≥ média aritmética). Qual dos dois será o 'diâmetro médio' de referência do projeto permanece decisão M5 da equipe.</td>
+      <td>literatura (Finger, 1992; Soares et al., 2011)</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>g_total_multifuste</td>
+      <td>Área basal total incluindo multifustes</td>
+      <td>72.953011</td>
+      <td>m²</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>884 indivíduos elegíveis de 1117 potenciais (27 multifustes com fustes extraídos)</td>
+      <td>1117.0</td>
+      <td>884.0</td>
+      <td>233.0</td>
+      <td>79.14</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 26; DAP ausente: valor ausente: 12</td>
+      <td>G' = Σ gᵢ ;  gᵢ = Σⱼ π·dᵢⱼ²/40000 (multifuste)  ou  π·DAPᵢ²/40000 (fuste único)</td>
+      <td>Regra de Finger (1992), adotada no Manual de Dendrometria da CEPLAC: fustes bifurcados abaixo de 1,30 m são medidos separadamente; a área seccional do indivíduo é a soma das áreas dos fustes. | 27 indivíduos com fustes extraídos da observação por padrão estrutural (quantidade declarada = valores listados); 45 indícios de multifuste ficaram para revisão humana. | Complementa — não substitui — a 'Área basal total (G)', que usa apenas o DAP da coluna.</td>
+      <td>Finger (1992) via Manual CEPLAC; Stewart &amp; Salazar (1992)</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>v_cil_total</td>
+      <td>Volume cilíndrico total (g × HT)</td>
+      <td>1457.436383</td>
+      <td>m³</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>858 indivíduos com DAP e altura elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>858.0</td>
+      <td>259.0</td>
+      <td>76.81</td>
+      <td>DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12; HT inválido: valor interpretado como data: 2; HT extremo: HT &gt; 120 m (pendente de revisão): 1</td>
+      <td>v = gᵢ · HTᵢ ;  V = Σ v</td>
+      <td>Volume de cilindro, sem fator de forma — informado como cilíndrico (orientação do áudio de 17/11/2026).</td>
+      <td>ref-PTMC-Camila + áudio 2026-11-17</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>v_spurr_total</td>
+      <td>Volume comercial — equação de Spurr (Jorge, 1982)</td>
+      <td>63.837526</td>
+      <td>m³</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>55 indivíduos com DAP e altura elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>55.0</td>
+      <td>1062.0</td>
+      <td>4.92</td>
+      <td>HC ausente: valor ausente: 806; DAP inválido: valor interpretado como data: 140; DAP não aplicável: observação menciona morte (estado vital requer revisão): 55; DAP não aplicável: multifuste: DAP de fuste único não aplicável (ver Multifustes): 49; DAP ausente: valor ausente: 12</td>
+      <td>Vc = 0,106531813 + 5,3372·10⁻⁵ · DAP² · HC</td>
+      <td>Coeficientes regionais (Mata Atlântica norte ES / sul BA). Calculado só quando há HC. | Faixa de DAP do ajuste não informada na referência: árvores pequenas podem ser superestimadas (o intercepto b₀ ≈ 0,1065 m³ domina).</td>
+      <td>ref-PTMC-Camila + áudio 2026-11-17</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>copa_comprimento_media</td>
+      <td>Comprimento médio de copa</td>
+      <td>6.554548</td>
+      <td>m</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>897 indivíduos com HT e HESGCOPA elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>897.0</td>
+      <td>220.0</td>
+      <td>80.30</td>
+      <td>HESGCOPA ausente: valor ausente: 112; HT ausente: valor ausente; HESGCOPA ausente: valor ausente: 60; HESGCOPA inválido: valor interpretado como data: 38; HT inválido: valor interpretado como data; HESGCOPA ausente: valor ausente: 5; HT inválido: valor interpretado como data: 3; HT extremo: HT &gt; 120 m (pendente de revisão): 1; HT inválido: valor interpretado como data; HESGCOPA inválido: valor interpretado como data: 1</td>
+      <td>média de (HT − HESGCOPA)</td>
+      <td>Comprimento de copa = HT − HESGCOPA (início da copa até o ápice). A nota (*) da definição de HESGCOPA não foi fornecida; indicador descritivo, sem decisão sobre critério de copa.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>copa_proporcao_media</td>
+      <td>Proporção média de copa</td>
+      <td>45.550561</td>
+      <td>%</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>897 indivíduos com HT e HESGCOPA elegíveis de 1117 potenciais</td>
+      <td>1117.0</td>
+      <td>897.0</td>
+      <td>220.0</td>
+      <td>80.30</td>
+      <td>HESGCOPA ausente: valor ausente: 112; HT ausente: valor ausente; HESGCOPA ausente: valor ausente: 60; HESGCOPA inválido: valor interpretado como data: 38; HT inválido: valor interpretado como data; HESGCOPA ausente: valor ausente: 5; HT inválido: valor interpretado como data: 3; HT extremo: HT &gt; 120 m (pendente de revisão): 1; HT inválido: valor interpretado como data; HESGCOPA inválido: valor interpretado como data: 1</td>
+      <td>média de (HT − HESGCOPA) / HT × 100</td>
+      <td>Comprimento de copa = HT − HESGCOPA (início da copa até o ápice). A nota (*) da definição de HESGCOPA não foi fornecida; indicador descritivo, sem decisão sobre critério de copa.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>shannon</td>
+      <td>Índice de Shannon (H')</td>
+      <td>4.035014</td>
+      <td>nats/indivíduo</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>N = 1117 indivíduos únicos com espécie; S = 76 espécies</td>
+      <td>1117.0</td>
+      <td>1117.0</td>
+      <td>0.0</td>
+      <td>100.00</td>
+      <td></td>
+      <td>H' = −Σ pᵢ · ln pᵢ ;  pᵢ = nᵢ / N</td>
+      <td>Arboreto plantado (parcelas monoespecíficas com o mesmo número de mudas por espécie): os índices descrevem a coleção atual registrada, não a diversidade de uma comunidade natural. | Rótulos 'Não identificada N' contados como morfoespécies distintas (7). | Variações de grafia de nomes comuns não são unificadas (ver Qualidade): podem inflar S. | Inclui 59 indivíduo(s) com menção de morte na observação (estado vital não estruturado).</td>
+      <td>literatura (Brower &amp; Zar, 1984; Magurran, 2004)</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>pielou</td>
+      <td>Equabilidade de Pielou (J')</td>
+      <td>0.931716</td>
+      <td>adimensional</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>N = 1117 indivíduos únicos com espécie; S = 76 espécies</td>
+      <td>1117.0</td>
+      <td>1117.0</td>
+      <td>0.0</td>
+      <td>100.00</td>
+      <td></td>
+      <td>J' = H' / ln S</td>
+      <td>Arboreto plantado (parcelas monoespecíficas com o mesmo número de mudas por espécie): os índices descrevem a coleção atual registrada, não a diversidade de uma comunidade natural. | Rótulos 'Não identificada N' contados como morfoespécies distintas (7). | Variações de grafia de nomes comuns não são unificadas (ver Qualidade): podem inflar S. | Inclui 59 indivíduo(s) com menção de morte na observação (estado vital não estruturado).</td>
+      <td>literatura (Brower &amp; Zar, 1984; Magurran, 2004)</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>simpson</td>
+      <td>Índice de Simpson (1 − D)</td>
+      <td>0.979942</td>
+      <td>adimensional</td>
+      <td>VÁLIDO COM RESSALVA</td>
+      <td>N = 1117 indivíduos únicos com espécie; S = 76 espécies</td>
+      <td>1117.0</td>
+      <td>1117.0</td>
+      <td>0.0</td>
+      <td>100.00</td>
+      <td></td>
+      <td>D = Σ nᵢ(nᵢ − 1) / [N(N − 1)] ;  índice = 1 − D</td>
+      <td>Arboreto plantado (parcelas monoespecíficas com o mesmo número de mudas por espécie): os índices descrevem a coleção atual registrada, não a diversidade de uma comunidade natural. | Rótulos 'Não identificada N' contados como morfoespécies distintas (7). | Variações de grafia de nomes comuns não são unificadas (ver Qualidade): podem inflar S. | Inclui 59 indivíduo(s) com menção de morte na observação (estado vital não estruturado).</td>
+      <td>literatura (Brower &amp; Zar, 1984; Magurran, 2004)</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>mortalidade</td>
+      <td>Mortalidade</td>
+      <td>—</td>
+      <td>%</td>
+      <td>BLOQUEADO POR QUALIDADE OU METODOLOGIA</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>Mortalidade (%) = mortos / implantados × 100 ;  Sobrevivência (%) = vivos / implantados × 100 ;  sem registro = implantados − (vivos + mortos + não localizados + não avaliados) — NÃO é mortalidade</td>
+      <td>O arquivo não possui estado vital estruturado (coluna 'Estado vital' com vivo / morto / não localizado / não avaliado). Menções de 'MORTA' em Observação são texto livre e não sustentam o cálculo. '36 − registros' nunca é usado como número de mortos.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+    <tr>
+      <td>sobrevivencia</td>
+      <td>Sobrevivência</td>
+      <td>—</td>
+      <td>%</td>
+      <td>BLOQUEADO POR QUALIDADE OU METODOLOGIA</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>Mortalidade (%) = mortos / implantados × 100 ;  Sobrevivência (%) = vivos / implantados × 100 ;  sem registro = implantados − (vivos + mortos + não localizados + não avaliados) — NÃO é mortalidade</td>
+      <td>O arquivo não possui estado vital estruturado (coluna 'Estado vital' com vivo / morto / não localizado / não avaliado). Menções de 'MORTA' em Observação são texto livre e não sustentam o cálculo. '36 − registros' nunca é usado como número de mortos.</td>
+      <td>dendro-2026.11-r1</td>
+      <td>não</td>
+    </tr>
+  </tbody>
+</table><h2>Qualidade dos dados</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>código</th>
+      <th>severidade</th>
+      <th>recuperação</th>
+      <th>ocorrências</th>
+      <th>registros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DAP_DATA</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>140</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>MENCAO_MULTIFUSTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>72</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>ALTURA_DATA</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>64</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>MENCAO_MORTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>59</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>DAP_NAO_MENSURAVEL</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>49</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>PARCELA_NAO_NUMERICA</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Válido com advertência</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>MENCAO_FUSTE_QUEBRADO</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>DAP_AUSENTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Irrecuperável sem a fonte original</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>ESPECIE_GRAFIA_VARIANTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>MENCAO_TOMBAMENTO</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>DAP_COM_MENCAO_MORTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DATA_AUSENTE</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Irrecuperável sem a fonte original</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ALTURA_EXTREMA</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POSSIVEL_SERIAL_DATA</td>
+      <td>ADVERTÊNCIA</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ANOTACAO_PARCELA</td>
+      <td>BLOQUEANTE</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>14</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>MENCAO_REBROTACAO</td>
+      <td>INFORMATIVO</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>96</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>ESPECIE_NAO_IDENTIFICADA</td>
+      <td>INFORMATIVO</td>
+      <td>Válido com advertência</td>
+      <td>72</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>ESPECIE_DUVIDA</td>
+      <td>INFORMATIVO</td>
+      <td>Recuperável somente com revisão humana</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table><h2>Resultados por parcela</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>parcela</th>
+      <th>indivíduos</th>
+      <th>registros</th>
+      <th>espécies</th>
+      <th>riqueza observada</th>
+      <th>DAPs elegíveis</th>
+      <th>média aritmética DAP (cm)</th>
+      <th>mediana DAP (cm)</th>
+      <th>altura total média HT (m)</th>
+      <th>área basal G (m²)</th>
+      <th>área da parcela (ha)</th>
+      <th>área basal G (m²/ha)</th>
+      <th>medições ausentes (DAP)</th>
+      <th>registros inválidos</th>
+      <th>cobertura DAP (%)</th>
+      <th>anotação de parcela</th>
+      <th>advertências</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>17.0</td>
+      <td>17.0</td>
+      <td>Barriguda</td>
+      <td>1</td>
+      <td>15.0</td>
+      <td>50.380000</td>
+      <td>45.50</td>
+      <td>14.033333</td>
+      <td>4.054416</td>
+      <td>0.0144</td>
+      <td>281.556679</td>
+      <td>0</td>
+      <td>0</td>
+      <td>88.235294</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>23.0</td>
+      <td>23.0</td>
+      <td>Araçá-d'água</td>
+      <td>1</td>
+      <td>23.0</td>
+      <td>28.078261</td>
+      <td>19.50</td>
+      <td>13.586957</td>
+      <td>1.947057</td>
+      <td>0.0144</td>
+      <td>135.212293</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Gindiba</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>16.366667</td>
+      <td>17.20</td>
+      <td>12.000000</td>
+      <td>0.065406</td>
+      <td>0.0144</td>
+      <td>4.542056</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>DAP_COM_MENCAO_MORTE; MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>26.0</td>
+      <td>26.0</td>
+      <td>Pau-óleo / Copaíba</td>
+      <td>1</td>
+      <td>25.0</td>
+      <td>24.828000</td>
+      <td>21.80</td>
+      <td>14.400000</td>
+      <td>1.775681</td>
+      <td>0.0144</td>
+      <td>123.311166</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.153846</td>
+      <td></td>
+      <td>MENCAO_MORTE; MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Claraíba-parda</td>
+      <td>1</td>
+      <td>13.0</td>
+      <td>34.061538</td>
+      <td>20.60</td>
+      <td>14.692308</td>
+      <td>1.917890</td>
+      <td>0.0144</td>
+      <td>133.186839</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.250000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Não identificada 7</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>30.500000</td>
+      <td>30.50</td>
+      <td>18.000000</td>
+      <td>0.073062</td>
+      <td>0.0144</td>
+      <td>5.073727</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA; ESPECIE_NAO_IDENTIFICADA</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>Jequitibá</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>3.460000</td>
+      <td>3.25</td>
+      <td>2.922727</td>
+      <td>0.011043</td>
+      <td>0.0144</td>
+      <td>0.766854</td>
+      <td>1</td>
+      <td>0</td>
+      <td>90.909091</td>
+      <td></td>
+      <td>DAP_AUSENTE</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>Maçaranduba</td>
+      <td>1</td>
+      <td>7.0</td>
+      <td>24.285714</td>
+      <td>21.80</td>
+      <td>15.000000</td>
+      <td>0.385634</td>
+      <td>0.0144</td>
+      <td>26.780114</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Jatobá piloso</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>17.400000</td>
+      <td>17.40</td>
+      <td>10.000000</td>
+      <td>0.023779</td>
+      <td>0.0144</td>
+      <td>1.651300</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>24.0</td>
+      <td>24.0</td>
+      <td>Buranhém</td>
+      <td>1</td>
+      <td>21.0</td>
+      <td>27.319048</td>
+      <td>20.90</td>
+      <td>15.523810</td>
+      <td>1.701791</td>
+      <td>0.0144</td>
+      <td>118.179898</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.500000</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Biriba-branca</td>
+      <td>1</td>
+      <td>15.0</td>
+      <td>17.940000</td>
+      <td>17.50</td>
+      <td>14.406250</td>
+      <td>0.417902</td>
+      <td>0.0144</td>
+      <td>29.020953</td>
+      <td>1</td>
+      <td>0</td>
+      <td>93.750000</td>
+      <td></td>
+      <td>DAP_AUSENTE</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>Óleo-comumbá</td>
+      <td>1</td>
+      <td>5.0</td>
+      <td>26.940000</td>
+      <td>29.90</td>
+      <td>14.800000</td>
+      <td>0.305230</td>
+      <td>0.0144</td>
+      <td>21.196533</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>17.0</td>
+      <td>17.0</td>
+      <td>Diospyros sp. (Ebenaceae)</td>
+      <td>1</td>
+      <td>17.0</td>
+      <td>13.911765</td>
+      <td>14.00</td>
+      <td>11.117647</td>
+      <td>0.274439</td>
+      <td>0.0144</td>
+      <td>19.058286</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>31.0</td>
+      <td>31.0</td>
+      <td>Folheiro</td>
+      <td>1</td>
+      <td>31.0</td>
+      <td>38.593548</td>
+      <td>31.70</td>
+      <td>20.741935</td>
+      <td>5.133136</td>
+      <td>0.0144</td>
+      <td>356.467792</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>Mucitaíba amarela; Mucitaíba-amarela</td>
+      <td>2</td>
+      <td>11.0</td>
+      <td>36.118182</td>
+      <td>29.00</td>
+      <td>15.545455</td>
+      <td>1.384502</td>
+      <td>0.0144</td>
+      <td>96.145989</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.666667</td>
+      <td></td>
+      <td>ESPECIE_GRAFIA_VARIANTE; MENCAO_MORTE; MENCAO_TOMBAMENTO</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>29.0</td>
+      <td>29.0</td>
+      <td>Putumuju-mirim</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>8.500000</td>
+      <td>8.50</td>
+      <td>9.504000</td>
+      <td>0.013273</td>
+      <td>0.0144</td>
+      <td>0.921752</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6.896552</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_AUSENTE; DAP_DATA; MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>Celastraceae</td>
+      <td>1</td>
+      <td>13.0</td>
+      <td>21.253846</td>
+      <td>21.50</td>
+      <td>14.461538</td>
+      <td>0.477268</td>
+      <td>0.0144</td>
+      <td>33.143639</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Falso-angelim (Dimorphandra jorgei)</td>
+      <td>1</td>
+      <td>8.0</td>
+      <td>44.212500</td>
+      <td>42.50</td>
+      <td>17.250000</td>
+      <td>1.312513</td>
+      <td>0.0144</td>
+      <td>91.146711</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>19.0</td>
+      <td>19.0</td>
+      <td>Bapeba 1; Bapeba 2; Bapeba 3</td>
+      <td>3</td>
+      <td>19.0</td>
+      <td>25.747368</td>
+      <td>22.60</td>
+      <td>15.542105</td>
+      <td>1.247658</td>
+      <td>0.0144</td>
+      <td>86.642944</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>29.0</td>
+      <td>29.0</td>
+      <td>Gonçalo Alves</td>
+      <td>1</td>
+      <td>27.0</td>
+      <td>8.655556</td>
+      <td>7.80</td>
+      <td>9.466667</td>
+      <td>0.198165</td>
+      <td>0.0144</td>
+      <td>13.761430</td>
+      <td>1</td>
+      <td>0</td>
+      <td>93.103448</td>
+      <td></td>
+      <td>ALTURA_EXTREMA; DAP_AUSENTE; MENCAO_MORTE; MENCAO_REBROTACAO; POSSIVEL_SERIAL_DATA</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>Arapati</td>
+      <td>1</td>
+      <td>7.0</td>
+      <td>17.600000</td>
+      <td>14.30</td>
+      <td>9.571429</td>
+      <td>0.207581</td>
+      <td>0.0144</td>
+      <td>14.415329</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Copaíba</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>54.666667</td>
+      <td>56.00</td>
+      <td>19.333333</td>
+      <td>0.707964</td>
+      <td>0.0144</td>
+      <td>49.164180</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>27.0</td>
+      <td>27.0</td>
+      <td>Mogno</td>
+      <td>1</td>
+      <td>26.0</td>
+      <td>7.538462</td>
+      <td>6.50</td>
+      <td>8.796296</td>
+      <td>0.140457</td>
+      <td>0.0144</td>
+      <td>9.753991</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.296296</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>38.0</td>
+      <td>38.0</td>
+      <td>Pau-brasil</td>
+      <td>1</td>
+      <td>9.0</td>
+      <td>15.033333</td>
+      <td>17.00</td>
+      <td>9.252727</td>
+      <td>0.236715</td>
+      <td>0.0144</td>
+      <td>16.438547</td>
+      <td>1</td>
+      <td>0</td>
+      <td>23.684211</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_AUSENTE; DAP_DATA; DAP_NAO_MENSURAVEL; DATA_AUSENTE; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO; MENCAO_TOMBAMENTO; 38 indivíduos: acima das 36 plantas do desenho publicado</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>19.0</td>
+      <td>19.0</td>
+      <td>Angelim-côco</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>20.000000</td>
+      <td>17.00</td>
+      <td>9.666667</td>
+      <td>0.098489</td>
+      <td>0.0144</td>
+      <td>6.839509</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.789474</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>23.0</td>
+      <td>23.0</td>
+      <td>Murta (Myrtaceae)</td>
+      <td>1</td>
+      <td>21.0</td>
+      <td>17.452381</td>
+      <td>16.70</td>
+      <td>10.809524</td>
+      <td>0.558216</td>
+      <td>0.0144</td>
+      <td>38.765017</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.304348</td>
+      <td></td>
+      <td>MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Cajazeira</td>
+      <td>1</td>
+      <td>8.0</td>
+      <td>37.187500</td>
+      <td>36.30</td>
+      <td>14.000000</td>
+      <td>0.946685</td>
+      <td>0.0144</td>
+      <td>65.742026</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>Putumuju-mirim</td>
+      <td>1</td>
+      <td>14.0</td>
+      <td>30.078571</td>
+      <td>25.90</td>
+      <td>14.178571</td>
+      <td>1.395319</td>
+      <td>0.0144</td>
+      <td>96.897135</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>DAP_COM_MENCAO_MORTE; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>Pau-brasil (folha de laranja)</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>24.000000</td>
+      <td>24.00</td>
+      <td>12.400000</td>
+      <td>0.045239</td>
+      <td>0.0144</td>
+      <td>3.141593</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.000000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>Cedro</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>41.500000</td>
+      <td>41.50</td>
+      <td>14.500000</td>
+      <td>0.135265</td>
+      <td>0.0144</td>
+      <td>9.393417</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.000000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Eritrina-mulungu</td>
+      <td>1</td>
+      <td>5.0</td>
+      <td>53.340000</td>
+      <td>47.20</td>
+      <td>15.666667</td>
+      <td>1.283491</td>
+      <td>0.0144</td>
+      <td>89.131292</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.333333</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Bacupari</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>9.000000</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Arariba-branca</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>22.433333</td>
+      <td>19.00</td>
+      <td>10.000000</td>
+      <td>0.130399</td>
+      <td>0.0144</td>
+      <td>9.055477</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.750000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>Sapucaia</td>
+      <td>1</td>
+      <td>20.0</td>
+      <td>20.005000</td>
+      <td>18.30</td>
+      <td>13.050000</td>
+      <td>0.769482</td>
+      <td>0.0144</td>
+      <td>53.436255</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.238095</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>Sapotaceae</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>14.000000</td>
+      <td>14.00</td>
+      <td>7.750000</td>
+      <td>0.015394</td>
+      <td>0.0144</td>
+      <td>1.069014</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.692308</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_FUSTE_QUEBRADO; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Pau-brasil (folha de arruda)</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>3.000000</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Jacarandá-da-bahia</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>36.000000</td>
+      <td>36.00</td>
+      <td>11.666667</td>
+      <td>0.101788</td>
+      <td>0.0144</td>
+      <td>7.068583</td>
+      <td>0</td>
+      <td>0</td>
+      <td>16.666667</td>
+      <td></td>
+      <td>DAP_DATA; DAP_NAO_MENSURAVEL; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>Não identificada 1</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>54.440000</td>
+      <td>49.75</td>
+      <td>17.500000</td>
+      <td>2.541178</td>
+      <td>0.0144</td>
+      <td>176.470677</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.428571</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; ESPECIE_NAO_IDENTIFICADA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>Cajazeira</td>
+      <td>1</td>
+      <td>7.0</td>
+      <td>53.257143</td>
+      <td>53.90</td>
+      <td>14.500000</td>
+      <td>1.816532</td>
+      <td>0.0144</td>
+      <td>126.148035</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.000000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Juerana</td>
+      <td>1</td>
+      <td>4.0</td>
+      <td>49.125000</td>
+      <td>42.75</td>
+      <td>11.833333</td>
+      <td>0.804410</td>
+      <td>0.0144</td>
+      <td>55.861826</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.666667</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>21.0</td>
+      <td>21.0</td>
+      <td>Putumuju-piloso</td>
+      <td>1</td>
+      <td>12.0</td>
+      <td>35.150000</td>
+      <td>36.95</td>
+      <td>13.473684</td>
+      <td>1.382964</td>
+      <td>0.0144</td>
+      <td>96.039142</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.142857</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA; MENCAO_FUSTE_QUEBRADO; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>24.0</td>
+      <td>24.0</td>
+      <td>Itapicuru</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>42.870000</td>
+      <td>39.05</td>
+      <td>16.916667</td>
+      <td>1.569716</td>
+      <td>0.0144</td>
+      <td>109.008084</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.666667</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Jitaí</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>41.600000</td>
+      <td>41.60</td>
+      <td>14.250000</td>
+      <td>0.135918</td>
+      <td>0.0144</td>
+      <td>9.438741</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12.500000</td>
+      <td></td>
+      <td>ALTURA_DATA; DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>Jenipapeiro</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>32.633333</td>
+      <td>31.40</td>
+      <td>13.000000</td>
+      <td>0.251894</td>
+      <td>0.0144</td>
+      <td>17.492617</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.000000</td>
+      <td></td>
+      <td>DAP_DATA</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>17.0</td>
+      <td>17.0</td>
+      <td>Teca</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>34.316667</td>
+      <td>34.20</td>
+      <td>14.500000</td>
+      <td>0.644018</td>
+      <td>0.0144</td>
+      <td>44.723462</td>
+      <td>0</td>
+      <td>0</td>
+      <td>35.294118</td>
+      <td></td>
+      <td>MENCAO_MORTE; MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>19.0</td>
+      <td>19.0</td>
+      <td>Mogno</td>
+      <td>1</td>
+      <td>19.0</td>
+      <td>27.105263</td>
+      <td>25.50</td>
+      <td>14.789474</td>
+      <td>1.314779</td>
+      <td>0.0144</td>
+      <td>91.304064</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>Não identificada 2</td>
+      <td>1</td>
+      <td>11.0</td>
+      <td>65.690909</td>
+      <td>60.30</td>
+      <td>17.363636</td>
+      <td>4.464773</td>
+      <td>0.0144</td>
+      <td>310.053706</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_NAO_IDENTIFICADA; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>Ipêzinho</td>
+      <td>1</td>
+      <td>11.0</td>
+      <td>15.763636</td>
+      <td>16.50</td>
+      <td>8.454545</td>
+      <td>0.251816</td>
+      <td>0.0144</td>
+      <td>17.487217</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>Jenipapeiro</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>23.710000</td>
+      <td>21.85</td>
+      <td>12.400000</td>
+      <td>0.466851</td>
+      <td>0.0144</td>
+      <td>32.420200</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.333333</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>Jacarandá-da-bahia</td>
+      <td>1</td>
+      <td>9.0</td>
+      <td>19.977778</td>
+      <td>18.60</td>
+      <td>13.111111</td>
+      <td>0.297118</td>
+      <td>0.0144</td>
+      <td>20.633173</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO; MENCAO_TOMBAMENTO</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Prunus selowii</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>19.900000</td>
+      <td>22.30</td>
+      <td>10.833333</td>
+      <td>0.212681</td>
+      <td>0.0144</td>
+      <td>14.769522</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Eucalipto</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>79.500000</td>
+      <td>79.50</td>
+      <td>28.000000</td>
+      <td>0.496391</td>
+      <td>0.0144</td>
+      <td>34.471616</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>Roxinho</td>
+      <td>1</td>
+      <td>11.0</td>
+      <td>27.545455</td>
+      <td>22.30</td>
+      <td>17.181818</td>
+      <td>0.756356</td>
+      <td>0.0144</td>
+      <td>52.524702</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.666667</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Juerana-branca</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>23.266667</td>
+      <td>23.60</td>
+      <td>13.666667</td>
+      <td>0.146917</td>
+      <td>0.0144</td>
+      <td>10.202540</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.000000</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Eritrina-do-alto</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>33.800000</td>
+      <td>33.80</td>
+      <td>19.000000</td>
+      <td>0.089727</td>
+      <td>0.0144</td>
+      <td>6.231044</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>23.0</td>
+      <td>23.0</td>
+      <td>Boleira</td>
+      <td>1</td>
+      <td>20.0</td>
+      <td>33.040000</td>
+      <td>29.30</td>
+      <td>15.025000</td>
+      <td>2.047893</td>
+      <td>0.0144</td>
+      <td>142.214773</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.956522</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>Não identificada 6 (fabaceae)</td>
+      <td>1</td>
+      <td>5.0</td>
+      <td>24.800000</td>
+      <td>25.30</td>
+      <td>13.000000</td>
+      <td>0.307483</td>
+      <td>0.0144</td>
+      <td>21.353013</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.428571</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; ESPECIE_NAO_IDENTIFICADA; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Cabeludinha (Myrtaceae)</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>6.900000</td>
+      <td>6.50</td>
+      <td>5.125000</td>
+      <td>0.011545</td>
+      <td>0.0144</td>
+      <td>0.801706</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.500000</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>29.0</td>
+      <td>29.0</td>
+      <td>Pitomba</td>
+      <td>1</td>
+      <td>28.0</td>
+      <td>22.910714</td>
+      <td>17.70</td>
+      <td>16.178571</td>
+      <td>1.618245</td>
+      <td>0.0144</td>
+      <td>112.378096</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.551724</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>Putumuju-gigante</td>
+      <td>1</td>
+      <td>7.0</td>
+      <td>25.585714</td>
+      <td>20.90</td>
+      <td>17.500000</td>
+      <td>0.439690</td>
+      <td>0.0144</td>
+      <td>30.534044</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Arariba- vermelha</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>19.650000</td>
+      <td>20.20</td>
+      <td>13.166667</td>
+      <td>0.189382</td>
+      <td>0.0144</td>
+      <td>13.151547</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Rosa-branca</td>
+      <td>1</td>
+      <td>6.0</td>
+      <td>30.266667</td>
+      <td>23.25</td>
+      <td>14.571429</td>
+      <td>0.516043</td>
+      <td>0.0144</td>
+      <td>35.836300</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.000000</td>
+      <td></td>
+      <td>DAP_COM_MENCAO_MORTE; DAP_NAO_MENSURAVEL; MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Jatobá</td>
+      <td>1</td>
+      <td>14.0</td>
+      <td>16.085714</td>
+      <td>10.80</td>
+      <td>13.285714</td>
+      <td>0.431312</td>
+      <td>0.0144</td>
+      <td>29.952250</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.500000</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Cedro</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td></td>
+      <td>DATA_AUSENTE; MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM O QUE TÁ MARCADO NO MAPA</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>Roxinho</td>
+      <td>1</td>
+      <td>11.0</td>
+      <td>28.100000</td>
+      <td>24.90</td>
+      <td>18.636364</td>
+      <td>0.856057</td>
+      <td>0.0144</td>
+      <td>59.448369</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>33.0</td>
+      <td>33.0</td>
+      <td>Mata-cacau</td>
+      <td>1</td>
+      <td>10.0</td>
+      <td>29.490000</td>
+      <td>22.95</td>
+      <td>9.937500</td>
+      <td>1.179414</td>
+      <td>0.0144</td>
+      <td>81.903775</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.303030</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>Jequitibá</td>
+      <td>1</td>
+      <td>4.0</td>
+      <td>42.750000</td>
+      <td>38.00</td>
+      <td>18.250000</td>
+      <td>0.775070</td>
+      <td>0.0144</td>
+      <td>53.824318</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>Mucitaíba-branca</td>
+      <td>1</td>
+      <td>8.0</td>
+      <td>18.600000</td>
+      <td>17.35</td>
+      <td>14.625000</td>
+      <td>0.232717</td>
+      <td>0.0144</td>
+      <td>16.160876</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>Pau-ferro</td>
+      <td>1</td>
+      <td>13.0</td>
+      <td>25.815385</td>
+      <td>21.50</td>
+      <td>16.384615</td>
+      <td>0.883329</td>
+      <td>0.0144</td>
+      <td>61.342324</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.666667</td>
+      <td></td>
+      <td>MENCAO_MORTE</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Falso-angelim (Dimorphandra jorgei)</td>
+      <td>1</td>
+      <td>16.0</td>
+      <td>34.181250</td>
+      <td>35.00</td>
+      <td>17.437500</td>
+      <td>1.774943</td>
+      <td>0.0144</td>
+      <td>123.259897</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>Pau-ferro</td>
+      <td>1</td>
+      <td>15.0</td>
+      <td>25.260000</td>
+      <td>20.30</td>
+      <td>15.466667</td>
+      <td>1.008950</td>
+      <td>0.0144</td>
+      <td>70.065970</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>Pau-óleo-branco</td>
+      <td>1</td>
+      <td>14.0</td>
+      <td>17.950000</td>
+      <td>17.75</td>
+      <td>15.071429</td>
+      <td>0.383762</td>
+      <td>0.0144</td>
+      <td>26.650141</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Penão</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>53.100000</td>
+      <td>53.20</td>
+      <td>23.000000</td>
+      <td>0.676939</td>
+      <td>0.0144</td>
+      <td>47.009625</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>Não identificada 5</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>14.350000</td>
+      <td>14.35</td>
+      <td>13.500000</td>
+      <td>0.033289</td>
+      <td>0.0144</td>
+      <td>2.311743</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA; ESPECIE_NAO_IDENTIFICADA</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>Angico</td>
+      <td>1</td>
+      <td>13.0</td>
+      <td>43.084615</td>
+      <td>37.50</td>
+      <td>18.269231</td>
+      <td>2.667859</td>
+      <td>0.0144</td>
+      <td>185.267955</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA; MENCAO_FUSTE_QUEBRADO; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>27.0</td>
+      <td>27.0</td>
+      <td>Sucupiruçu</td>
+      <td>1</td>
+      <td>22.0</td>
+      <td>39.572727</td>
+      <td>29.85</td>
+      <td>19.636364</td>
+      <td>3.603226</td>
+      <td>0.0144</td>
+      <td>250.224037</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.481481</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>Ipêzinho-de-jardim</td>
+      <td>1</td>
+      <td>9.0</td>
+      <td>8.733333</td>
+      <td>8.50</td>
+      <td>8.480000</td>
+      <td>0.054293</td>
+      <td>0.0144</td>
+      <td>3.770348</td>
+      <td>1</td>
+      <td>0</td>
+      <td>90.000000</td>
+      <td></td>
+      <td>DAP_AUSENTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>Não identificada 3</td>
+      <td>1</td>
+      <td>8.0</td>
+      <td>16.387500</td>
+      <td>15.35</td>
+      <td>9.033333</td>
+      <td>0.197986</td>
+      <td>0.0144</td>
+      <td>13.748995</td>
+      <td>4</td>
+      <td>0</td>
+      <td>40.000000</td>
+      <td></td>
+      <td>DAP_AUSENTE; DAP_NAO_MENSURAVEL; ESPECIE_NAO_IDENTIFICADA; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO; MENCAO_TOMBAMENTO</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>16.0</td>
+      <td>16.0</td>
+      <td>Maçaranduba</td>
+      <td>1</td>
+      <td>15.0</td>
+      <td>23.400000</td>
+      <td>18.00</td>
+      <td>15.656250</td>
+      <td>0.934286</td>
+      <td>0.0144</td>
+      <td>64.880979</td>
+      <td>1</td>
+      <td>0</td>
+      <td>93.750000</td>
+      <td></td>
+      <td>DAP_AUSENTE; MENCAO_FUSTE_QUEBRADO; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>Jacarandá-da-bahia</td>
+      <td>1</td>
+      <td>11.0</td>
+      <td>14.181818</td>
+      <td>12.50</td>
+      <td>11.500000</td>
+      <td>0.191744</td>
+      <td>0.0144</td>
+      <td>13.315553</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.666667</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Eucalipto</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>65.200000</td>
+      <td>65.20</td>
+      <td>27.000000</td>
+      <td>0.333876</td>
+      <td>0.0144</td>
+      <td>23.185826</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>17.0</td>
+      <td>17.0</td>
+      <td>Não identificada 4</td>
+      <td>1</td>
+      <td>17.0</td>
+      <td>20.529412</td>
+      <td>18.40</td>
+      <td>15.411765</td>
+      <td>0.613409</td>
+      <td>0.0144</td>
+      <td>42.597815</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>ESPECIE_DUVIDA; ESPECIE_NAO_IDENTIFICADA; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>—</td>
+      <td>—</td>
+      <td></td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0.0144</td>
+      <td>—</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>NÃO TEM ÁRVORES</td>
+      <td>ANOTACAO_PARCELA</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>18.0</td>
+      <td>18.0</td>
+      <td>Vinhático</td>
+      <td>1</td>
+      <td>18.0</td>
+      <td>38.277778</td>
+      <td>36.20</td>
+      <td>21.722222</td>
+      <td>2.484580</td>
+      <td>0.0144</td>
+      <td>172.540305</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>MENCAO_FUSTE_QUEBRADO; MENCAO_MULTIFUSTE</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>17.0</td>
+      <td>17.0</td>
+      <td>Pau-brasil</td>
+      <td>1</td>
+      <td>15.0</td>
+      <td>13.633333</td>
+      <td>12.50</td>
+      <td>10.576471</td>
+      <td>0.265081</td>
+      <td>0.0144</td>
+      <td>18.408369</td>
+      <td>1</td>
+      <td>0</td>
+      <td>88.235294</td>
+      <td></td>
+      <td>DAP_AUSENTE; DAP_COM_MENCAO_MORTE; DAP_NAO_MENSURAVEL; MENCAO_FUSTE_QUEBRADO; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO</td>
+    </tr>
+    <tr>
+      <td>PX1</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>Pouteria procera (Sapotaceae)</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>14.866667</td>
+      <td>14.10</td>
+      <td>12.333333</td>
+      <td>0.052523</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>PARCELA_NAO_NUMERICA</td>
+    </tr>
+    <tr>
+      <td>PX2</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>Jatobá</td>
+      <td>1</td>
+      <td>4.0</td>
+      <td>20.500000</td>
+      <td>19.10</td>
+      <td>13.500000</td>
+      <td>0.144386</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>PARCELA_NAO_NUMERICA</td>
+    </tr>
+    <tr>
+      <td>PX3</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>Pau-brasil</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>3.700000</td>
+      <td>3.70</td>
+      <td>6.150000</td>
+      <td>0.001075</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.000000</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MULTIFUSTE; PARCELA_NAO_NUMERICA</td>
+    </tr>
+    <tr>
+      <td>PX4</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>Pau-d'alho</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>7.500000</td>
+      <td>7.50</td>
+      <td>11.000000</td>
+      <td>0.004418</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td></td>
+      <td>PARCELA_NAO_NUMERICA</td>
+    </tr>
+    <tr>
+      <td>PX5</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>Murta (Rutaceae)</td>
+      <td>1</td>
+      <td>13.0</td>
+      <td>14.107692</td>
+      <td>13.90</td>
+      <td>7.264706</td>
+      <td>0.211552</td>
+      <td>—</td>
+      <td>—</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.000000</td>
+      <td></td>
+      <td>DAP_NAO_MENSURAVEL; MENCAO_MORTE; MENCAO_MULTIFUSTE; MENCAO_REBROTACAO; PARCELA_NAO_NUMERICA</td>
+    </tr>
+  </tbody>
+</table><h2>Resultados por espécie</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>espécie</th>
+      <th>Abundância por indivíduos únicos</th>
+      <th>Ocorrência em parcelas</th>
+      <th>Densidade relativa DR (%)</th>
+      <th>Frequência absoluta FA (%)</th>
+      <th>Frequência relativa FR (%)</th>
+      <th>DAPs elegíveis</th>
+      <th>DAPs excluídos</th>
+      <th>cobertura DAP (%)</th>
+      <th>média aritmética DAP (cm)</th>
+      <th>mediana DAP (cm)</th>
+      <th>HT elegíveis</th>
+      <th>altura total média HT (m)</th>
+      <th>área basal G (m²)</th>
+      <th>Dominância relativa DoR (%)</th>
+      <th>Valor de importância VI (0–300)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pau-brasil</td>
+      <td>57</td>
+      <td>3</td>
+      <td>5.102954</td>
+      <td>2.912621</td>
+      <td>3.260870</td>
+      <td>25</td>
+      <td>32</td>
+      <td>43.859649</td>
+      <td>13.740000</td>
+      <td>12.50</td>
+      <td>52</td>
+      <td>9.566154</td>
+      <td>0.502871</td>
+      <td>0.695892</td>
+      <td>9.059716</td>
+    </tr>
+    <tr>
+      <td>Mogno</td>
+      <td>46</td>
+      <td>2</td>
+      <td>4.118174</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>45</td>
+      <td>1</td>
+      <td>97.826087</td>
+      <td>15.800000</td>
+      <td>10.60</td>
+      <td>46</td>
+      <td>11.271739</td>
+      <td>1.455236</td>
+      <td>2.013813</td>
+      <td>8.305900</td>
+    </tr>
+    <tr>
+      <td>Putumuju-mirim</td>
+      <td>43</td>
+      <td>2</td>
+      <td>3.849597</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>16</td>
+      <td>27</td>
+      <td>37.209302</td>
+      <td>27.381250</td>
+      <td>24.45</td>
+      <td>39</td>
+      <td>11.182051</td>
+      <td>1.408592</td>
+      <td>1.949265</td>
+      <td>7.972775</td>
+    </tr>
+    <tr>
+      <td>Mata-cacau</td>
+      <td>33</td>
+      <td>1</td>
+      <td>2.954342</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>10</td>
+      <td>23</td>
+      <td>30.303030</td>
+      <td>29.490000</td>
+      <td>22.95</td>
+      <td>32</td>
+      <td>9.937500</td>
+      <td>1.179414</td>
+      <td>1.632120</td>
+      <td>5.673419</td>
+    </tr>
+    <tr>
+      <td>Folheiro</td>
+      <td>31</td>
+      <td>1</td>
+      <td>2.775291</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>31</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>38.593548</td>
+      <td>31.70</td>
+      <td>31</td>
+      <td>20.741935</td>
+      <td>5.133136</td>
+      <td>7.103436</td>
+      <td>10.965684</td>
+    </tr>
+    <tr>
+      <td>Pau-ferro</td>
+      <td>30</td>
+      <td>2</td>
+      <td>2.685765</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>28</td>
+      <td>2</td>
+      <td>93.333333</td>
+      <td>25.517857</td>
+      <td>21.15</td>
+      <td>28</td>
+      <td>15.892857</td>
+      <td>1.892279</td>
+      <td>2.618611</td>
+      <td>7.478289</td>
+    </tr>
+    <tr>
+      <td>Gonçalo Alves</td>
+      <td>29</td>
+      <td>1</td>
+      <td>2.596240</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>27</td>
+      <td>2</td>
+      <td>93.103448</td>
+      <td>8.655556</td>
+      <td>7.80</td>
+      <td>27</td>
+      <td>9.466667</td>
+      <td>0.198165</td>
+      <td>0.274228</td>
+      <td>3.957424</td>
+    </tr>
+    <tr>
+      <td>Pitomba</td>
+      <td>29</td>
+      <td>1</td>
+      <td>2.596240</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>28</td>
+      <td>1</td>
+      <td>96.551724</td>
+      <td>22.910714</td>
+      <td>17.70</td>
+      <td>28</td>
+      <td>16.178571</td>
+      <td>1.618245</td>
+      <td>2.239391</td>
+      <td>5.922587</td>
+    </tr>
+    <tr>
+      <td>Jacarandá-da-bahia</td>
+      <td>27</td>
+      <td>3</td>
+      <td>2.417189</td>
+      <td>2.912621</td>
+      <td>3.260870</td>
+      <td>21</td>
+      <td>6</td>
+      <td>77.777778</td>
+      <td>17.704762</td>
+      <td>15.40</td>
+      <td>26</td>
+      <td>12.096154</td>
+      <td>0.590649</td>
+      <td>0.817364</td>
+      <td>6.495422</td>
+    </tr>
+    <tr>
+      <td>Sucupiruçu</td>
+      <td>27</td>
+      <td>1</td>
+      <td>2.417189</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>22</td>
+      <td>5</td>
+      <td>81.481481</td>
+      <td>39.572727</td>
+      <td>29.85</td>
+      <td>22</td>
+      <td>19.636364</td>
+      <td>3.603226</td>
+      <td>4.986286</td>
+      <td>8.490432</td>
+    </tr>
+    <tr>
+      <td>Pau-óleo / Copaíba</td>
+      <td>26</td>
+      <td>1</td>
+      <td>2.327663</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>25</td>
+      <td>1</td>
+      <td>96.153846</td>
+      <td>24.828000</td>
+      <td>21.80</td>
+      <td>25</td>
+      <td>14.400000</td>
+      <td>1.775681</td>
+      <td>2.457257</td>
+      <td>5.871877</td>
+    </tr>
+    <tr>
+      <td>Buranhém</td>
+      <td>24</td>
+      <td>1</td>
+      <td>2.148612</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>21</td>
+      <td>3</td>
+      <td>87.500000</td>
+      <td>27.319048</td>
+      <td>20.90</td>
+      <td>21</td>
+      <td>15.523810</td>
+      <td>1.701791</td>
+      <td>2.355005</td>
+      <td>5.590574</td>
+    </tr>
+    <tr>
+      <td>Falso-angelim (Dimorphandra jorgei)</td>
+      <td>24</td>
+      <td>2</td>
+      <td>2.148612</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>24</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>37.525000</td>
+      <td>37.25</td>
+      <td>24</td>
+      <td>17.375000</td>
+      <td>3.087455</td>
+      <td>4.272542</td>
+      <td>8.595068</td>
+    </tr>
+    <tr>
+      <td>Itapicuru</td>
+      <td>24</td>
+      <td>1</td>
+      <td>2.148612</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>10</td>
+      <td>14</td>
+      <td>41.666667</td>
+      <td>42.870000</td>
+      <td>39.05</td>
+      <td>24</td>
+      <td>16.916667</td>
+      <td>1.569716</td>
+      <td>2.172235</td>
+      <td>5.407804</td>
+    </tr>
+    <tr>
+      <td>Araçá-d'água</td>
+      <td>23</td>
+      <td>1</td>
+      <td>2.059087</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>23</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>28.078261</td>
+      <td>19.50</td>
+      <td>23</td>
+      <td>13.586957</td>
+      <td>1.947057</td>
+      <td>2.694414</td>
+      <td>5.840458</td>
+    </tr>
+    <tr>
+      <td>Boleira</td>
+      <td>23</td>
+      <td>1</td>
+      <td>2.059087</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>20</td>
+      <td>3</td>
+      <td>86.956522</td>
+      <td>33.040000</td>
+      <td>29.30</td>
+      <td>20</td>
+      <td>15.025000</td>
+      <td>2.047893</td>
+      <td>2.833955</td>
+      <td>5.979998</td>
+    </tr>
+    <tr>
+      <td>Maçaranduba</td>
+      <td>23</td>
+      <td>2</td>
+      <td>2.059087</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>22</td>
+      <td>1</td>
+      <td>95.652174</td>
+      <td>23.681818</td>
+      <td>18.00</td>
+      <td>23</td>
+      <td>15.456522</td>
+      <td>1.319920</td>
+      <td>1.826557</td>
+      <td>6.059557</td>
+    </tr>
+    <tr>
+      <td>Murta (Myrtaceae)</td>
+      <td>23</td>
+      <td>1</td>
+      <td>2.059087</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>21</td>
+      <td>2</td>
+      <td>91.304348</td>
+      <td>17.452381</td>
+      <td>16.70</td>
+      <td>21</td>
+      <td>10.809524</td>
+      <td>0.558216</td>
+      <td>0.772482</td>
+      <td>3.918525</td>
+    </tr>
+    <tr>
+      <td>Roxinho</td>
+      <td>23</td>
+      <td>2</td>
+      <td>2.059087</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>22</td>
+      <td>1</td>
+      <td>95.652174</td>
+      <td>27.822727</td>
+      <td>22.75</td>
+      <td>22</td>
+      <td>17.909091</td>
+      <td>1.612412</td>
+      <td>2.231320</td>
+      <td>6.464319</td>
+    </tr>
+    <tr>
+      <td>Putumuju-piloso</td>
+      <td>21</td>
+      <td>1</td>
+      <td>1.880036</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>12</td>
+      <td>9</td>
+      <td>57.142857</td>
+      <td>35.150000</td>
+      <td>36.95</td>
+      <td>19</td>
+      <td>13.473684</td>
+      <td>1.382964</td>
+      <td>1.913800</td>
+      <td>4.880792</td>
+    </tr>
+    <tr>
+      <td>Sapucaia</td>
+      <td>21</td>
+      <td>1</td>
+      <td>1.880036</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>20</td>
+      <td>1</td>
+      <td>95.238095</td>
+      <td>20.005000</td>
+      <td>18.30</td>
+      <td>20</td>
+      <td>13.050000</td>
+      <td>0.769482</td>
+      <td>1.064840</td>
+      <td>4.031832</td>
+    </tr>
+    <tr>
+      <td>Jatobá</td>
+      <td>20</td>
+      <td>2</td>
+      <td>1.790510</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>18</td>
+      <td>2</td>
+      <td>90.000000</td>
+      <td>17.066667</td>
+      <td>14.90</td>
+      <td>18</td>
+      <td>13.333333</td>
+      <td>0.575698</td>
+      <td>0.796674</td>
+      <td>4.761098</td>
+    </tr>
+    <tr>
+      <td>Murta (Rutaceae)</td>
+      <td>20</td>
+      <td>1</td>
+      <td>1.790510</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>13</td>
+      <td>7</td>
+      <td>65.000000</td>
+      <td>14.107692</td>
+      <td>13.90</td>
+      <td>17</td>
+      <td>7.264706</td>
+      <td>0.211552</td>
+      <td>0.292754</td>
+      <td>3.170220</td>
+    </tr>
+    <tr>
+      <td>Não identificada 3</td>
+      <td>20</td>
+      <td>1</td>
+      <td>1.790510</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>8</td>
+      <td>12</td>
+      <td>40.000000</td>
+      <td>16.387500</td>
+      <td>15.35</td>
+      <td>15</td>
+      <td>9.033333</td>
+      <td>0.197986</td>
+      <td>0.273980</td>
+      <td>3.151447</td>
+    </tr>
+    <tr>
+      <td>Angelim-côco</td>
+      <td>19</td>
+      <td>1</td>
+      <td>1.700985</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>16</td>
+      <td>15.789474</td>
+      <td>20.000000</td>
+      <td>17.00</td>
+      <td>18</td>
+      <td>9.666667</td>
+      <td>0.098489</td>
+      <td>0.136293</td>
+      <td>2.924234</td>
+    </tr>
+    <tr>
+      <td>Cajazeira</td>
+      <td>18</td>
+      <td>2</td>
+      <td>1.611459</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>15</td>
+      <td>3</td>
+      <td>83.333333</td>
+      <td>44.686667</td>
+      <td>41.10</td>
+      <td>18</td>
+      <td>14.277778</td>
+      <td>2.763217</td>
+      <td>3.823848</td>
+      <td>7.609221</td>
+    </tr>
+    <tr>
+      <td>Vinhático</td>
+      <td>18</td>
+      <td>1</td>
+      <td>1.611459</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>18</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>38.277778</td>
+      <td>36.20</td>
+      <td>18</td>
+      <td>21.722222</td>
+      <td>2.484580</td>
+      <td>3.438260</td>
+      <td>6.136676</td>
+    </tr>
+    <tr>
+      <td>Barriguda</td>
+      <td>17</td>
+      <td>1</td>
+      <td>1.521934</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>15</td>
+      <td>2</td>
+      <td>88.235294</td>
+      <td>50.380000</td>
+      <td>45.50</td>
+      <td>15</td>
+      <td>14.033333</td>
+      <td>4.054416</td>
+      <td>5.610661</td>
+      <td>8.219551</td>
+    </tr>
+    <tr>
+      <td>Diospyros sp. (Ebenaceae)</td>
+      <td>17</td>
+      <td>1</td>
+      <td>1.521934</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>17</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>13.911765</td>
+      <td>14.00</td>
+      <td>17</td>
+      <td>11.117647</td>
+      <td>0.274439</td>
+      <td>0.379780</td>
+      <td>2.988670</td>
+    </tr>
+    <tr>
+      <td>Não identificada 4</td>
+      <td>17</td>
+      <td>1</td>
+      <td>1.521934</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>17</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>20.529412</td>
+      <td>18.40</td>
+      <td>17</td>
+      <td>15.411765</td>
+      <td>0.613409</td>
+      <td>0.848859</td>
+      <td>3.457749</td>
+    </tr>
+    <tr>
+      <td>Teca</td>
+      <td>17</td>
+      <td>1</td>
+      <td>1.521934</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>6</td>
+      <td>11</td>
+      <td>35.294118</td>
+      <td>34.316667</td>
+      <td>34.20</td>
+      <td>6</td>
+      <td>14.500000</td>
+      <td>0.644018</td>
+      <td>0.891217</td>
+      <td>3.500108</td>
+    </tr>
+    <tr>
+      <td>Arariba-branca</td>
+      <td>16</td>
+      <td>1</td>
+      <td>1.432408</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>13</td>
+      <td>18.750000</td>
+      <td>22.433333</td>
+      <td>19.00</td>
+      <td>16</td>
+      <td>10.000000</td>
+      <td>0.130399</td>
+      <td>0.180451</td>
+      <td>2.699816</td>
+    </tr>
+    <tr>
+      <td>Biriba-branca</td>
+      <td>16</td>
+      <td>1</td>
+      <td>1.432408</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>15</td>
+      <td>1</td>
+      <td>93.750000</td>
+      <td>17.940000</td>
+      <td>17.50</td>
+      <td>16</td>
+      <td>14.406250</td>
+      <td>0.417902</td>
+      <td>0.578309</td>
+      <td>3.097674</td>
+    </tr>
+    <tr>
+      <td>Claraíba-parda</td>
+      <td>16</td>
+      <td>1</td>
+      <td>1.432408</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>13</td>
+      <td>3</td>
+      <td>81.250000</td>
+      <td>34.061538</td>
+      <td>20.60</td>
+      <td>13</td>
+      <td>14.692308</td>
+      <td>1.917890</td>
+      <td>2.654052</td>
+      <td>5.173417</td>
+    </tr>
+    <tr>
+      <td>Jenipapeiro</td>
+      <td>16</td>
+      <td>2</td>
+      <td>1.432408</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>13</td>
+      <td>3</td>
+      <td>81.250000</td>
+      <td>25.769231</td>
+      <td>23.40</td>
+      <td>14</td>
+      <td>12.571429</td>
+      <td>0.718745</td>
+      <td>0.994627</td>
+      <td>4.600948</td>
+    </tr>
+    <tr>
+      <td>Bapeba 1</td>
+      <td>15</td>
+      <td>1</td>
+      <td>1.342883</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>15</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>26.126667</td>
+      <td>24.80</td>
+      <td>15</td>
+      <td>15.820000</td>
+      <td>1.036896</td>
+      <td>1.434898</td>
+      <td>3.864737</td>
+    </tr>
+    <tr>
+      <td>Jequitibá</td>
+      <td>15</td>
+      <td>2</td>
+      <td>1.342883</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>14</td>
+      <td>1</td>
+      <td>93.333333</td>
+      <td>14.685714</td>
+      <td>3.80</td>
+      <td>15</td>
+      <td>7.010000</td>
+      <td>0.786113</td>
+      <td>1.087854</td>
+      <td>4.604650</td>
+    </tr>
+    <tr>
+      <td>Não identificada 1</td>
+      <td>14</td>
+      <td>1</td>
+      <td>1.253357</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>10</td>
+      <td>4</td>
+      <td>71.428571</td>
+      <td>54.440000</td>
+      <td>49.75</td>
+      <td>14</td>
+      <td>17.500000</td>
+      <td>2.541178</td>
+      <td>3.516582</td>
+      <td>5.856896</td>
+    </tr>
+    <tr>
+      <td>Pau-óleo-branco</td>
+      <td>14</td>
+      <td>1</td>
+      <td>1.253357</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>14</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>17.950000</td>
+      <td>17.75</td>
+      <td>14</td>
+      <td>15.071429</td>
+      <td>0.383762</td>
+      <td>0.531065</td>
+      <td>2.871379</td>
+    </tr>
+    <tr>
+      <td>Angico</td>
+      <td>13</td>
+      <td>1</td>
+      <td>1.163832</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>13</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>43.084615</td>
+      <td>37.50</td>
+      <td>13</td>
+      <td>18.269231</td>
+      <td>2.667859</td>
+      <td>3.691888</td>
+      <td>5.942676</td>
+    </tr>
+    <tr>
+      <td>Celastraceae</td>
+      <td>13</td>
+      <td>1</td>
+      <td>1.163832</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>13</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>21.253846</td>
+      <td>21.50</td>
+      <td>13</td>
+      <td>14.461538</td>
+      <td>0.477268</td>
+      <td>0.660463</td>
+      <td>2.911251</td>
+    </tr>
+    <tr>
+      <td>Sapotaceae</td>
+      <td>13</td>
+      <td>1</td>
+      <td>1.163832</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>12</td>
+      <td>7.692308</td>
+      <td>14.000000</td>
+      <td>14.00</td>
+      <td>12</td>
+      <td>7.750000</td>
+      <td>0.015394</td>
+      <td>0.021303</td>
+      <td>2.272091</td>
+    </tr>
+    <tr>
+      <td>Ipêzinho</td>
+      <td>11</td>
+      <td>1</td>
+      <td>0.984781</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>11</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>15.763636</td>
+      <td>16.50</td>
+      <td>11</td>
+      <td>8.454545</td>
+      <td>0.251816</td>
+      <td>0.348473</td>
+      <td>2.420210</td>
+    </tr>
+    <tr>
+      <td>Não identificada 2</td>
+      <td>11</td>
+      <td>1</td>
+      <td>0.984781</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>11</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>65.690909</td>
+      <td>60.30</td>
+      <td>11</td>
+      <td>17.363636</td>
+      <td>4.464773</td>
+      <td>6.178529</td>
+      <td>8.250267</td>
+    </tr>
+    <tr>
+      <td>Ipêzinho-de-jardim</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0.895255</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>9</td>
+      <td>1</td>
+      <td>90.000000</td>
+      <td>8.733333</td>
+      <td>8.50</td>
+      <td>10</td>
+      <td>8.480000</td>
+      <td>0.054293</td>
+      <td>0.075133</td>
+      <td>2.057344</td>
+    </tr>
+    <tr>
+      <td>Mucitaíba-amarela</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0.895255</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>9</td>
+      <td>1</td>
+      <td>90.000000</td>
+      <td>38.622222</td>
+      <td>36.20</td>
+      <td>9</td>
+      <td>16.444444</td>
+      <td>1.287360</td>
+      <td>1.781500</td>
+      <td>3.763712</td>
+    </tr>
+    <tr>
+      <td>Cabeludinha (Myrtaceae)</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0.716204</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>5</td>
+      <td>37.500000</td>
+      <td>6.900000</td>
+      <td>6.50</td>
+      <td>8</td>
+      <td>5.125000</td>
+      <td>0.011545</td>
+      <td>0.015976</td>
+      <td>1.819136</td>
+    </tr>
+    <tr>
+      <td>Jitaí</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0.716204</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>7</td>
+      <td>12.500000</td>
+      <td>41.600000</td>
+      <td>41.60</td>
+      <td>8</td>
+      <td>14.250000</td>
+      <td>0.135918</td>
+      <td>0.188088</td>
+      <td>1.991249</td>
+    </tr>
+    <tr>
+      <td>Mucitaíba-branca</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0.716204</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>8</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>18.600000</td>
+      <td>17.35</td>
+      <td>8</td>
+      <td>14.625000</td>
+      <td>0.232717</td>
+      <td>0.322042</td>
+      <td>2.125203</td>
+    </tr>
+    <tr>
+      <td>Rosa-branca</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0.716204</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>6</td>
+      <td>2</td>
+      <td>75.000000</td>
+      <td>30.266667</td>
+      <td>23.25</td>
+      <td>7</td>
+      <td>14.571429</td>
+      <td>0.516043</td>
+      <td>0.714120</td>
+      <td>2.517281</td>
+    </tr>
+    <tr>
+      <td>Arapati</td>
+      <td>7</td>
+      <td>1</td>
+      <td>0.626679</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>7</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>17.600000</td>
+      <td>14.30</td>
+      <td>7</td>
+      <td>9.571429</td>
+      <td>0.207581</td>
+      <td>0.287258</td>
+      <td>2.000894</td>
+    </tr>
+    <tr>
+      <td>Não identificada 6 (fabaceae)</td>
+      <td>7</td>
+      <td>1</td>
+      <td>0.626679</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>5</td>
+      <td>2</td>
+      <td>71.428571</td>
+      <td>24.800000</td>
+      <td>25.30</td>
+      <td>7</td>
+      <td>13.000000</td>
+      <td>0.307483</td>
+      <td>0.425508</td>
+      <td>2.139143</td>
+    </tr>
+    <tr>
+      <td>Putumuju-gigante</td>
+      <td>7</td>
+      <td>1</td>
+      <td>0.626679</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>7</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>25.585714</td>
+      <td>20.90</td>
+      <td>7</td>
+      <td>17.500000</td>
+      <td>0.439690</td>
+      <td>0.608461</td>
+      <td>2.322096</td>
+    </tr>
+    <tr>
+      <td>Arariba- vermelha</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.537153</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>6</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>19.650000</td>
+      <td>20.20</td>
+      <td>6</td>
+      <td>13.166667</td>
+      <td>0.189382</td>
+      <td>0.262075</td>
+      <td>1.886184</td>
+    </tr>
+    <tr>
+      <td>Eritrina-mulungu</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.537153</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>5</td>
+      <td>1</td>
+      <td>83.333333</td>
+      <td>53.340000</td>
+      <td>47.20</td>
+      <td>6</td>
+      <td>15.666667</td>
+      <td>1.283491</td>
+      <td>1.776145</td>
+      <td>3.400255</td>
+    </tr>
+    <tr>
+      <td>Juerana</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.537153</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>4</td>
+      <td>2</td>
+      <td>66.666667</td>
+      <td>49.125000</td>
+      <td>42.75</td>
+      <td>6</td>
+      <td>11.833333</td>
+      <td>0.804410</td>
+      <td>1.113175</td>
+      <td>2.737284</td>
+    </tr>
+    <tr>
+      <td>Juerana-branca</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.537153</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>3</td>
+      <td>50.000000</td>
+      <td>23.266667</td>
+      <td>23.60</td>
+      <td>3</td>
+      <td>13.666667</td>
+      <td>0.146917</td>
+      <td>0.203309</td>
+      <td>1.827419</td>
+    </tr>
+    <tr>
+      <td>Prunus selowii</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.537153</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>6</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>19.900000</td>
+      <td>22.30</td>
+      <td>6</td>
+      <td>10.833333</td>
+      <td>0.212681</td>
+      <td>0.294317</td>
+      <td>1.918426</td>
+    </tr>
+    <tr>
+      <td>Pau-brasil (folha de laranja)</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0.447628</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>4</td>
+      <td>20.000000</td>
+      <td>24.000000</td>
+      <td>24.00</td>
+      <td>5</td>
+      <td>12.400000</td>
+      <td>0.045239</td>
+      <td>0.062603</td>
+      <td>1.597188</td>
+    </tr>
+    <tr>
+      <td>Óleo-comumbá</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0.447628</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>5</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>26.940000</td>
+      <td>29.90</td>
+      <td>5</td>
+      <td>14.800000</td>
+      <td>0.305230</td>
+      <td>0.422389</td>
+      <td>1.956974</td>
+    </tr>
+    <tr>
+      <td>Bapeba 3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.268577</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>19.266667</td>
+      <td>18.10</td>
+      <td>3</td>
+      <td>12.666667</td>
+      <td>0.088221</td>
+      <td>0.122083</td>
+      <td>1.477616</td>
+    </tr>
+    <tr>
+      <td>Cedro</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0.268577</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>1</td>
+      <td>2</td>
+      <td>33.333333</td>
+      <td>41.500000</td>
+      <td>41.50</td>
+      <td>2</td>
+      <td>14.500000</td>
+      <td>0.135265</td>
+      <td>0.187185</td>
+      <td>2.629675</td>
+    </tr>
+    <tr>
+      <td>Copaíba</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.268577</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>54.666667</td>
+      <td>56.00</td>
+      <td>3</td>
+      <td>19.333333</td>
+      <td>0.707964</td>
+      <td>0.979709</td>
+      <td>2.335242</td>
+    </tr>
+    <tr>
+      <td>Gindiba</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.268577</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>16.366667</td>
+      <td>17.20</td>
+      <td>3</td>
+      <td>12.000000</td>
+      <td>0.065406</td>
+      <td>0.090511</td>
+      <td>1.446044</td>
+    </tr>
+    <tr>
+      <td>Penão</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.268577</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>53.100000</td>
+      <td>53.20</td>
+      <td>3</td>
+      <td>23.000000</td>
+      <td>0.676939</td>
+      <td>0.936774</td>
+      <td>2.292307</td>
+    </tr>
+    <tr>
+      <td>Pouteria procera (Sapotaceae)</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.268577</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>3</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>14.866667</td>
+      <td>14.10</td>
+      <td>3</td>
+      <td>12.333333</td>
+      <td>0.052523</td>
+      <td>0.072683</td>
+      <td>1.428216</td>
+    </tr>
+    <tr>
+      <td>Eucalipto</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.179051</td>
+      <td>1.941748</td>
+      <td>2.173913</td>
+      <td>2</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>72.350000</td>
+      <td>72.35</td>
+      <td>2</td>
+      <td>27.500000</td>
+      <td>0.830267</td>
+      <td>1.148956</td>
+      <td>3.501921</td>
+    </tr>
+    <tr>
+      <td>Mucitaíba amarela</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.179051</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>2</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>24.850000</td>
+      <td>24.85</td>
+      <td>2</td>
+      <td>11.500000</td>
+      <td>0.097142</td>
+      <td>0.134429</td>
+      <td>1.400436</td>
+    </tr>
+    <tr>
+      <td>Não identificada 5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.179051</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>2</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>14.350000</td>
+      <td>14.35</td>
+      <td>2</td>
+      <td>13.500000</td>
+      <td>0.033289</td>
+      <td>0.046067</td>
+      <td>1.312074</td>
+    </tr>
+    <tr>
+      <td>Bacupari</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000000</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1</td>
+      <td>9.000000</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Bapeba 2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>39.500000</td>
+      <td>39.50</td>
+      <td>1</td>
+      <td>20.000000</td>
+      <td>0.122542</td>
+      <td>0.169578</td>
+      <td>1.346060</td>
+    </tr>
+    <tr>
+      <td>Eritrina-do-alto</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>33.800000</td>
+      <td>33.80</td>
+      <td>1</td>
+      <td>19.000000</td>
+      <td>0.089727</td>
+      <td>0.124168</td>
+      <td>1.300650</td>
+    </tr>
+    <tr>
+      <td>Jatobá piloso</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>17.400000</td>
+      <td>17.40</td>
+      <td>1</td>
+      <td>10.000000</td>
+      <td>0.023779</td>
+      <td>0.032906</td>
+      <td>1.209388</td>
+    </tr>
+    <tr>
+      <td>Não identificada 7</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>30.500000</td>
+      <td>30.50</td>
+      <td>1</td>
+      <td>18.000000</td>
+      <td>0.073062</td>
+      <td>0.101106</td>
+      <td>1.277588</td>
+    </tr>
+    <tr>
+      <td>Pau-brasil (folha de arruda)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000000</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1</td>
+      <td>3.000000</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Pau-d'alho</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.089526</td>
+      <td>0.970874</td>
+      <td>1.086957</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.000000</td>
+      <td>7.500000</td>
+      <td>7.50</td>
+      <td>1</td>
+      <td>11.000000</td>
+      <td>0.004418</td>
+      <td>0.006114</td>
+      <td>1.182596</td>
+    </tr>
+  </tbody>
+</table><h2>Indicadores pendentes de definição</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>indicador</th>
+      <th>motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Indicador composto de saúde</td>
+      <td>Escala e interpretação não definidas (M12); fitossanidade fora deste arquivo.</td>
+    </tr>
+    <tr>
+      <td>Dano leve / dano severo</td>
+      <td>Não há coleta de gradação de dano (D6 / M2).</td>
+    </tr>
+    <tr>
+      <td>Classificação definitiva do povoamento</td>
+      <td>Limiares sem origem documentada (M13).</td>
+    </tr>
+    <tr>
+      <td>Diâmetro médio de referência do projeto</td>
+      <td>dg e média aritmética são calculados e definidos pela literatura; qual deles será o 'diâmetro médio' oficial do projeto é decisão M5 da equipe.</td>
+    </tr>
+    <tr>
+      <td>Multifuste sem padrão estrutural</td>
+      <td>Indícios de multifuste cujos fustes não podem ser extraídos sem ambiguidade (números por extenso, listas sem quantidade declarada, contagem divergente, DAP da coluna diferente dos fustes): revisão humana. Os extraíveis seguem a regra de Finger (1992).</td>
+    </tr>
+    <tr>
+      <td>Mortalidade baseada apenas em registros ausentes</td>
+      <td>Ausência de registro não é morte.</td>
+    </tr>
+    <tr>
+      <td>Mortalidade / sobrevivência</td>
+      <td>O desenho (36 plantas por parcela) é documentado na literatura, mas o arquivo não tem estado vital estruturado (vivo / morto / não localizado / não avaliado). Dado ausente, não lacuna de método.</td>
+    </tr>
+    <tr>
+      <td>Intensidade de serrapilheira</td>
+      <td>Sem escala definida (M10).</td>
+    </tr>
+    <tr>
+      <td>Ocorrência confirmada de fauna</td>
+      <td>Texto livre gera apenas menções potenciais.</td>
+    </tr>
+    <tr>
+      <td>Nota (*) da definição de HESGCOPA</td>
+      <td>A imagem de definições das siglas traz um asterisco sem a nota correspondente. Comprimento e proporção de copa são calculados pela definição fornecida, com ressalva.</td>
+    </tr>
+  </tbody>
+</table></body></html>

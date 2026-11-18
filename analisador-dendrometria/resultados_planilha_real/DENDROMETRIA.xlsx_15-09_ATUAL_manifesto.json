@@ -1,0 +1,1122 @@
+{
+  "analisador": "Analisador de Dendrometria",
+  "versao_analisador": "1.1.0",
+  "versao_metodologica": "dendro-2026.11-r1",
+  "data_hora_execucao": "2026-11-17T17:49:27-03:00",
+  "arquivos": [
+    {
+      "nome": "DENDROMETRIA.xlsx_15-09_ATUAL.xlsx",
+      "sha256": "07fdf7838a722b54ad9fcc821d826a275c0575845a3e0fd20e85de9a7523ff00",
+      "tamanho_bytes": 1148787,
+      "formato": "xlsx",
+      "codificacao": null,
+      "separador": null
+    }
+  ],
+  "planilhas_processadas": [
+    "dendrometria"
+  ],
+  "planilhas_disponiveis": [
+    "dendrometria",
+    "MAPA"
+  ],
+  "numero_linhas_fisicas": 1225,
+  "registros_interpretados": 1131,
+  "linhas_vazias_ignoradas": 93,
+  "registros_por_status": {
+    "VÁLIDO": 773,
+    "VÁLIDO COM RESSALVA": 342,
+    "INVÁLIDO": 14,
+    "INCONCLUSIVO": 2
+  },
+  "registros_validos": 773,
+  "registros_com_ressalva": 342,
+  "registros_invalidos": 14,
+  "registros_inconclusivos": 2,
+  "avisos": 475,
+  "ocorrencias_bloqueantes": 14,
+  "mapeamento_colunas": {
+    "parcela": "Parcela",
+    "arvore": "Árvore",
+    "plantio": "Plantio",
+    "replantio": "Replantio",
+    "especie": "Nome Comum",
+    "data_medicao": "Data Medição",
+    "dap_cm": "DAP (cm)",
+    "hesg_m": "HESG (m)",
+    "hesgcopa_m": "HESGCOPA (m)",
+    "hc_m": "HC (m)",
+    "ht_m": "HT (m)",
+    "observacao": "Observação"
+  },
+  "filtros_aplicados": {},
+  "registros_apos_filtro": 1131,
+  "parametros": {
+    "incluir_extremos": false,
+    "largura_classe_cm": 5.0,
+    "implantados": 36,
+    "mortalidade_ativa": true,
+    "metodologia": {
+      "area_parcela": {
+        "1": 144.0,
+        "2": 144.0,
+        "3": 144.0,
+        "4": 144.0,
+        "5": 144.0,
+        "6": 144.0,
+        "7": 144.0,
+        "8": 144.0,
+        "9": 144.0,
+        "10": 144.0,
+        "11": 144.0,
+        "12": 144.0,
+        "13": 144.0,
+        "14": 144.0,
+        "15": 144.0,
+        "16": 144.0,
+        "17": 144.0,
+        "18": 144.0,
+        "19": 144.0,
+        "20": 144.0,
+        "21": 144.0,
+        "22": 144.0,
+        "23": 144.0,
+        "24": 144.0,
+        "25": 144.0,
+        "26": 144.0,
+        "27": 144.0,
+        "28": 144.0,
+        "29": 144.0,
+        "30": 144.0,
+        "31": 144.0,
+        "32": 144.0,
+        "33": 144.0,
+        "34": 144.0,
+        "35": 144.0,
+        "36": 144.0,
+        "37": 144.0,
+        "38": 144.0,
+        "39": 144.0,
+        "40": 144.0,
+        "41": 144.0,
+        "42": 144.0,
+        "43": 144.0,
+        "44": 144.0,
+        "45": 144.0,
+        "46": 144.0,
+        "47": 144.0,
+        "48": 144.0,
+        "49": 144.0,
+        "50": 144.0,
+        "51": 144.0,
+        "52": 144.0,
+        "53": 144.0,
+        "54": 144.0,
+        "55": 144.0,
+        "56": 144.0,
+        "57": 144.0,
+        "58": 144.0,
+        "59": 144.0,
+        "60": 144.0,
+        "61": 144.0,
+        "62": 144.0,
+        "63": 144.0,
+        "64": 144.0,
+        "65": 144.0,
+        "66": 144.0,
+        "67": 144.0,
+        "68": 144.0,
+        "69": 144.0,
+        "70": 144.0,
+        "71": 144.0,
+        "72": 144.0,
+        "73": 144.0,
+        "74": 144.0,
+        "75": 144.0,
+        "76": 144.0,
+        "77": 144.0,
+        "78": 144.0,
+        "79": 144.0,
+        "80": 144.0,
+        "81": 144.0,
+        "82": 144.0,
+        "83": 144.0,
+        "84": 144.0,
+        "85": 144.0,
+        "86": 144.0,
+        "87": 144.0,
+        "88": 144.0,
+        "89": 144.0,
+        "90": 144.0,
+        "91": 144.0,
+        "92": 144.0,
+        "93": 144.0,
+        "94": 144.0,
+        "95": 144.0,
+        "96": 144.0,
+        "97": 144.0,
+        "98": 144.0
+      },
+      "unidade_area": "m²",
+      "desenho_amostral": "censo de parcelas monoespecíficas do arboreto da ESARM/CEPLAC (todas as árvores medidas, sem amostragem); 36 plantas em grade 6 × 6, espaçamento 2 × 2 m → área útil 144 m² (36 × 4 m²). Os 100 m² citados por Barazetti et al. correspondem ao polígono entre as árvores externas ((6 − 1) × 2 m)²; a área útil é a que reproduz a densidade do espaçamento (2.500 plantas/ha). Corredores de 4 m entre parcelas não entram em A.",
+      "fonte": "literatura — Barazetti et al. (2011), Unoesc & Ciência – ACET 2(1):31-46 — arboreto da ESARM/CEPLAC, Ilhéus: 98 parcelas, 36 indivíduos da mesma espécie, 6 linhas × 6 colunas, espaçamento 2 × 2 m; Gama-Rodrigues, Barros & Mendonça (1999), R. Bras. Ci. Solo 23:581-592 — arboreto CEPLAC/ESPAB: parcelas puras de 144 m², 2 × 2 m, 36 árvores por espécie"
+    }
+  },
+  "indicadores_calculados": [
+    {
+      "id": "linhas_importadas",
+      "nome": "Total de linhas importadas (físicas, incl. cabeçalho e vazias)",
+      "valor": 1225,
+      "unidade": "linhas",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": null
+    },
+    {
+      "id": "registros_validos",
+      "nome": "Registros válidos",
+      "valor": 773,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1131
+    },
+    {
+      "id": "registros_ressalva",
+      "nome": "Registros válidos com ressalva",
+      "valor": 342,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1131
+    },
+    {
+      "id": "registros_invalidos",
+      "nome": "Registros inválidos",
+      "valor": 14,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1131
+    },
+    {
+      "id": "registros_inconclusivos",
+      "nome": "Registros inconclusivos",
+      "valor": 2,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1131
+    },
+    {
+      "id": "parcelas",
+      "nome": "Parcelas identificadas",
+      "valor": 103,
+      "unidade": "parcelas",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": null
+    },
+    {
+      "id": "individuos",
+      "nome": "Indivíduos únicos identificáveis",
+      "valor": 1117,
+      "unidade": "indivíduos",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1117
+    },
+    {
+      "id": "especies",
+      "nome": "Espécies identificadas (riqueza observada)",
+      "valor": 76,
+      "unidade": "táxons",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": null,
+      "potencial": null
+    },
+    {
+      "id": "medicoes",
+      "nome": "Medições dendrométricas",
+      "valor": 1115,
+      "unidade": "medições",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1117
+    },
+    {
+      "id": "cobertura_dap",
+      "nome": "Cobertura de DAP",
+      "valor": 77.08146821844225,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "cobertura_ht",
+      "nome": "Cobertura de altura total (HT)",
+      "valor": 93.7332139659803,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_ausentes",
+      "nome": "DAPs ausentes",
+      "valor": 12,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_invalidos",
+      "nome": "DAPs inválidos",
+      "valor": 140,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1117
+    },
+    {
+      "id": "duplicidades",
+      "nome": "Duplicidades de medição (Parcela + Árvore + Data)",
+      "valor": 0,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 1131
+    },
+    {
+      "id": "campanhas",
+      "nome": "Possíveis campanhas",
+      "valor": 1,
+      "unidade": "campanhas",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": null,
+      "potencial": null
+    },
+    {
+      "id": "obs_revisao",
+      "nome": "Observações que exigem revisão",
+      "valor": 239,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": null,
+      "potencial": 316
+    },
+    {
+      "id": "dap_n",
+      "nome": "Contagem de DAP elegíveis",
+      "valor": 861,
+      "unidade": "valores",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_media",
+      "nome": "Média aritmética do DAP",
+      "valor": 26.54123112659698,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_mediana",
+      "nome": "Mediana de DAP",
+      "valor": 20.4,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_min",
+      "nome": "Mínimo de DAP",
+      "valor": 1.5,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_max",
+      "nome": "Máximo de DAP",
+      "valor": 125.0,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_q1",
+      "nome": "1º quartil de DAP",
+      "valor": 13.4,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_q3",
+      "nome": "3º quartil de DAP",
+      "valor": 35.5,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_dp",
+      "nome": "Desvio-padrão amostral de DAP",
+      "valor": 19.09454160087854,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "dap_cv",
+      "nome": "Coeficiente de variação de DAP",
+      "valor": 71.94293855398399,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_n",
+      "nome": "Contagem de HESG elegíveis",
+      "valor": 568,
+      "unidade": "valores",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_media",
+      "nome": "Média de HESG",
+      "valor": 4.4817605633802815,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_mediana",
+      "nome": "Mediana de HESG",
+      "valor": 3.8499999999999996,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_min",
+      "nome": "Mínimo de HESG",
+      "valor": 0.2,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_max",
+      "nome": "Máximo de HESG",
+      "valor": 23.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_q1",
+      "nome": "1º quartil de HESG",
+      "valor": 2.45,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_q3",
+      "nome": "3º quartil de HESG",
+      "valor": 6.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_dp",
+      "nome": "Desvio-padrão amostral de HESG",
+      "valor": 2.9582839296677044,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_cv",
+      "nome": "Coeficiente de variação de HESG",
+      "valor": 66.00718373577003,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesg_m_ausentes",
+      "nome": "HESG ausentes",
+      "valor": 533,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": 568,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_n",
+      "nome": "Contagem de HESGCOPA elegíveis",
+      "valor": 901,
+      "unidade": "valores",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_media",
+      "nome": "Média de HESGCOPA",
+      "valor": 7.772885682574917,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_mediana",
+      "nome": "Mediana de HESGCOPA",
+      "valor": 7.5,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_min",
+      "nome": "Mínimo de HESGCOPA",
+      "valor": 0.3,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_max",
+      "nome": "Máximo de HESGCOPA",
+      "valor": 25.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_q1",
+      "nome": "1º quartil de HESGCOPA",
+      "valor": 5.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_q3",
+      "nome": "3º quartil de HESGCOPA",
+      "valor": 10.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_dp",
+      "nome": "Desvio-padrão amostral de HESGCOPA",
+      "valor": 4.00250325799372,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_cv",
+      "nome": "Coeficiente de variação de HESGCOPA",
+      "valor": 51.49314452117111,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hesgcopa_m_ausentes",
+      "nome": "HESGCOPA ausentes",
+      "valor": 177,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": 901,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_n",
+      "nome": "Contagem de HC elegíveis",
+      "valor": 62,
+      "unidade": "valores",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_media",
+      "nome": "Média de HC",
+      "valor": 9.008064516129032,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_mediana",
+      "nome": "Mediana de HC",
+      "valor": 8.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_min",
+      "nome": "Mínimo de HC",
+      "valor": 2.5,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_max",
+      "nome": "Máximo de HC",
+      "valor": 20.0,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_q1",
+      "nome": "1º quartil de HC",
+      "valor": 6.625,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_q3",
+      "nome": "3º quartil de HC",
+      "valor": 10.75,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_dp",
+      "nome": "Desvio-padrão amostral de HC",
+      "valor": 3.8116430082051154,
+      "unidade": "m",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_cv",
+      "nome": "Coeficiente de variação de HC",
+      "valor": 42.31367350200844,
+      "unidade": "%",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "hc_m_ausentes",
+      "nome": "HC ausentes",
+      "valor": 1055,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": 62,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_n",
+      "nome": "Contagem de HT elegíveis",
+      "valor": 1047,
+      "unidade": "valores",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_media",
+      "nome": "Altura total média (HT)",
+      "valor": 13.554813753581662,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_mediana",
+      "nome": "Mediana de HT",
+      "valor": 13.0,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_min",
+      "nome": "Mínimo de HT",
+      "valor": 0.3,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_max",
+      "nome": "Máximo de HT",
+      "valor": 33.0,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_q1",
+      "nome": "1º quartil de HT",
+      "valor": 10.0,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_q3",
+      "nome": "3º quartil de HT",
+      "valor": 17.0,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_dp",
+      "nome": "Desvio-padrão amostral de HT",
+      "valor": 5.871475293408877,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_cv",
+      "nome": "Coeficiente de variação de HT",
+      "valor": 43.316532415337875,
+      "unidade": "%",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "ht_m_ausentes",
+      "nome": "HT ausentes",
+      "valor": 60,
+      "unidade": "registros",
+      "status": "VÁLIDO",
+      "elegivel": 1047,
+      "potencial": 1117
+    },
+    {
+      "id": "g_total",
+      "nome": "Área basal total (G)",
+      "valor": 72.26271943912789,
+      "unidade": "m²",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "g_media",
+      "nome": "Área basal média por indivíduo elegível",
+      "valor": 0.08392882629399291,
+      "unidade": "m²",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "g_max",
+      "nome": "Maior área basal individual",
+      "valor": 1.227184630308513,
+      "unidade": "m²",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "area_amostrada",
+      "nome": "Área das parcelas com área conhecida (A)",
+      "valor": 1.4112000000000002,
+      "unidade": "ha",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 839,
+      "potencial": 1117
+    },
+    {
+      "id": "g_ha",
+      "nome": "Área basal por hectare",
+      "valor": 50.913241151028416,
+      "unidade": "m²/ha",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 839,
+      "potencial": 1117
+    },
+    {
+      "id": "dg",
+      "nome": "Diâmetro quadrático médio (dg)",
+      "valor": 32.6896773585669,
+      "unidade": "cm",
+      "status": "VÁLIDO",
+      "elegivel": 861,
+      "potencial": 1117
+    },
+    {
+      "id": "g_total_multifuste",
+      "nome": "Área basal total incluindo multifustes",
+      "valor": 72.95301138272507,
+      "unidade": "m²",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 884,
+      "potencial": 1117
+    },
+    {
+      "id": "v_cil_total",
+      "nome": "Volume cilíndrico total (g × HT)",
+      "valor": 1457.436382708317,
+      "unidade": "m³",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 858,
+      "potencial": 1117
+    },
+    {
+      "id": "v_spurr_total",
+      "nome": "Volume comercial — equação de Spurr (Jorge, 1982)",
+      "valor": 63.83752604592,
+      "unidade": "m³",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 55,
+      "potencial": 1117
+    },
+    {
+      "id": "copa_comprimento_media",
+      "nome": "Comprimento médio de copa",
+      "valor": 6.554548494983278,
+      "unidade": "m",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 897,
+      "potencial": 1117
+    },
+    {
+      "id": "copa_proporcao_media",
+      "nome": "Proporção média de copa",
+      "valor": 45.55056113019953,
+      "unidade": "%",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 897,
+      "potencial": 1117
+    },
+    {
+      "id": "shannon",
+      "nome": "Índice de Shannon (H')",
+      "valor": 4.035013699140337,
+      "unidade": "nats/indivíduo",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1117,
+      "potencial": 1117
+    },
+    {
+      "id": "pielou",
+      "nome": "Equabilidade de Pielou (J')",
+      "valor": 0.9317160356203223,
+      "unidade": "adimensional",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1117,
+      "potencial": 1117
+    },
+    {
+      "id": "simpson",
+      "nome": "Índice de Simpson (1 − D)",
+      "valor": 0.9799417923713993,
+      "unidade": "adimensional",
+      "status": "VÁLIDO COM RESSALVA",
+      "elegivel": 1117,
+      "potencial": 1117
+    }
+  ],
+  "indicadores_bloqueados": [
+    {
+      "id": "mortalidade",
+      "nome": "Mortalidade",
+      "status": "BLOQUEADO POR QUALIDADE OU METODOLOGIA",
+      "motivo": "O arquivo não possui estado vital estruturado (coluna 'Estado vital' com vivo / morto / não localizado / não avaliado). Menções de 'MORTA' em Observação são texto livre e não sustentam o cálculo. '36 − registros' nunca é usado como número de mortos."
+    },
+    {
+      "id": "sobrevivencia",
+      "nome": "Sobrevivência",
+      "status": "BLOQUEADO POR QUALIDADE OU METODOLOGIA",
+      "motivo": "O arquivo não possui estado vital estruturado (coluna 'Estado vital' com vivo / morto / não localizado / não avaliado). Menções de 'MORTA' em Observação são texto livre e não sustentam o cálculo. '36 − registros' nunca é usado como número de mortos."
+    },
+    {
+      "id": null,
+      "nome": "Indicador composto de saúde",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Escala e interpretação não definidas (M12); fitossanidade fora deste arquivo."
+    },
+    {
+      "id": null,
+      "nome": "Dano leve / dano severo",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Não há coleta de gradação de dano (D6 / M2)."
+    },
+    {
+      "id": null,
+      "nome": "Classificação definitiva do povoamento",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Limiares sem origem documentada (M13)."
+    },
+    {
+      "id": null,
+      "nome": "Diâmetro médio de referência do projeto",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "dg e média aritmética são calculados e definidos pela literatura; qual deles será o 'diâmetro médio' oficial do projeto é decisão M5 da equipe."
+    },
+    {
+      "id": null,
+      "nome": "Multifuste sem padrão estrutural",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Indícios de multifuste cujos fustes não podem ser extraídos sem ambiguidade (números por extenso, listas sem quantidade declarada, contagem divergente, DAP da coluna diferente dos fustes): revisão humana. Os extraíveis seguem a regra de Finger (1992)."
+    },
+    {
+      "id": null,
+      "nome": "Mortalidade baseada apenas em registros ausentes",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Ausência de registro não é morte."
+    },
+    {
+      "id": null,
+      "nome": "Mortalidade / sobrevivência",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "O desenho (36 plantas por parcela) é documentado na literatura, mas o arquivo não tem estado vital estruturado (vivo / morto / não localizado / não avaliado). Dado ausente, não lacuna de método."
+    },
+    {
+      "id": null,
+      "nome": "Intensidade de serrapilheira",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Sem escala definida (M10)."
+    },
+    {
+      "id": null,
+      "nome": "Ocorrência confirmada de fauna",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "Texto livre gera apenas menções potenciais."
+    },
+    {
+      "id": null,
+      "nome": "Nota (*) da definição de HESGCOPA",
+      "status": "PENDENTE DE DEFINIÇÃO",
+      "motivo": "A imagem de definições das siglas traz um asterisco sem a nota correspondente. Comprimento e proporção de copa são calculados pela definição fornecida, com ressalva."
+    }
+  ],
+  "decisoes_metodologicas": [
+    "Indivíduo = Parcela + Árvore; medição = Parcela + Árvore + Data Medição (provisório, seção 12).",
+    "Identificadores: remoção apenas de espaço externo; '7', '07' e '007' permanecem distintos.",
+    "Separador decimal: vírgula ou ponto (um único); '1.2,5' é inválido.",
+    "Política única de elegibilidade de DAP: MEDIDO (> 0), não duplicado, ≤ 300 cm salvo opção explícita.",
+    "Limite de 300 cm: REGRA LEGADA NÃO VALIDADA METODOLOGICAMENTE.",
+    "Área seccional g = π·DAP²/40000 (m²); área basal G = Σg (absoluta, não por hectare).",
+    "Diâmetro: 'Média aritmética do DAP' e 'Diâmetro quadrático médio (dg)' (literatura) apresentados separados; o 'diâmetro médio oficial' do projeto é decisão M5.",
+    "Área basal por hectare somente com área + desenho amostral (predefinição da literatura para o arboreto ESARM ou informados pelo usuário); parcelas sem área ficam fora de G e de A.",
+    "Multifuste: regra de Finger (1992) / Manual CEPLAC — g do indivíduo = Σ g dos fustes; DAP equivalente = √(Σd²); fustes extraídos só por padrão estrutural (quantidade declarada = valores listados).",
+    "Diversidade: Shannon (ln), Pielou, Simpson (1 − D, sem reposição) sobre indivíduos únicos (Brower & Zar, 1984).",
+    "Fitossociologia: DR, DoR, FA, FR, VI (Mueller-Dombois & Ellenberg, 1974).",
+    "Limite físico de altura 120 m (maior árvore viva medida ≈ 116 m); HC/HESG/HESGCOPA ≤ HT por definição.",
+    "Siglas (equipe, 17/11/2026): HESG = altura do esgalhamento (solo até o 1º galho vivo); HESGCOPA = altura da formação da copa (solo até o início da copa); HC = altura comercial; HT = altura total (solo até o ápice). Copa = HT − HESGCOPA.",
+    "Alturas HESG, HESGCOPA, HC e HT tratadas separadamente; 'Altura total média' somente para HT.",
+    "Volume cilíndrico v = g·HT (sem fator de forma), conforme orientação em áudio de 17/11/2026.",
+    "Volume comercial por Spurr (Jorge, 1982) apenas com HC: Vc = 0,106531813 + 5,3372e-5·DAP²·HC.",
+    "Quartis por interpolação linear (Hyndman & Fan tipo 7); desvio-padrão amostral (n − 1).",
+    "Distribuição diamétrica exploratória com classes [a; b) de largura escolhida pelo usuário.",
+    "Mortalidade/sobrevivência apenas com estado vital estruturado; denominador configurável (padrão 36).",
+    "Datas em colunas numéricas não são reconstruídas; o texto exibido serve só de pista para revisão.",
+    "Área basal por hectare (fonte: literatura — Barazetti et al. (2011), Unoesc & Ciência – ACET 2(1):31-46 — arboreto da ESARM/CEPLAC, Ilhéus: 98 parcelas, 36 indivíduos da mesma espécie, 6 linhas × 6 colunas, espaçamento 2 × 2 m; Gama-Rodrigues, Barros & Mendonça (1999), R. Bras. Ci. Solo 23:581-592 — arboreto CEPLAC/ESPAB: parcelas puras de 144 m², 2 × 2 m, 36 árvores por espécie): área da parcela por parcela; desenho amostral: censo de parcelas monoespecíficas do arboreto da ESARM/CEPLAC (todas as árvores medidas, sem amostragem); 36 plantas em grade 6 × 6, espaçamento 2 × 2 m → área útil 144 m² (36 × 4 m²). Os 100 m² citados por Barazetti et al. correspondem ao polígono entre as árvores externas ((6 − 1) × 2 m)²; a área útil é a que reproduz a densidade do espaçamento (2.500 plantas/ha). Corredores de 4 m entre parcelas não entram em A.; ABₕₐ = G / A; fator de expansão F = 1 / a (ha)."
+  ],
+  "decisoes_do_usuario": {
+    "area_parcela": {
+      "1": 144.0,
+      "2": 144.0,
+      "3": 144.0,
+      "4": 144.0,
+      "5": 144.0,
+      "6": 144.0,
+      "7": 144.0,
+      "8": 144.0,
+      "9": 144.0,
+      "10": 144.0,
+      "11": 144.0,
+      "12": 144.0,
+      "13": 144.0,
+      "14": 144.0,
+      "15": 144.0,
+      "16": 144.0,
+      "17": 144.0,
+      "18": 144.0,
+      "19": 144.0,
+      "20": 144.0,
+      "21": 144.0,
+      "22": 144.0,
+      "23": 144.0,
+      "24": 144.0,
+      "25": 144.0,
+      "26": 144.0,
+      "27": 144.0,
+      "28": 144.0,
+      "29": 144.0,
+      "30": 144.0,
+      "31": 144.0,
+      "32": 144.0,
+      "33": 144.0,
+      "34": 144.0,
+      "35": 144.0,
+      "36": 144.0,
+      "37": 144.0,
+      "38": 144.0,
+      "39": 144.0,
+      "40": 144.0,
+      "41": 144.0,
+      "42": 144.0,
+      "43": 144.0,
+      "44": 144.0,
+      "45": 144.0,
+      "46": 144.0,
+      "47": 144.0,
+      "48": 144.0,
+      "49": 144.0,
+      "50": 144.0,
+      "51": 144.0,
+      "52": 144.0,
+      "53": 144.0,
+      "54": 144.0,
+      "55": 144.0,
+      "56": 144.0,
+      "57": 144.0,
+      "58": 144.0,
+      "59": 144.0,
+      "60": 144.0,
+      "61": 144.0,
+      "62": 144.0,
+      "63": 144.0,
+      "64": 144.0,
+      "65": 144.0,
+      "66": 144.0,
+      "67": 144.0,
+      "68": 144.0,
+      "69": 144.0,
+      "70": 144.0,
+      "71": 144.0,
+      "72": 144.0,
+      "73": 144.0,
+      "74": 144.0,
+      "75": 144.0,
+      "76": 144.0,
+      "77": 144.0,
+      "78": 144.0,
+      "79": 144.0,
+      "80": 144.0,
+      "81": 144.0,
+      "82": 144.0,
+      "83": 144.0,
+      "84": 144.0,
+      "85": 144.0,
+      "86": 144.0,
+      "87": 144.0,
+      "88": 144.0,
+      "89": 144.0,
+      "90": 144.0,
+      "91": 144.0,
+      "92": 144.0,
+      "93": 144.0,
+      "94": 144.0,
+      "95": 144.0,
+      "96": 144.0,
+      "97": 144.0,
+      "98": 144.0
+    },
+    "unidade_area": "m²",
+    "desenho_amostral": "censo de parcelas monoespecíficas do arboreto da ESARM/CEPLAC (todas as árvores medidas, sem amostragem); 36 plantas em grade 6 × 6, espaçamento 2 × 2 m → área útil 144 m² (36 × 4 m²). Os 100 m² citados por Barazetti et al. correspondem ao polígono entre as árvores externas ((6 − 1) × 2 m)²; a área útil é a que reproduz a densidade do espaçamento (2.500 plantas/ha). Corredores de 4 m entre parcelas não entram em A.",
+    "fonte": "literatura — Barazetti et al. (2011), Unoesc & Ciência – ACET 2(1):31-46 — arboreto da ESARM/CEPLAC, Ilhéus: 98 parcelas, 36 indivíduos da mesma espécie, 6 linhas × 6 colunas, espaçamento 2 × 2 m; Gama-Rodrigues, Barros & Mendonça (1999), R. Bras. Ci. Solo 23:581-592 — arboreto CEPLAC/ESPAB: parcelas puras de 144 m², 2 × 2 m, 36 árvores por espécie"
+  },
+  "tolerancias_numericas": {
+    "contagem": {
+      "atol": 0.0,
+      "rtol": 0.0,
+      "justificativa": "Contagens são inteiras: comparação exata."
+    },
+    "dap_cm": {
+      "atol": 1e-09,
+      "rtol": 1e-12,
+      "justificativa": "Estatísticas de DAP (cm): resolução de campo 0,1 cm ≫ 1e-9 cm."
+    },
+    "altura_m": {
+      "atol": 1e-09,
+      "rtol": 1e-12,
+      "justificativa": "Estatísticas de altura (m): resolução de campo 0,1 m ≫ 1e-9 m."
+    },
+    "dispersao": {
+      "atol": 1e-09,
+      "rtol": 1e-09,
+      "justificativa": "Desvio-padrão e CV envolvem raiz quadrada e divisão; rtol 1e-9."
+    },
+    "area_basal_m2": {
+      "atol": 1e-12,
+      "rtol": 1e-09,
+      "justificativa": "g ~ 1e-4 a 1 m²; atol 1e-12 m² e rtol 1e-9 cobrem o erro de π·d²/40000 em dupla precisão."
+    },
+    "volume_m3": {
+      "atol": 1e-12,
+      "rtol": 1e-09,
+      "justificativa": "Produto de g por altura ou polinômio de Spurr: mesma ordem de erro da área basal."
+    },
+    "percentual": {
+      "atol": 1e-09,
+      "rtol": 0.0,
+      "justificativa": "Percentuais (0–100): erro absoluto de 1e-9 ponto percentual."
+    },
+    "indice": {
+      "atol": 1e-12,
+      "rtol": 1e-09,
+      "justificativa": "Índices de diversidade (ordem 0–10): soma de termos p·ln p com math.fsum; atol 1e-12 e rtol 1e-9 ficam muito acima do erro de arredondamento."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "area_basal": {
+    "dap_cm": [
+      10,
+      20,
+      30
+    ],
+    "g_m2": [
+      0.007853981633974483,
+      0.031415926535897934,
+      0.07068583470577035
+    ],
+    "G_total_m2": 0.10995574287564276,
+    "G_media_m2": 0.03665191429188092,
+    "g_max_m2": 0.07068583470577035,
+    "calculo": "g = π·DAP²/40000: 0,007853981634 + 0,031415926536 + 0,070685834706 = 0,109955742876 m²"
+  },
+  "ab_hectare": {
+    "G_total_m2": 0.4241150082346221,
+    "parcela_1_area_ha": 0.1,
+    "G_ha_parcela_1": 4.241150082346221,
+    "G_ha_duas_parcelas": 2.1205750411731104,
+    "dg_cm": 36.742346141747674,
+    "calculo": "Sc = π·5400/40000 = 0,424115 m²; parcela 1 (0,10 ha) → 4,2412 m²/ha (exemplo do documento); com a parcela 2 sem árvores, A = 0,20 ha → 2,1206 m²/ha; dg = √(5400/4) = √1350 = 36,7423 cm"
+  },
+  "copa": {
+    "comprimento_medio_m": 10.5,
+    "proporcao_media_pct": 67.5,
+    "n_elegivel": 2,
+    "n_potencial": 4,
+    "calculo": "(10−4)=6 m (60 %); (20−5)=15 m (75 %); média 10,5 m e 67,5 %; árvores 3 e 4 excluídas"
+  },
+  "multifuste": {
+    "G_coluna_m2": 0.19232830225276712,
+    "G_multifuste_m2": 0.2096730352932364,
+    "calculo": "G' = g(20) + π·(9+16+144)/40000 + g(44,4) + π·(77,44+51,84)/40000; árvore 3 (contagem divergente) e fustes da árvore 4 (DAP ≠ fustes) não entram"
+  },
+  "valido_csv": {
+    "dap_media_cm": 30.0,
+    "dap_mediana_cm": 30.0,
+    "dap_min_cm": 10.0,
+    "dap_max_cm": 50.0,
+    "dap_q1_cm": 20.0,
+    "dap_q3_cm": 40.0,
+    "dap_dp_cm": 15.811388300841896,
+    "dap_cv_pct": 52.70462766947299,
+    "ht_media_m": 14.6,
+    "G_total_m2": 0.43196898986859655,
+    "v_cil_total_m3": 7.689048019661019,
+    "v_spurr_total_m3": 1.024318026,
+    "individuos": 5,
+    "parcelas": 2,
+    "especies": 3,
+    "shannon": 1.0549201679861442,
+    "pielou": 0.9602297178607612,
+    "simpson_1_menos_D": 0.8,
+    "DoR_cedro_pct": 45.45454545454545,
+    "calculo": "x̄ = 150/5 = 30; s² = (400+100+0+100+400)/4 = 250; s = 15,8113883; CV = 52,7046277 %; Q1/Q3 por interpolação linear: posição 1 → 20, posição 3 → 40"
+  },
+  "estado_vital": {
+    "sobrevivencia_pct": 4.166666666666666,
+    "calculo": "implantados 36 + 36 = 72; mortos 1 → 1,3889 %; vivos 3 → 4,1667 %",
+    "mortalidade_total_pct": 1.3888888888888888
+  }
+}
